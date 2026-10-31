@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "preflight_archive_sha256": "5adc43ded92396baff04774983205655bb57397de2bd0c9ca7625610dd352188",
+  "preflight_source_members_including_manifest": 4262,
+  "archive_crc_membership_and_all_member_hashes_verified": true,
+  "extracted_cpu_configuration": "pass",
+  "extracted_bridge_compile": "pass",
+  "extracted_incremental_tests": {
+    "status": "pass",
+    "tests": 10,
+    "failures": 0,
+    "skipped": 0
+  },
+  "extracted_cuda_model_configuration": "pass",
+  "source_dependencies_resolve_inside_extracted_tree": true,
+  "required_nested_build_info_sources_preserved": true,
+  "validation_scope": "Independent archive extraction/configuration plus ten bridge tests; full CUDA/model runtime acceptance uses fresh release-directory builds.",
+  "final_archive_hash_location": "Published separately with migration evidence; excluded here to avoid a circular archive hash."
+}
