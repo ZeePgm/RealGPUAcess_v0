@@ -31,13 +31,6 @@
     "processes": 27,
     "rerun_in_release": false
   },
-  "implementation_files_identical_to_accepted_candidate": 4232,
-  "package_preflight": "pass",
-  "extracted_bridge_tests": 10,
-  "previous_release_preserved": true,
-  "original_frozen_files_reverified": 4341,
-  "prior_evidence_files_reverified": 1480,
-  "original_HBFLab_baseline_verification": "pass",
   "time_policy": "Existing GPU timestamp policy retained; no measured-compute TTFT/TPOT claim.",
   "records": [
     "core-tests.xml",
@@ -45,8 +38,6 @@
     "validator-tests.log",
     "model-validation.json",
     "candidate-matrix.json",
-    "build-provenance.json",
-    "backend-provenance.json",
-    "package-validation.json"
+    "backend-provenance.json"
   ]
 }

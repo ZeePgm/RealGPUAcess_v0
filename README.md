@@ -110,7 +110,7 @@ service calls.
 - ./tests and ./examples: functional, GPU, failure and injection validation.
 - ./docs/validation: compact acceptance records.
 
-See [validation](docs/VALIDATION.md), [migration and API changes](docs/MIGRATION.md),
+See [validation](docs/VALIDATION.md), [incremental backend contract](docs/INCREMENTAL_BACKEND.md),
 [dependencies](docs/DEPENDENCIES.md), [architecture](docs/ARCHITECTURE.md), and
 [third-party notices](THIRD_PARTY_NOTICES.md).
 

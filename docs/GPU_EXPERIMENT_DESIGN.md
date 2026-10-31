@@ -2,7 +2,7 @@
 
 日期：2026-10-31。状态：**待用户审查，仅设计，未实施、未运行实验。** 本版取代本聊天上一版方案。
 
-依据：当前 README、INCREMENTAL_BACKEND、ARCHITECTURE、MIGRATION、VALIDATION、DEPENDENCIES、实际接口和构建入口，以及用户提供的 `D:\HBF-Sim\gpu_experiment_handoff.md`。外部交接文档与当前 bundled 同名文件的 SHA256 相同：`efcb30843271e3ac653f55945633e91a1f4e0add5c7dc3a2bc88b7ac5485e59a`。本文采用其实验与验收要求，不采用人员分工或旧外部执行器的部署安排。
+依据：当前 README、INCREMENTAL_BACKEND、ARCHITECTURE、VALIDATION、DEPENDENCIES、实际接口和构建入口，以及用户提供的 `D:\HBF-Sim\gpu_experiment_handoff.md`。外部交接文档与当前 bundled 同名文件的 SHA256 相同：`efcb30843271e3ac653f55945633e91a1f4e0add5c7dc3a2bc88b7ac5485e59a`。本文采用其实验与验收要求，不采用人员分工或旧外部执行器的部署安排。
 
 ## 1. 更新后的判断
 
