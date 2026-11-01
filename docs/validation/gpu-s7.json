@@ -1,0 +1,99 @@
+{
+  "stage": "S7",
+  "status": "pass",
+  "mode": "record_only",
+  "acceptance_scope": "minimum_fixed_trace_mechanism_experiment",
+  "metrics": {
+    "actual_outputs": 8,
+    "ttft_ps": 10040304000,
+    "itl_ps": [
+      3864877000,
+      3732482000,
+      5410031000,
+      5947936000,
+      5838706000,
+      5369777000,
+      5665642000
+    ],
+    "tpot_ps": 5118493000.0
+  },
+  "table_sha256": "ff8c7d97d9527d2caf99d4a154068be416c88b60506d4d7a82e86f580f5f5394",
+  "deterministic_replays": 3,
+  "replicate_all_artifact_hashes_exact": true,
+  "negative_cases_rejected": [
+    "missing_segment",
+    "duplicate_segment",
+    "reordered_segments",
+    "wrong_model_hash",
+    "wrong_prompt_hash",
+    "wrong_event_hash",
+    "unqualified_table",
+    "negative_duration",
+    "fractional_duration",
+    "altered_measured_duration",
+    "wrong_step_owner"
+  ],
+  "audit": {
+    "status": "pass",
+    "segments": 18072,
+    "events": 18091,
+    "active_segments": 5880,
+    "step_compute_ps": [
+      10040304000,
+      3864877000,
+      3732482000,
+      5410031000,
+      5947936000,
+      5838706000,
+      5369777000,
+      5665642000
+    ],
+    "token_relative_ps": [
+      10040304000,
+      13905181000,
+      17637663000,
+      23047694000,
+      28995630000,
+      34834336000,
+      40204113000,
+      45869755000
+    ],
+    "all_token_conservation_residuals_ps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "all_source_events_retained": true,
+    "selected_callback_intersections": 16,
+    "source_tokens_exact": true,
+    "HBF_wait_ps": 0,
+    "total_ps": 45869755000
+  },
+  "zero_access": {
+    "mode": "record_only",
+    "request_t0_ps": 0,
+    "gpu_executions": 0,
+    "bridge_sessions": 0,
+    "access_submissions": 0,
+    "read_globals": 0,
+    "write_globals": 0,
+    "NAND_commands": 0,
+    "HBF_wait_ps": 0,
+    "selected_callbacks_retained": 16,
+    "logits_recomputed": false,
+    "finished_ps": 45869755000
+  },
+  "S8_started": false,
+  "logits_recomputed": false,
+  "event_clock_audit": {
+    "status": "pass",
+    "events_independently_checked": 18091,
+    "all_event_clock_residuals_ps": 0,
+    "method": "For each source event, binary search closed source-window endpoints and independently sum qualified durations. CPU timestamp differences are not used as durations."
+  }
+}

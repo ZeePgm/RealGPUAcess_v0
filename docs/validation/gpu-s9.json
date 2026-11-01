@@ -1,0 +1,60 @@
+{
+  "stage": "S9",
+  "status": "pass",
+  "acceptance_scope": "minimum_fixed_trace_mechanism_experiment",
+  "figure_files": [
+    "figure1-ttft-tpot.png",
+    "figure1-ttft-tpot.svg",
+    "figure2-token-itl.png",
+    "figure2-token-itl.svg",
+    "figure3-prefill-decode.png",
+    "figure3-prefill-decode.svg"
+  ],
+  "table_files": [
+    "coverage.csv",
+    "figure1-metrics.csv",
+    "figure2-itl.csv",
+    "figure3-phases.csv",
+    "native-reference.csv",
+    "numerical-arrays.csv",
+    "numerical-by-step.csv",
+    "paired-tokens.csv",
+    "software-costs.csv",
+    "stage-history.csv",
+    "status.csv",
+    "step-decomposition.csv"
+  ],
+  "matched_table_sha256": "ff8c7d97d9527d2caf99d4a154068be416c88b60506d4d7a82e86f580f5f5394",
+  "max_integer_pair_residual_ps": 0,
+  "numerical_arrays_per_GPU_path": 1369,
+  "all_numerical_checks_pass": true,
+  "modeled_HBF_wait_ps": 2363704,
+  "unmeasured_wall_subphases_explicitly_marked": true,
+  "S10_started": false,
+  "figure_audit": {
+    "status": "pass",
+    "all_input_snapshot_hashes_verified": true,
+    "raw_token_gate_pairing_verified": true,
+    "paired_token_count": 8,
+    "integer_pair_residual_ps": 0,
+    "figure_data_verified_against_raw_tokens": [
+      "figure1-ttft-tpot",
+      "figure2-token-itl",
+      "figure3-prefill-decode"
+    ],
+    "native_panel_verified_against_raw_host_events": true,
+    "numerical_table_limits_verified": true,
+    "PNG_SVG_parse_valid": true,
+    "rendered_visual_QA": "All three figures inspected; no clipped labels; model/native axes and delta units explicit.",
+    "additional_input": {
+      "path": "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-s\\20261101-s8-002\\G3\\G3-full\\gates.jsonl",
+      "snapshot": "validator-inputs\\gates.jsonl",
+      "sha256": "f5d1648ba414441f542a0e21ee061fa86bbbc29977a387f6dbd5bd7affd79a28"
+    },
+    "validator_sha256": "63708e7e7a832c1b8bf0c3ecfb53d13ad751761bb00186045e13aa97245c92a3"
+  },
+  "rendered_visual_QA": "pass",
+  "independent_plot_rebuild": "pass",
+  "minimum_delivery_complete": true,
+  "cost_phase_limit": "Individual load/backend/close wall phases not recorded; explicit missing entries, not inferred."
+}

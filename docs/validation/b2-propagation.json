@@ -1,0 +1,72 @@
+{
+  "B2_qualified": false,
+  "cases": [
+    {
+      "case": "holdout-c",
+      "arrays": 344,
+      "GPU_covered": 344,
+      "CPU_covered": 344,
+      "RMS_certified": 0,
+      "first_array": {
+        "step": 0,
+        "array": "Qcur-0",
+        "GPU_covered": true,
+        "CPU_covered": true,
+        "pairwise_RMS_ratio_bound": 0.007869648984407637,
+        "RMS_target_certified": false
+      },
+      "first_possible_F16_overflow": null,
+      "possible_overflow_count": 0,
+      "logits_bound": [
+        1662.7913716461026,
+        1462.3841324735808
+      ]
+    },
+    {
+      "case": "holdout-d",
+      "arrays": 344,
+      "GPU_covered": 344,
+      "CPU_covered": 344,
+      "RMS_certified": 0,
+      "first_array": {
+        "step": 0,
+        "array": "Qcur-0",
+        "GPU_covered": true,
+        "CPU_covered": true,
+        "pairwise_RMS_ratio_bound": 0.0077631590743007265,
+        "RMS_target_certified": false
+      },
+      "first_possible_F16_overflow": null,
+      "possible_overflow_count": 0,
+      "logits_bound": [
+        1438.090750374096,
+        1153.1650081848136
+      ]
+    },
+    {
+      "case": "main",
+      "arrays": 344,
+      "GPU_covered": 344,
+      "CPU_covered": 344,
+      "RMS_certified": 0,
+      "first_array": {
+        "step": 0,
+        "array": "Qcur-0",
+        "GPU_covered": true,
+        "CPU_covered": true,
+        "pairwise_RMS_ratio_bound": 0.007854824229175938,
+        "RMS_target_certified": false
+      },
+      "first_possible_F16_overflow": null,
+      "possible_overflow_count": 0,
+      "logits_bound": [
+        1034.92107344706,
+        950.5462930856104
+      ]
+    }
+  ],
+  "status": "inconclusive",
+  "reason": "Bounds are too wide and nonlinear allowances remain unverified; overflow screening is reported separately.",
+  "artifact_index_sha256": "e4006f6db56a4d3a603b0a69cd70f64ed42e257559deade3547765b3624ff90a",
+  "report": "docs/GPU_B2_PROPAGATION.md"
+}

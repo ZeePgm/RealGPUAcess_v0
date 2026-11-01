@@ -1,0 +1,443 @@
+{
+  "schema_version": 1,
+  "study": "20261031-s0-s2-002",
+  "recorded_utc": "2026-10-31T10:10:34.464962+00:00",
+  "status": "blocked",
+  "stages": {
+    "S0": "pass",
+    "S1": "pass",
+    "S2": "blocked"
+  },
+  "model": {
+    "architecture": "Qwen3",
+    "layers": 28,
+    "hidden": 1024,
+    "ffn": 3072,
+    "gguf_sha256": "74878aba1d10648eae3d6cfef822f8c59ce3217b3808b35fce2dd02d975952a2",
+    "conversion_sha256": "ba7a2098911000e1fdbf9b4035aef34dc4d29ce95f6e91b7b2b53688cc7d86ba"
+  },
+  "environment": {
+    "gpu": "NVIDIA GeForce RTX 5070",
+    "compute_capability": [
+      12,
+      0
+    ],
+    "cuda_driver_api": 13040,
+    "cuda_runtime": 13040,
+    "cuda_architectures": "120a-real",
+    "cuda_graphs": "OFF",
+    "numpy": "2.4.6",
+    "torch": "2.7.1+cu118"
+  },
+  "inputs": {
+    "backup": {
+      "sha256": "70bfdd609a6fe451d633245101ad30c279e556cdb087842747f0c1b21f3dd8ef",
+      "prompt_ids": [
+        151644,
+        8948,
+        198,
+        2610,
+        525,
+        264,
+        10950,
+        17847,
+        13,
+        21806,
+        5961,
+        2041,
+        7274,
+        70411,
+        13,
+        151645,
+        198,
+        151644,
+        872,
+        198,
+        840,
+        20772,
+        3170,
+        18495,
+        1184,
+        4938,
+        304,
+        3807,
+        22870,
+        13,
+        151645,
+        198,
+        151644,
+        77091,
+        198,
+        151667,
+        271,
+        151668,
+        271
+      ],
+      "tokens": 39
+    },
+    "calibration-a": {
+      "sha256": "a4fc266f6bd40fa6d7a588cef9582be52c29e3e9503cd7f0f11a64cc91a5e15f",
+      "prompt_ids": [
+        151644,
+        8948,
+        198,
+        2610,
+        525,
+        264,
+        10950,
+        17847,
+        13,
+        21806,
+        5961,
+        2041,
+        7274,
+        70411,
+        13,
+        151645,
+        198,
+        151644,
+        872,
+        198,
+        46254,
+        279,
+        1790,
+        1378,
+        25780,
+        1283,
+        220,
+        19,
+        323,
+        220,
+        20,
+        13,
+        21806,
+        26753,
+        13,
+        151645,
+        198,
+        151644,
+        77091,
+        198,
+        151667,
+        271,
+        151668,
+        271
+      ],
+      "tokens": 44
+    },
+    "calibration-b": {
+      "sha256": "e844f42ac904e7952aa374e4a31dcb82bbdc06431e89917399b680aabe8986c3",
+      "prompt_ids": [
+        151644,
+        8948,
+        198,
+        2610,
+        525,
+        264,
+        10950,
+        17847,
+        13,
+        21806,
+        5961,
+        2041,
+        7274,
+        70411,
+        13,
+        151645,
+        198,
+        151644,
+        872,
+        198,
+        32,
+        2518,
+        2311,
+        323,
+        264,
+        6303,
+        2311,
+        525,
+        389,
+        264,
+        1965,
+        13,
+        60785,
+        279,
+        6467,
+        13,
+        151645,
+        198,
+        151644,
+        77091,
+        198,
+        151667,
+        271,
+        151668,
+        271
+      ],
+      "tokens": 45
+    },
+    "main": {
+      "sha256": "ce4fa40becfa4a191064fbda15721985a953ae231557ea6f6f8f7b669e0d1a74",
+      "prompt_ids": [
+        151644,
+        8948,
+        319,
+        2610,
+        525,
+        264,
+        10950,
+        17847,
+        13,
+        21806,
+        5961,
+        304,
+        6364,
+        2041,
+        7274,
+        70411,
+        13,
+        151645,
+        319,
+        151644,
+        872,
+        319,
+        840,
+        20772,
+        1246,
+        264,
+        6366,
+        5711,
+        4938,
+        304,
+        911,
+        825,
+        7739,
+        4244,
+        13,
+        151645,
+        319,
+        151644,
+        77091,
+        319,
+        151667,
+        871,
+        151668,
+        871
+      ],
+      "tokens": 44
+    }
+  },
+  "dependency_identity_sha256": "f886772c4488ef82be04170d92f7b019cf86c65d8a6ab4644edd119c1ead4d26",
+  "experiment_sources_and_binaries": [
+    {
+      "path": "build-s0-s2/bin/gpu_s_bridge.exe",
+      "sha256": "17b3a8f08de426a6b284cfd0a9b4c03892f94768efdd500ff5ab915edfe60f77",
+      "bytes": 642560
+    },
+    {
+      "path": "build-s0-s2/bin/gpu_s_native.exe",
+      "sha256": "6c93a28e81a0fa927b84ee21ad471d81bf1479ba8f60ef7bd8ae22eb6edecca0",
+      "bytes": 228352
+    },
+    {
+      "path": "experiments/gpu_s/audit.py",
+      "sha256": "22fb53580a10d6590e42021583d8dab91818df4bce2f69855b3830cbc67766d4",
+      "bytes": 8936
+    },
+    {
+      "path": "experiments/gpu_s/bridge.cpp",
+      "sha256": "2e0924ae28cb213db4b20013c4c300887e1f0dea7a4230e1570d7c544e69652d",
+      "bytes": 7325
+    },
+    {
+      "path": "experiments/gpu_s/CMakeLists.txt",
+      "sha256": "8aeb5e7961845a76d2b40d335d3fd1fe04815be73daa0f072279b241414b9ee6",
+      "bytes": 1493
+    },
+    {
+      "path": "experiments/gpu_s/common.py",
+      "sha256": "3c72da21e3b3aba77a6c130e6f506ec04f8a23cce70564c062277847e3b600b5",
+      "bytes": 4535
+    },
+    {
+      "path": "experiments/gpu_s/native.cpp",
+      "sha256": "f60af98547b5bf1e736587cb5622f0097ab9d7bae466f778756bba8da89db300",
+      "bytes": 12435
+    },
+    {
+      "path": "experiments/gpu_s/README.md",
+      "sha256": "412b9d8d0a6be757e179826fcb099a96fe6c6033294897d699a0cba593231e31",
+      "bytes": 3169
+    },
+    {
+      "path": "experiments/gpu_s/reference.py",
+      "sha256": "cb2a307f02b9ff27c2d7ba2628009205c374fb3202ee2007594b73f1a5a50350",
+      "bytes": 6130
+    },
+    {
+      "path": "experiments/gpu_s/report.py",
+      "sha256": "8f996cd38e119fbbdbcff1557115424b0754ea7f57a15fee3f6e906279441c04",
+      "bytes": 6446
+    },
+    {
+      "path": "experiments/gpu_s/s2.py",
+      "sha256": "37a0f3d692a67a88f9659b528c7ff11e652cd8efbee1050a3cdfeaca5badfa1f",
+      "bytes": 10124
+    },
+    {
+      "path": "experiments/gpu_s/study.py",
+      "sha256": "597a8418c30be1df8c79805a70695548ffd3670167be35068e585be2724bdddb",
+      "bytes": 14767
+    }
+  ],
+  "criteria": {
+    "tokens_exact": true,
+    "finite": true,
+    "shape_exact": true,
+    "relative_rms_max": 0.00048828125,
+    "element_error_over_max_reference_abs_or_reference_rms": 0.0009765625
+  },
+  "criteria_sha256": "ae956ca732ee01a95da0126cf3a29753ec719a903bfd0d477efaad7bc873c694",
+  "B1_access_semantics": "pass",
+  "B2_numerical_contract": "not_qualified",
+  "calibration": [
+    {
+      "case": "calibration-a",
+      "status": "fail",
+      "token_boundary_exact": true,
+      "valid_kv_arrays": 112,
+      "expected_kv_arrays": 112,
+      "arrays_compared": 343,
+      "expected_arrays": 343,
+      "failed_arrays": 198,
+      "max_abs": 0.125,
+      "max_relative_rms": 0.0005310494236827182,
+      "max_normalized_element_error": 0.005931683688795868,
+      "complete_logits": {
+        "pass": false,
+        "elements": 303872,
+        "max_abs": 0.008039712905883789,
+        "rms": 0.001595718666136284,
+        "reference_rms": 4.361384426113697,
+        "relative_rms": 0.0003658743440688127,
+        "normalized_max": 0.0018433855217499695,
+        "name": "complete_logits"
+      },
+      "worst_rms": {
+        "pass": false,
+        "elements": 45056,
+        "max_abs": 0.03515625,
+        "rms": 0.004290118269562438,
+        "reference_rms": 8.07856684941178,
+        "relative_rms": 0.0005310494236827182,
+        "normalized_max": 0.004351792917646007,
+        "step": 0,
+        "name": "Vstore-27",
+        "node_id": 1104
+      },
+      "worst_element_error": {
+        "pass": false,
+        "elements": 45056,
+        "max_abs": 0.015625,
+        "rms": 0.000620017418010957,
+        "reference_rms": 2.3048894238619444,
+        "relative_rms": 0.0002690009384363829,
+        "normalized_max": 0.005931683688795868,
+        "step": 0,
+        "name": "Kstore-20",
+        "node_id": 820
+      }
+    },
+    {
+      "case": "calibration-b",
+      "status": "fail",
+      "token_boundary_exact": true,
+      "valid_kv_arrays": 112,
+      "expected_kv_arrays": 112,
+      "arrays_compared": 343,
+      "expected_arrays": 343,
+      "failed_arrays": 202,
+      "max_abs": 0.125,
+      "max_relative_rms": 0.000523298561115133,
+      "max_normalized_element_error": 0.006722683782178467,
+      "complete_logits": {
+        "pass": false,
+        "elements": 303872,
+        "max_abs": 0.005339860916137695,
+        "rms": 0.0010455253437245452,
+        "reference_rms": 3.913204332705252,
+        "relative_rms": 0.00026717882707692883,
+        "normalized_max": 0.0013645750290903352,
+        "name": "complete_logits"
+      },
+      "worst_rms": {
+        "pass": false,
+        "elements": 46080,
+        "max_abs": 0.03515625,
+        "rms": 0.004330213799716472,
+        "reference_rms": 8.274843696280993,
+        "relative_rms": 0.000523298561115133,
+        "normalized_max": 0.004248569675799491,
+        "step": 0,
+        "name": "Vstore-27",
+        "node_id": 1104
+      },
+      "worst_element_error": {
+        "pass": false,
+        "elements": 46080,
+        "max_abs": 0.015625,
+        "rms": 0.0006199377393873255,
+        "reference_rms": 2.3242205800935,
+        "relative_rms": 0.0002667293047385315,
+        "normalized_max": 0.006722683782178467,
+        "step": 0,
+        "name": "Kstore-20",
+        "node_id": 820
+      }
+    }
+  ],
+  "native_boundary": {
+    "status": "pass",
+    "main_1_tokens": [
+      32
+    ],
+    "main_2_tokens": [
+      32,
+      6366
+    ],
+    "positions": [
+      44,
+      45
+    ],
+    "no_extra_step": true,
+    "verify_timing_logits_exact": true,
+    "actual_outputs": [
+      1,
+      2
+    ],
+    "stop_reasons": [
+      "length",
+      "length"
+    ],
+    "one_vs_two_first_logits_exact": true,
+    "kv_publication_arrays_checked": 392,
+    "kv_publication_exact": true,
+    "hbf_submitted": 0,
+    "intentional_stop": {
+      "status": "pass",
+      "node_id": 439,
+      "consumer_dispatched_after_stop": false,
+      "tokens_emitted_after_stop": 0,
+      "evidence": "Actual CUDA run intentionally stopped before dispatch; NOT an HBF failure injection."
+    }
+  },
+  "thresholds_relaxed": false,
+  "S3_started": false,
+  "formal_performance_measured": false,
+  "artifacts": {
+    "report": "output/gpu-s/20261031-s0-s2-002/report.md",
+    "index": "output/gpu-s/20261031-s0-s2-002/artifact-index.json",
+    "directory": "output/gpu-s/20261031-s0-s2-002",
+    "index_sha256": "d86b81911d60eb6e46a387d178ccc9a46973229f7b3ca2fd90ee3803ea6e6c34"
+  }
+}

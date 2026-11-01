@@ -1,0 +1,421 @@
+{
+  "stage": "S5",
+  "status": "pass",
+  "study": "output/gpu-s/20261101-s5b-002",
+  "fixed_duration_ps": 1000,
+  "S5-a": "pass_revalidated",
+  "S5-b": "pass",
+  "S6_started": false,
+  "formal_performance_measured": false,
+  "conditions_sha256": "cc450c67e81f6eb69c32215f1f21b95d464a20990b92893ce53f60dece01e9e2",
+  "B2_criteria_changed": false,
+  "revalidation": {
+    "status": "pass",
+    "cases": [
+      {
+        "case": "calibration-g",
+        "status": "pass",
+        "arrays": 343
+      },
+      {
+        "case": "calibration-h",
+        "status": "pass",
+        "arrays": 343
+      },
+      {
+        "case": "M1",
+        "status": "pass",
+        "arrays": 172,
+        "segments": 735
+      },
+      {
+        "case": "M8",
+        "status": "pass",
+        "arrays": 172,
+        "segments": 735
+      },
+      {
+        "case": "M2",
+        "status": "pass",
+        "arrays": 172,
+        "segments": 735
+      },
+      {
+        "case": "M2-offset",
+        "status": "pass",
+        "arrays": 172,
+        "segments": 735
+      }
+    ],
+    "negative_cases": {
+      "program_fail": {
+        "status": "pass",
+        "expected_negative_outcome_verified": true,
+        "dependent_consumer_dispatched": false,
+        "tokens_emitted": 0,
+        "phase": "initialization",
+        "gpu_nodes_dispatched": 0,
+        "normal_failure_drained": true,
+        "reason": "RecoveryBudgetExhausted"
+      },
+      "time_limit": {
+        "status": "pass",
+        "expected_negative_outcome_verified": true,
+        "dependent_consumer_dispatched": false,
+        "tokens_emitted": 0,
+        "phase": "consumer_dependency",
+        "consumer_node_id": 439,
+        "all_kernels_end_before_failed_gate": true,
+        "pending_globals": 1,
+        "host_drained": false,
+        "device_drained": false,
+        "state_retained_at_limit": true
+      }
+    }
+  },
+  "supplemental_validation": {
+    "status": "pass",
+    "operation_identity": [
+      {
+        "case": "native-timing-2",
+        "per_segment_enqueued_operations_exact": true
+      },
+      {
+        "case": "M2-zero-2",
+        "per_segment_enqueued_operations_exact": true
+      },
+      {
+        "case": "M2-fixed-2",
+        "per_segment_enqueued_operations_exact": true
+      },
+      {
+        "case": "native-timing-8",
+        "per_segment_enqueued_operations_exact": true
+      },
+      {
+        "case": "M2-zero-8",
+        "per_segment_enqueued_operations_exact": true
+      },
+      {
+        "case": "M2-fixed-8",
+        "per_segment_enqueued_operations_exact": true
+      }
+    ],
+    "negative_audit_fixtures_rejected": [
+      "missing_activity",
+      "duplicate_activity",
+      "missing_enqueue_correlation",
+      "failed_device_synchronize",
+      "wrong_duration",
+      "nonempty_work_not_modeled",
+      "production_kernel_disguised_as_snapshot",
+      "duplicate_or_missing_advance",
+      "wrong_token_clock",
+      "wrong_tail_owner"
+    ],
+    "fixture_scope": "Mutated copies of raw records; not claims of real CUDA failures.",
+    "source_sha256": "9b37f0f00a7d6064426d47fcdb6cc9e545358f58575afb7aaf07f0995275f7da"
+  },
+  "cases": [
+    {
+      "case": "M2-zero-2",
+      "actual_outputs": 2,
+      "tokens": [
+        32,
+        6366
+      ],
+      "metrics": {
+        "actual_outputs": 2,
+        "ttft_ps": 487788,
+        "itl_ps": [
+          267988
+        ],
+        "tpot_ps": 267988.0
+      },
+      "compute_ps": 0,
+      "wait_ps": 755776,
+      "numerical_arrays": 343,
+      "native_hbf_exact": {
+        "status": "pass",
+        "tokens_exact": true,
+        "complete_logits_exact": true,
+        "valid_snapshot_arrays": 902,
+        "valid_snapshot_bytes_exact": true,
+        "unused_kv_padding_excluded": true,
+        "all_raw_events_and_callback_ids_exact": true
+      },
+      "coverage": {
+        "registered_valid_bytes": 10240,
+        "registered_storage_bytes": 12288,
+        "padding_bytes": 2048,
+        "touched_union_bytes": 10240,
+        "cumulative_read_bytes": 20480,
+        "read_globals": 6,
+        "read_logical_fragments": 320,
+        "read_attempts": 320,
+        "model_weight_bytes": 1503395840,
+        "selected_tensor_bytes": 6295552,
+        "registered_model_fraction": 6.81124673060157e-06,
+        "selected_tensor_fraction": 0.0016265452179570592
+      },
+      "modeled_segments": 1470,
+      "segments_per_step": [
+        735,
+        735
+      ],
+      "conservation_residuals_ps": [
+        0,
+        0
+      ],
+      "production_activities": {
+        "memcpy": 48,
+        "kernel": 1882,
+        "memset": 54
+      },
+      "production_copy_kinds": {
+        "1": 18,
+        "2": 2,
+        "8": 28
+      },
+      "verification_copies_excluded": 902,
+      "cpu_gpu_timestamp_projection_discrepancy_count": 727
+    },
+    {
+      "case": "M2-fixed-2",
+      "actual_outputs": 2,
+      "tokens": [
+        32,
+        6366
+      ],
+      "metrics": {
+        "actual_outputs": 2,
+        "ttft_ps": 1222788,
+        "itl_ps": [
+          1002988
+        ],
+        "tpot_ps": 1002988.0
+      },
+      "compute_ps": 1470000,
+      "wait_ps": 755776,
+      "numerical_arrays": 343,
+      "native_hbf_exact": {
+        "status": "pass",
+        "tokens_exact": true,
+        "complete_logits_exact": true,
+        "valid_snapshot_arrays": 902,
+        "valid_snapshot_bytes_exact": true,
+        "unused_kv_padding_excluded": true,
+        "all_raw_events_and_callback_ids_exact": true
+      },
+      "coverage": {
+        "registered_valid_bytes": 10240,
+        "registered_storage_bytes": 12288,
+        "padding_bytes": 2048,
+        "touched_union_bytes": 10240,
+        "cumulative_read_bytes": 20480,
+        "read_globals": 6,
+        "read_logical_fragments": 320,
+        "read_attempts": 320,
+        "model_weight_bytes": 1503395840,
+        "selected_tensor_bytes": 6295552,
+        "registered_model_fraction": 6.81124673060157e-06,
+        "selected_tensor_fraction": 0.0016265452179570592
+      },
+      "modeled_segments": 1470,
+      "segments_per_step": [
+        735,
+        735
+      ],
+      "conservation_residuals_ps": [
+        0,
+        0
+      ],
+      "production_activities": {
+        "memcpy": 48,
+        "kernel": 1882,
+        "memset": 54
+      },
+      "production_copy_kinds": {
+        "1": 18,
+        "2": 2,
+        "8": 28
+      },
+      "verification_copies_excluded": 902,
+      "cpu_gpu_timestamp_projection_discrepancy_count": 8
+    },
+    {
+      "case": "M2-zero-8",
+      "actual_outputs": 8,
+      "tokens": [
+        32,
+        6366,
+        5711,
+        4938,
+        311,
+        3553,
+        323,
+        17179
+      ],
+      "metrics": {
+        "actual_outputs": 8,
+        "ttft_ps": 487788,
+        "itl_ps": [
+          267988,
+          267988,
+          267988,
+          267988,
+          267988,
+          267988,
+          267988
+        ],
+        "tpot_ps": 267988.0
+      },
+      "compute_ps": 0,
+      "wait_ps": 2363704,
+      "numerical_arrays": 1369,
+      "native_hbf_exact": {
+        "status": "pass",
+        "tokens_exact": true,
+        "complete_logits_exact": true,
+        "valid_snapshot_arrays": 3608,
+        "valid_snapshot_bytes_exact": true,
+        "unused_kv_padding_excluded": true,
+        "all_raw_events_and_callback_ids_exact": true
+      },
+      "coverage": {
+        "registered_valid_bytes": 10240,
+        "registered_storage_bytes": 12288,
+        "padding_bytes": 2048,
+        "touched_union_bytes": 10240,
+        "cumulative_read_bytes": 81920,
+        "read_globals": 24,
+        "read_logical_fragments": 1280,
+        "read_attempts": 1280,
+        "model_weight_bytes": 1503395840,
+        "selected_tensor_bytes": 6295552,
+        "registered_model_fraction": 6.81124673060157e-06,
+        "selected_tensor_fraction": 0.0016265452179570592
+      },
+      "modeled_segments": 5880,
+      "segments_per_step": [
+        735,
+        735,
+        735,
+        735,
+        735,
+        735,
+        735,
+        735
+      ],
+      "conservation_residuals_ps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "production_activities": {
+        "memcpy": 276,
+        "kernel": 6112,
+        "memset": 54
+      },
+      "production_copy_kinds": {
+        "1": 72,
+        "2": 8,
+        "8": 196
+      },
+      "verification_copies_excluded": 3608,
+      "cpu_gpu_timestamp_projection_discrepancy_count": 0
+    },
+    {
+      "case": "M2-fixed-8",
+      "actual_outputs": 8,
+      "tokens": [
+        32,
+        6366,
+        5711,
+        4938,
+        311,
+        3553,
+        323,
+        17179
+      ],
+      "metrics": {
+        "actual_outputs": 8,
+        "ttft_ps": 1222788,
+        "itl_ps": [
+          1002988,
+          1002988,
+          1002988,
+          1002988,
+          1002988,
+          1002988,
+          1002988
+        ],
+        "tpot_ps": 1002988.0
+      },
+      "compute_ps": 5880000,
+      "wait_ps": 2363704,
+      "numerical_arrays": 1369,
+      "native_hbf_exact": {
+        "status": "pass",
+        "tokens_exact": true,
+        "complete_logits_exact": true,
+        "valid_snapshot_arrays": 3608,
+        "valid_snapshot_bytes_exact": true,
+        "unused_kv_padding_excluded": true,
+        "all_raw_events_and_callback_ids_exact": true
+      },
+      "coverage": {
+        "registered_valid_bytes": 10240,
+        "registered_storage_bytes": 12288,
+        "padding_bytes": 2048,
+        "touched_union_bytes": 10240,
+        "cumulative_read_bytes": 81920,
+        "read_globals": 24,
+        "read_logical_fragments": 1280,
+        "read_attempts": 1280,
+        "model_weight_bytes": 1503395840,
+        "selected_tensor_bytes": 6295552,
+        "registered_model_fraction": 6.81124673060157e-06,
+        "selected_tensor_fraction": 0.0016265452179570592
+      },
+      "modeled_segments": 5880,
+      "segments_per_step": [
+        735,
+        735,
+        735,
+        735,
+        735,
+        735,
+        735,
+        735
+      ],
+      "conservation_residuals_ps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "production_activities": {
+        "memcpy": 276,
+        "kernel": 6112,
+        "memset": 54
+      },
+      "production_copy_kinds": {
+        "1": 72,
+        "2": 8,
+        "8": 196
+      },
+      "verification_copies_excluded": 3608,
+      "cpu_gpu_timestamp_projection_discrepancy_count": 0
+    }
+  ]
+}

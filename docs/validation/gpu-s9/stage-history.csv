@@ -1,0 +1,13 @@
+stage,status,scope,source
+S0,pass,original_conditions,output/gpu-s/20261101-s2-b2-v2-001/S0/stage-result.json
+S1,pass,original_conditions,output/gpu-s/20261101-s2-b2-v2-001/S1/stage-result.json
+S2-old,blocked,original_conditions,output/gpu-s/20261031-s0-s2-002/S2/stage-result.json
+S2-revised,pass,original_conditions,output/gpu-s/20261101-s2-b2-v2-001/S2/stage-result.json
+S3-revalidated,pass,acceptance,output/gpu-s/20261101-s3-b2-v2-001/S3/stage-result.json
+S4,pass,original_conditions,output/gpu-s/20261101-s4-001/S4/stage-result.json
+S5,pass,original_conditions,output/gpu-s/20261101-s5b-002/S5/stage-result.json
+S6-original,inconclusive,original_conditions,output/gpu-s/20261101-s6-001/stage-result.json
+S6-minimum-scope,pass,minimum_fixed_trace_mechanism_experiment,output/gpu-s/20261101-s6-minimum-acceptance-001/stage-result.json
+S7,pass,minimum_fixed_trace_mechanism_experiment,output/gpu-s/20261101-s7-001/G2/stage-result.json
+S8-interrupted-audit,inconclusive,original_conditions,output/gpu-s/20261101-s8-001/G3/stage-result.json
+S8,pass,minimum_fixed_trace_mechanism_experiment,output/gpu-s/20261101-s8-002/G3/stage-result.json

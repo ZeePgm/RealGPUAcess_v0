@@ -1,0 +1,13 @@
+quantity,value
+registered_valid_bytes,10240
+registered_storage_bytes,12288
+padding_bytes,2048
+touched_union_bytes,10240
+cumulative_read_bytes,81920
+read_globals,24
+read_logical_fragments,1280
+read_attempts,1280
+model_weight_bytes,1503395840
+selected_tensor_bytes,6295552
+registered_model_fraction,6.81124673060157e-06
+selected_tensor_fraction,0.0016265452179570592

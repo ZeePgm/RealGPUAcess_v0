@@ -1,0 +1,112 @@
+{
+  "stage": "S6",
+  "status": "pass",
+  "acceptance_scope": "minimum_fixed_trace_mechanism_experiment",
+  "precision_qualification": "unresolved_for_individual_short_segments_and_real_hardware_prediction",
+  "user_authorization": "User explicitly permits a qualification annotation ignoring local fluctuations if they do not prevent the original minimum experiment.",
+  "basis": "Original handoff sections 4 and 8 require measured reusable segments, correctness, complete boundaries and same-table G2/G3. They require acknowledging short-interval resolution limits, not per-segment repeatability thresholds.",
+  "ignored_for_acceptance_only": [
+    "Large relative variability of individual short segments",
+    "No precision guarantee for sub-microsecond activity durations"
+  ],
+  "retained": [
+    "All measured durations, activities, segment boundaries and raw samples",
+    "Numerical and causal correctness gates",
+    "Exact table identity, deterministic clock accounting and failures/drain checks for S7/S8"
+  ],
+  "forbidden_claims": [
+    "Short activities have proven microsecond/sub-microsecond accuracy",
+    "Small simulated differences prove observable real-hardware speedup",
+    "Selected trace represents all native executions or calibrated HBF hardware"
+  ],
+  "chosen_sample": "sample-3",
+  "sample_reselected": false,
+  "measured_durations_changed": false,
+  "historical_stage_result_sha256": "9a68cbcd25e190f151beb3d67983dbd0379ae2ac114473767a6a3a8151ae2930",
+  "source_table_sha256": "128cbf9b3d4a57c70ca092da581b496fc5bca9362adecc5be79eab764713e920",
+  "protocol_sha256": "240eb358b00f92af79c7e4faaa05c8e07fb9993cfa5a658465339266b08eac77",
+  "evidence": [
+    {
+      "sample": 1,
+      "total_ps": 44879566000,
+      "gap_tail_ps": 273443000,
+      "gap_tail_fraction": 0.006092817385979178,
+      "sub_us_activity_duration_sum_ps": 916629000,
+      "sub_us_duration_sum_fraction": 0.020424194832900124
+    },
+    {
+      "sample": 2,
+      "total_ps": 47283121000,
+      "gap_tail_ps": 264940000,
+      "gap_tail_fraction": 0.005603268024545165,
+      "sub_us_activity_duration_sum_ps": 910523000,
+      "sub_us_duration_sum_fraction": 0.019256829514278467
+    },
+    {
+      "sample": 3,
+      "total_ps": 45869755000,
+      "gap_tail_ps": 286600000,
+      "gap_tail_fraction": 0.0062481258075173934,
+      "sub_us_activity_duration_sum_ps": 880958000,
+      "sub_us_duration_sum_fraction": 0.019205639969082023
+    },
+    {
+      "sample": 4,
+      "total_ps": 45524075000,
+      "gap_tail_ps": 286984000,
+      "gap_tail_fraction": 0.006304005078631472,
+      "sub_us_activity_duration_sum_ps": 955063000,
+      "sub_us_duration_sum_fraction": 0.02097929502137056
+    },
+    {
+      "sample": 5,
+      "total_ps": 47299544000,
+      "gap_tail_ps": 287817000,
+      "gap_tail_fraction": 0.006084984667082626,
+      "sub_us_activity_duration_sum_ps": 872463000,
+      "sub_us_duration_sum_fraction": 0.018445484379299725
+    },
+    {
+      "sample": 6,
+      "total_ps": 46089275000,
+      "gap_tail_ps": 248902000,
+      "gap_tail_fraction": 0.005400432096187236,
+      "sub_us_activity_duration_sum_ps": 890810000,
+      "sub_us_duration_sum_fraction": 0.019327923904205478
+    },
+    {
+      "sample": 7,
+      "total_ps": 46094642000,
+      "gap_tail_ps": 267398000,
+      "gap_tail_fraction": 0.0058010646877352905,
+      "sub_us_activity_duration_sum_ps": 825287000,
+      "sub_us_duration_sum_fraction": 0.017904185046062403
+    },
+    {
+      "sample": 8,
+      "total_ps": 42707339000,
+      "gap_tail_ps": 255879000,
+      "gap_tail_fraction": 0.005991452663440352,
+      "sub_us_activity_duration_sum_ps": 877262000,
+      "sub_us_duration_sum_fraction": 0.02054124702079893
+    },
+    {
+      "sample": 9,
+      "total_ps": 45014890000,
+      "gap_tail_ps": 248995000,
+      "gap_tail_fraction": 0.005531391946087172,
+      "sub_us_activity_duration_sum_ps": 896505000,
+      "sub_us_duration_sum_fraction": 0.019915743435116692
+    },
+    {
+      "sample": 10,
+      "total_ps": 44405201000,
+      "gap_tail_ps": 225186000,
+      "gap_tail_fraction": 0.0050711627225828795,
+      "sub_us_activity_duration_sum_ps": 925008000,
+      "sub_us_duration_sum_fraction": 0.020831073369085754
+    }
+  ],
+  "scope_note": "Variability remains a limitation. This is a retrospective user-authorized scope qualification, not a new pre-registered accuracy test or evidence that variability disappeared.",
+  "qualified_table_sha256": "ff8c7d97d9527d2caf99d4a154068be416c88b60506d4d7a82e86f580f5f5394"
+}

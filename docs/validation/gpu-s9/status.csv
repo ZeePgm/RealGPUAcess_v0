@@ -1,0 +1,5 @@
+run,actual_outputs,stop_reason,positions,cupti_dropped,host_drained,device_drained,dependency_failed
+native-verify,8,length,51,0,not_applicable,not_applicable,not_applicable
+G3-full,8,length,51,0,True,True,False
+G3-timing-1,8,length,51,0,True,True,False
+G3-timing-2,8,length,51,0,True,True,False

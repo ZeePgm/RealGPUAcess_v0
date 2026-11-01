@@ -1,0 +1,21 @@
+run,phase,seconds,measurement,scope
+native-verify,whole_process,22.921451800037175,measured,"Includes load, initialization, execution, recording and shutdown; never hardware latency."
+native-verify,model_load,,not_separately_recorded,Not inferred from process time or simulation ticks.
+native-verify,backend_initialize,,not_separately_recorded,Not inferred from process time or simulation ticks.
+native-verify,backend_CPU_wait,,not_separately_recorded,Not inferred from process time or simulation ticks.
+native-verify,close_and_drain,,not_separately_recorded,Not inferred from process time or simulation ticks.
+G3-full,whole_process,23.0850515999482,measured,"Includes load, initialization, execution, recording and shutdown; never hardware latency."
+G3-full,model_load,,not_separately_recorded,Not inferred from process time or simulation ticks.
+G3-full,backend_initialize,,not_separately_recorded,Not inferred from process time or simulation ticks.
+G3-full,backend_CPU_wait,,not_separately_recorded,Not inferred from process time or simulation ticks.
+G3-full,close_and_drain,,not_separately_recorded,Not inferred from process time or simulation ticks.
+G3-timing-1,whole_process,18.259697799978312,measured,"Includes load, initialization, execution, recording and shutdown; never hardware latency."
+G3-timing-1,model_load,,not_separately_recorded,Not inferred from process time or simulation ticks.
+G3-timing-1,backend_initialize,,not_separately_recorded,Not inferred from process time or simulation ticks.
+G3-timing-1,backend_CPU_wait,,not_separately_recorded,Not inferred from process time or simulation ticks.
+G3-timing-1,close_and_drain,,not_separately_recorded,Not inferred from process time or simulation ticks.
+G3-timing-2,whole_process,18.369311700051185,measured,"Includes load, initialization, execution, recording and shutdown; never hardware latency."
+G3-timing-2,model_load,,not_separately_recorded,Not inferred from process time or simulation ticks.
+G3-timing-2,backend_initialize,,not_separately_recorded,Not inferred from process time or simulation ticks.
+G3-timing-2,backend_CPU_wait,,not_separately_recorded,Not inferred from process time or simulation ticks.
+G3-timing-2,close_and_drain,,not_separately_recorded,Not inferred from process time or simulation ticks.

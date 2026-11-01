@@ -1,0 +1,142 @@
+{
+  "status": "inconclusive",
+  "samples": 10,
+  "gpu_work_median_ms": 45.696915,
+  "gpu_work_min_ms": 42.707339,
+  "gpu_work_max_ms": 47.299544,
+  "reference_request_median_ms": 180.75025,
+  "instrumented_request_median_ms": 16597.165,
+  "critical_transfer_distributions": [
+    {
+      "segment_id": 5,
+      "step": 0,
+      "kind": "gap",
+      "median_ps": 36560000.0,
+      "range_over_median": 0.44814004376367617
+    },
+    {
+      "segment_id": 2259,
+      "step": 0,
+      "kind": "tail",
+      "median_ps": 14961000.0,
+      "range_over_median": 0.5198181939709913
+    },
+    {
+      "segment_id": 2264,
+      "step": 1,
+      "kind": "gap",
+      "median_ps": 13505500.0,
+      "range_over_median": 0.6256710229165895
+    },
+    {
+      "segment_id": 4518,
+      "step": 1,
+      "kind": "tail",
+      "median_ps": 16400000.0,
+      "range_over_median": 0.43902439024390244
+    },
+    {
+      "segment_id": 4523,
+      "step": 2,
+      "kind": "gap",
+      "median_ps": 14704000.0,
+      "range_over_median": 0.7857725788900979
+    },
+    {
+      "segment_id": 6777,
+      "step": 2,
+      "kind": "tail",
+      "median_ps": 15456500.0,
+      "range_over_median": 0.385080710380746
+    },
+    {
+      "segment_id": 6782,
+      "step": 3,
+      "kind": "gap",
+      "median_ps": 13472000.0,
+      "range_over_median": 0.8835362232779097
+    },
+    {
+      "segment_id": 9036,
+      "step": 3,
+      "kind": "tail",
+      "median_ps": 15920000.0,
+      "range_over_median": 0.5567839195979899
+    },
+    {
+      "segment_id": 9041,
+      "step": 4,
+      "kind": "gap",
+      "median_ps": 15904500.0,
+      "range_over_median": 0.6700619321575655
+    },
+    {
+      "segment_id": 11295,
+      "step": 4,
+      "kind": "tail",
+      "median_ps": 16209000.0,
+      "range_over_median": 0.4975630822382627
+    },
+    {
+      "segment_id": 11300,
+      "step": 5,
+      "kind": "gap",
+      "median_ps": 12704000.0,
+      "range_over_median": 1.0527392947103276
+    },
+    {
+      "segment_id": 13554,
+      "step": 5,
+      "kind": "tail",
+      "median_ps": 16224000.0,
+      "range_over_median": 0.34122287968441817
+    },
+    {
+      "segment_id": 13559,
+      "step": 6,
+      "kind": "gap",
+      "median_ps": 16624500.0,
+      "range_over_median": 0.7757225781226503
+    },
+    {
+      "segment_id": 15813,
+      "step": 6,
+      "kind": "tail",
+      "median_ps": 13137000.0,
+      "range_over_median": 0.4019182461749258
+    },
+    {
+      "segment_id": 15818,
+      "step": 7,
+      "kind": "gap",
+      "median_ps": 16112000.0,
+      "range_over_median": 0.722877358490566
+    },
+    {
+      "segment_id": 18072,
+      "step": 7,
+      "kind": "tail",
+      "median_ps": 16832500.0,
+      "range_over_median": 0.5798900935689886
+    }
+  ],
+  "segment_range_ratio_quantiles": [
+    0.7946961714085001,
+    2.5,
+    47.27966772151899
+  ],
+  "sub_microsecond_activities_per_sample": [
+    1039,
+    1024,
+    996,
+    1078,
+    983,
+    1005,
+    935,
+    987,
+    1008,
+    1043
+  ],
+  "protocol_sha256": "240eb358b00f92af79c7e4faaa05c8e07fb9993cfa5a658465339266b08eac77",
+  "aggregate_sampling_status": "pass"
+}

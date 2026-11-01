@@ -1,0 +1,300 @@
+{
+  "stage": "S3",
+  "study": "20261031-s3-002",
+  "status": "blocked",
+  "execution_scope": "diagnostic_only_per_user_continuation",
+  "functional_status": "pass",
+  "prerequisite_S2": "blocked",
+  "B2_numerical_contract": "not_qualified",
+  "native_revalidation": "pass",
+  "native_cpu_diagnostic_status": "fail",
+  "native_cpu_diagnostic": {
+    "status": "fail",
+    "token_boundary_exact": true,
+    "valid_kv_arrays": 56,
+    "expected_kv_arrays": 56,
+    "arrays_compared": 172,
+    "expected_arrays": 172,
+    "failed_arrays": 107,
+    "max_abs": 0.062652587890625,
+    "max_relative_rms": 0.0005277176107836553,
+    "max_normalized_element_error": 0.004430923456385624
+  },
+  "cases": [
+    {
+      "case": "M1",
+      "functional_status": "pass",
+      "gpu_native_exact": {
+        "status": "pass",
+        "tokens_exact": true,
+        "complete_logits_exact": true,
+        "valid_snapshot_arrays": 451,
+        "valid_snapshot_bytes_exact": true,
+        "unused_kv_padding_excluded": true,
+        "all_raw_events_and_callback_ids_exact": true
+      },
+      "coverage": {
+        "registered_valid_bytes": 4096,
+        "registered_storage_bytes": 4096,
+        "padding_bytes": 0,
+        "touched_union_bytes": 4096,
+        "cumulative_read_bytes": 4096,
+        "read_globals": 1,
+        "read_logical_fragments": 64,
+        "read_attempts": 64,
+        "model_weight_bytes": 1503395840,
+        "selected_tensor_bytes": 4096,
+        "registered_model_fraction": 2.724498692240628e-06,
+        "selected_tensor_fraction": 1.0
+      },
+      "metrics": {
+        "actual_outputs": 1,
+        "ttft_ps": 217222,
+        "itl_ps": [],
+        "tpot_ps": null
+      },
+      "wait_ps": 217222,
+      "closed_and_drained": true,
+      "cpu_diagnostic_status": "fail",
+      "cpu_arrays_compared": 172,
+      "cpu_failed_arrays": 107,
+      "gpu_hbf_valid_kv_arrays": 56
+    },
+    {
+      "case": "M8",
+      "functional_status": "pass",
+      "gpu_native_exact": {
+        "status": "pass",
+        "tokens_exact": true,
+        "complete_logits_exact": true,
+        "valid_snapshot_arrays": 451,
+        "valid_snapshot_bytes_exact": true,
+        "unused_kv_padding_excluded": true,
+        "all_raw_events_and_callback_ids_exact": true
+      },
+      "coverage": {
+        "registered_valid_bytes": 8192,
+        "registered_storage_bytes": 8192,
+        "padding_bytes": 0,
+        "touched_union_bytes": 8192,
+        "cumulative_read_bytes": 8192,
+        "read_globals": 2,
+        "read_logical_fragments": 128,
+        "read_attempts": 128,
+        "model_weight_bytes": 1503395840,
+        "selected_tensor_bytes": 6291456,
+        "registered_model_fraction": 5.448997384481256e-06,
+        "selected_tensor_fraction": 0.0013020833333333333
+      },
+      "metrics": {
+        "actual_outputs": 1,
+        "ttft_ps": 323910,
+        "itl_ps": [],
+        "tpot_ps": null
+      },
+      "wait_ps": 323910,
+      "closed_and_drained": true,
+      "cpu_diagnostic_status": "fail",
+      "cpu_arrays_compared": 172,
+      "cpu_failed_arrays": 107,
+      "gpu_hbf_valid_kv_arrays": 56
+    }
+  ],
+  "negative_cases": {
+    "initialization_program_fail": {
+      "status": "pass",
+      "expected_negative_outcome_verified": true,
+      "dependent_consumer_dispatched": false,
+      "tokens_emitted": 0,
+      "phase": "initialization",
+      "gpu_nodes_dispatched": 0,
+      "normal_failure_drained": true,
+      "reason": "RecoveryBudgetExhausted"
+    },
+    "request_time_limit": {
+      "status": "pass",
+      "expected_negative_outcome_verified": true,
+      "dependent_consumer_dispatched": false,
+      "tokens_emitted": 0,
+      "phase": "consumer_dependency",
+      "consumer_node_id": 439,
+      "all_kernels_end_before_failed_gate": true,
+      "pending_globals": 1,
+      "host_drained": false,
+      "device_drained": false,
+      "state_retained_at_limit": true
+    }
+  },
+  "blocking_items": [
+    "Independent CPU numerical contract is unqualified; frozen CPU criteria do not pass. Functional diagnostics cannot qualify S3 or open S4."
+  ],
+  "thresholds_relaxed": false,
+  "S4_started": false,
+  "formal_performance_measured": false,
+  "conditions": {
+    "stage": "S3",
+    "recorded_utc": "2026-10-31T11:07:18.118468+00:00",
+    "s2_stage_result_sha256": "8c4dc45a80add0f3e04cdc14d7edabed14f963e97798882250fbdec1517efe6e",
+    "s2_status": "blocked",
+    "execution_scope": "diagnostic_only_per_user_continuation",
+    "user_request": "继续执行S3",
+    "numerical_contract_status": "not_qualified",
+    "numerical_thresholds_sha256": "ae956ca732ee01a95da0126cf3a29753ec719a903bfd0d477efaad7bc873c694",
+    "h0_sha256": "b91705e39e83bc51cf636ce9415beb63363444e1a564f930b5727a3fea4d4ec7",
+    "model_sha256": "74878aba1d10648eae3d6cfef822f8c59ce3217b3808b35fce2dd02d975952a2",
+    "prompt_sha256": "ce4fa40becfa4a191064fbda15721985a953ae231557ea6f6f8f7b669e0d1a74",
+    "core_host_device_modified": false,
+    "controls": {
+      "compute_ps": 0,
+      "context": 512,
+      "batch": 256,
+      "ubatch": 256,
+      "outputs": 1,
+      "kv": "native F16",
+      "matrix_precision": "every MUL_MAT F32; cuBLAS f32; TF32 disabled",
+      "flash_attention": false,
+      "cuda_graphs": false
+    },
+    "cases": [
+      "native-1",
+      "native-2-revalidation",
+      "M1",
+      "M8",
+      "initialization-program-fail",
+      "request-time-limit"
+    ],
+    "qualification": "Functional diagnostics do not waive B2; no S4 entry or formal performance conclusion if S2 is unqualified."
+  },
+  "prior_study": "20261031-s0-s2-002",
+  "environment": {
+    "gpu": "NVIDIA GeForce RTX 5070",
+    "compute_capability": [
+      12,
+      0
+    ],
+    "cuda_driver_api": 13040,
+    "cuda_runtime": 13040
+  },
+  "sources_and_binaries": [
+    {
+      "path": "build-s3/bin/gpu_s_joint.exe",
+      "sha256": "395e17a4110d6ce5b6cf034a773134a8dff96513438fbe21b1598de261b695a2",
+      "bytes": 794112
+    },
+    {
+      "path": "build-s3/CMakeCache.txt",
+      "sha256": "55e863fc88c09df8a07fad59ea4c3e0aee3f4de04d7143488b8d86952d5275d9",
+      "bytes": 30407
+    },
+    {
+      "path": "experiments/gpu_s/audit.py",
+      "sha256": "22fb53580a10d6590e42021583d8dab91818df4bce2f69855b3830cbc67766d4",
+      "bytes": 8936
+    },
+    {
+      "path": "experiments/gpu_s/bridge.cpp",
+      "sha256": "2e0924ae28cb213db4b20013c4c300887e1f0dea7a4230e1570d7c544e69652d",
+      "bytes": 7325
+    },
+    {
+      "path": "experiments/gpu_s/CMakeLists.txt",
+      "sha256": "82fe1e2bc1ab25ddc67762557bb2dab22ae3bee65737278de4fc135e79e4a9db",
+      "bytes": 2147
+    },
+    {
+      "path": "experiments/gpu_s/common.py",
+      "sha256": "3c72da21e3b3aba77a6c130e6f506ec04f8a23cce70564c062277847e3b600b5",
+      "bytes": 4535
+    },
+    {
+      "path": "experiments/gpu_s/hbf_gate.hpp",
+      "sha256": "2ecb569c0ecbd0d893ef702ccee5ab39bebc404dc2c3414573e4da6b6b5faae8",
+      "bytes": 9063
+    },
+    {
+      "path": "experiments/gpu_s/native.cpp",
+      "sha256": "4e3dcaecae10a3143268047172018d05db14c9a4ddb6e581541383ad6f45252f",
+      "bytes": 14150
+    },
+    {
+      "path": "experiments/gpu_s/README.md",
+      "sha256": "c781de1c264b87cf1f9a8e6385c006650df8b8c0514d1f1015e5746c7845b69f",
+      "bytes": 4893
+    },
+    {
+      "path": "experiments/gpu_s/reference.py",
+      "sha256": "cb2a307f02b9ff27c2d7ba2628009205c374fb3202ee2007594b73f1a5a50350",
+      "bytes": 6130
+    },
+    {
+      "path": "experiments/gpu_s/report.py",
+      "sha256": "8f996cd38e119fbbdbcff1557115424b0754ea7f57a15fee3f6e906279441c04",
+      "bytes": 6446
+    },
+    {
+      "path": "experiments/gpu_s/s2.py",
+      "sha256": "37a0f3d692a67a88f9659b528c7ff11e652cd8efbee1050a3cdfeaca5badfa1f",
+      "bytes": 10124
+    },
+    {
+      "path": "experiments/gpu_s/s3.py",
+      "sha256": "da0dab3efd5a5c456bb67b0fcfba373e5cf75370b5cd923353f06265e90afbfc",
+      "bytes": 13358
+    },
+    {
+      "path": "experiments/gpu_s/s3_audit.py",
+      "sha256": "fc7a5ab0e12f960dfaffb22c1de785cc8cec5e78ad32a08d6051131ca2e28f92",
+      "bytes": 11657
+    },
+    {
+      "path": "experiments/gpu_s/study.py",
+      "sha256": "597a8418c30be1df8c79805a70695548ffd3670167be35068e585be2724bdddb",
+      "bytes": 14767
+    }
+  ],
+  "negative_audit_controls": {
+    "status": "pass",
+    "cases": [
+      {
+        "case": "shifted_source_intersection",
+        "rejected": true,
+        "reason": "Independent source/global intersection mismatch"
+      },
+      {
+        "case": "missing_selected_gate",
+        "rejected": true,
+        "reason": "S3 requires one actual selected consumer"
+      },
+      {
+        "case": "consumer_kernel_before_dependency_success",
+        "rejected": true,
+        "reason": "Consumer kernel starts before successful dependency"
+      },
+      {
+        "case": "host_content_verification_failure",
+        "rejected": true,
+        "reason": "Host expected-content verification failed"
+      },
+      {
+        "case": "parent_completion_not_max_child",
+        "rejected": true,
+        "reason": "Parent does not finish at last child"
+      },
+      {
+        "case": "unqualified_S2_default_gate",
+        "rejected": true,
+        "output_directory_created": false
+      }
+    ],
+    "frozen_raw_artifacts_modified": false
+  },
+  "artifact_index": {
+    "path": "output/gpu-s/20261031-s3-002/artifact-index.json",
+    "sha256": "18032b6c299f9467f289927b7633db5ac9c7c4542723cffea1987014b6dcb82f",
+    "files": 2557,
+    "bytes": 785073520
+  },
+  "report": "output/gpu-s/20261031-s3-002/S3/report.md",
+  "artifact_hashes_verified": true,
+  "historical_S2_artifacts_unchanged": true
+}

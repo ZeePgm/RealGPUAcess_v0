@@ -1,0 +1,92 @@
+{
+  "stage": "S2",
+  "status": "pass",
+  "B1_access_semantics": "pass",
+  "B2_numerical_contract": "pass",
+  "calibration": [
+    {
+      "case": "calibration-g",
+      "native": "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-s\\20261101-s2-b2-v2-001\\S2\\calibration-g-2",
+      "cpu": "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-s\\20261101-s2-b2-v2-001\\S2\\calibration-g-cpu",
+      "status": "pass",
+      "token_boundary_exact": true,
+      "valid_kv_arrays": 112,
+      "expected_kv_arrays": 112,
+      "arrays_compared": 343,
+      "expected_arrays": 343,
+      "failed_arrays": 0,
+      "max_abs": 0.125,
+      "max_relative_rms": 0.0007579837680117108,
+      "max_normalized_element_error": 0.007744322758401469
+    },
+    {
+      "case": "calibration-h",
+      "native": "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-s\\20261101-s2-b2-v2-001\\S2\\calibration-h-2",
+      "cpu": "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-s\\20261101-s2-b2-v2-001\\S2\\calibration-h-cpu",
+      "status": "pass",
+      "token_boundary_exact": true,
+      "valid_kv_arrays": 112,
+      "expected_kv_arrays": 112,
+      "arrays_compared": 343,
+      "expected_arrays": 343,
+      "failed_arrays": 0,
+      "max_abs": 0.125,
+      "max_relative_rms": 0.0005192938964658101,
+      "max_normalized_element_error": 0.008226198757263884
+    }
+  ],
+  "native_boundary": {
+    "status": "pass",
+    "main_1_tokens": [
+      32
+    ],
+    "main_2_tokens": [
+      32,
+      6366
+    ],
+    "positions": [
+      44,
+      45
+    ],
+    "no_extra_step": true,
+    "verify_timing_logits_exact": true,
+    "actual_outputs": [
+      1,
+      2
+    ],
+    "stop_reasons": [
+      "length",
+      "length"
+    ],
+    "one_vs_two_first_logits_exact": true,
+    "kv_publication_arrays_checked": 392,
+    "kv_publication_exact": true,
+    "hbf_submitted": 0,
+    "intentional_stop": {
+      "status": "pass",
+      "node_id": 439,
+      "consumer_dispatched_after_stop": false,
+      "tokens_emitted_after_stop": 0,
+      "evidence": "Actual CUDA run intentionally stopped before dispatch; NOT an HBF failure injection."
+    }
+  },
+  "formal_main_cpu_acceptance": "pass",
+  "formal_checks": [
+    {
+      "count": 1,
+      "status": "pass",
+      "artifact": "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-s\\20261101-s2-b2-v2-001\\S2\\main-1\\numerical.json"
+    },
+    {
+      "count": 2,
+      "status": "pass",
+      "artifact": "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-s\\20261101-s2-b2-v2-001\\S2\\main-2\\numerical.json"
+    }
+  ],
+  "blocking_items": [],
+  "thresholds_relaxed": true,
+  "qualification_scope": "User-approved engineering criteria for this model, inputs and execution settings; not a proven forward-error bound.",
+  "S3_started": false,
+  "artifact_index_sha256": "9d9afc963a2d035b9385a550bf1cb87ba77adfe5cd94146d1a542bd6500628a2",
+  "report": "docs/GPU_S2_B2_V2_RESULTS.md"
+}

@@ -1,0 +1,3 @@
+phase,gpu_kernel_only_ps,gpu_transfer_only_ps,gpu_kernel_transfer_overlap_ps,gpu_active_total_ps,HBF_wait_ps,G3_interval_ps
+prefill,9964845000,75459000,0,10040304000,487788,10040791788
+decode,35433564000,395887000,0,35829451000,1875916,35831326916
