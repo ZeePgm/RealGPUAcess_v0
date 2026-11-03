@@ -58,3 +58,6 @@ python experiments/gpu_s/s8_decomposition.py --study output/gpu-s/<new-S8-study-
 ```
 
 当前S8已满足进入S9的固定轨迹数值/行为和配对要求。S9图表尚未生成；本次结果不证明微小模拟差异在真实硬件上可观测，不代表真实NAND字节搬运或权重卸载。
+
+
+2026-11-03恢复说明：本地缺失的数值数组已使用原执行器与原输入重新生成，逐文件旧SHA256全部匹配后补回缺失路径，原实验索引再次通过。旧计时记录未覆盖，见[快照恢复报告](GPU_SNAPSHOT_REPRODUCTION_20261103.md)。

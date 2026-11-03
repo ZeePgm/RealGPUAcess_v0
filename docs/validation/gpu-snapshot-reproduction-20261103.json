@@ -1,0 +1,47 @@
+{
+  "status": "pass",
+  "purpose": "numerical_snapshot_reproduction",
+  "new_files": 10825,
+  "byte_exact_files": 10825,
+  "different_raw_files": 0,
+  "all_missing_paths_reproduced": true,
+  "valid_GPU_arrays_exact_across_new_runs": true,
+  "all_original_logits_tokens_events_match": true,
+  "numerical": {
+    "S6-reference-verification": {
+      "status": "pass",
+      "arrays_compared": 1369,
+      "failed_arrays": 0
+    },
+    "S8-native-verify": {
+      "status": "pass",
+      "arrays_compared": 1369,
+      "failed_arrays": 0
+    },
+    "S8-G3-full": {
+      "status": "pass",
+      "arrays_compared": 1369,
+      "failed_arrays": 0
+    }
+  },
+  "old_paths_filled_or_overwritten": true,
+  "original_timing_samples_replaced": false,
+  "note": "Raw mismatches, if any, are retained as new data and never labelled original bytes. Valid KV checks exclude unused padding; raw-file equality is stronger.",
+  "restored_original_paths": 10825,
+  "restored_files_byte_exact": true,
+  "original_index_verification": [
+    {
+      "original_study": "20261101-s6-001",
+      "all_original_index_entries_verified": true,
+      "indexed_files": 3931
+    },
+    {
+      "original_study": "20261101-s8-002",
+      "all_original_index_entries_verified": true,
+      "indexed_files": 7381
+    }
+  ],
+  "upload_resumed": false,
+  "missing_original_paths_filled": true,
+  "existing_files_overwritten": false
+}

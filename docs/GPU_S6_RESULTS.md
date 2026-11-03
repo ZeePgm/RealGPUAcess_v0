@@ -26,3 +26,6 @@
 下一轮应先固定关键段稳定性、极短活动的处理和可接受的不确定性，再使用新样本验证；必要时减少逐窗口flush的测量扰动，保留依赖/输出边界并重做受影响的S5验收。此次不根据已见数据调高阈值，也不隐藏局部波动。
 
 产物：`output/gpu-s/20261101-s6-001/`中的协议、每次原始GPU/API记录、`compute-samples.jsonl`、每次`measured-segments.json`、`sampling-assessment.json`、`distribution-report.json`、`instrumentation-comparison.csv`、候选表与哈希索引。仓库摘要见[validation/gpu-s6.json](validation/gpu-s6.json)。旧试采记录保留。
+
+
+2026-11-03恢复说明：本地缺失的数值数组已使用原执行器与原输入重新生成，逐文件旧SHA256全部匹配后补回缺失路径，原实验索引再次通过。旧计时记录未覆盖，见[快照恢复报告](GPU_SNAPSHOT_REPRODUCTION_20261103.md)。

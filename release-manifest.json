@@ -17,6 +17,36 @@
       "sha256": "c6586e1141dc749233e01a226d1fbe83e53b6fba949bf50b90ce69be7e33a4f8"
     },
     {
+      "path": "CMakeLists.txt",
+      "bytes": 21073,
+      "sha256": "359fd7bbb35bc4f60f5426cad87ae1df67fdf7c6655e5059d8393d5d74f7906b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7021,
+      "sha256": "25d7ae971303d62c5e2c6b1eba185e5c20f434d00aa0134f4002cc3116bf4fd4"
+    },
+    {
+      "path": "RELEASE_STATUS.md",
+      "bytes": 1115,
+      "sha256": "0a94a4adc28bd0f1071c3979bb19f573376ac0a75abb1d7b8ce1000aeaa78014"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 554,
+      "sha256": "74936797603d174f684730829c0ed79ce5b58593068f0f0d7b7fb34353a9ed1d"
+    },
+    {
+      "path": "adapters/llama_cpp/CMakeLists.txt",
+      "bytes": 119,
+      "sha256": "5f460d4a292be2f71ded6ad81e0f94518a80823e819e327d6e5461c3cea1c8ae"
+    },
+    {
+      "path": "adapters/llama_cpp/README.md",
+      "bytes": 86,
+      "sha256": "f7267059ec45b60fafdc6a31330d75ba23f1e5e34e9a99b3679877ee39b62c15"
+    },
+    {
       "path": "adapters/llama_cpp/baseline.cpp",
       "bytes": 11992,
       "sha256": "05b101d567e75c08f0b4b0d629daee03a91d1ea001bbf491fdcb15a6b72d1ea9"
@@ -30,11 +60,6 @@
       "path": "adapters/llama_cpp/capacity_capacity_probe.hpp",
       "bytes": 405,
       "sha256": "984048337d0c1065492ca681276bc85d44b0482629ee5d2501f657dfd0a10047"
-    },
-    {
-      "path": "adapters/llama_cpp/CMakeLists.txt",
-      "bytes": 119,
-      "sha256": "5f460d4a292be2f71ded6ad81e0f94518a80823e819e327d6e5461c3cea1c8ae"
     },
     {
       "path": "adapters/llama_cpp/instrumented_bridge.cu",
@@ -157,11 +182,6 @@
       "sha256": "ce4fa40becfa4a191064fbda15721985a953ae231557ea6f6f8f7b669e0d1a74"
     },
     {
-      "path": "adapters/llama_cpp/README.md",
-      "bytes": 86,
-      "sha256": "f7267059ec45b60fafdc6a31330d75ba23f1e5e34e9a99b3679877ee39b62c15"
-    },
-    {
       "path": "adapters/llama_cpp/weights_bridge.cpp",
       "bytes": 4007,
       "sha256": "eae3bbafd5b29b95b07aef414b74e9ed4c0c7211712b34e2d6f208ab05856a07"
@@ -177,6 +197,536 @@
       "sha256": "05ae143cf96c48afdef8196219b1d23017a6b98b43169cf6e572f73a441508c2"
     },
     {
+      "path": "artifacts/minexp/README.md",
+      "bytes": 2806,
+      "sha256": "7b48c3ba22c84c691841a433ac71c500ff6244b0c4173909155d0c77e8070adc"
+    },
+    {
+      "path": "artifacts/minexp/file-index.json.gz",
+      "bytes": 566413,
+      "sha256": "b2807f94f4414fa932815c2e7cb05de37a047ff3a3101523314d8368adda73e6"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part001",
+      "bytes": 2097152,
+      "sha256": "29fba33e541f4a4b7795ad4b56b979fa92e54a84b91010e9d0ee9f7202b9ac47"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part002",
+      "bytes": 2097152,
+      "sha256": "8160152ddd6840fa13c472079fce1dbeee41b10422663c264b3a7485c96eedac"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part003",
+      "bytes": 2097152,
+      "sha256": "f9e976cdfca9942c7f800b71f5ba192f77df2c367b4c4565e7b9c3161c6274bd"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part004",
+      "bytes": 2097152,
+      "sha256": "0f034153e8e9c5882a47d669f6a26d4eda6bc789f320037829289920b44f164a"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part005",
+      "bytes": 2097152,
+      "sha256": "9e4707980c2b5635c5e2db65d59e0603a4ed4d3fb28bc82255d23f7867ce88f2"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part006",
+      "bytes": 2097152,
+      "sha256": "ba8999d0cad962ab62ac9146e0a4c28165b67769266c578457966f7e67cb2e13"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part007",
+      "bytes": 2097152,
+      "sha256": "62fd4db7056f375211533c8b6913305d4f7ed28fc40be32bfb1d229a13b620ae"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part008",
+      "bytes": 2097152,
+      "sha256": "84c93badc15e2accab10fc07d28bd08494c803dfae109d0d749d07eb5907e4d0"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part009",
+      "bytes": 2097152,
+      "sha256": "c09611380b7055882f03448a75090a67a6d70b5f487e91f61bcf4e9923de4b04"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part010",
+      "bytes": 2097152,
+      "sha256": "35da4ee5c3aa949d9e7fb57f8e15477c1f71edb4b6113af994ab3f76e8e2eb17"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part011",
+      "bytes": 2097152,
+      "sha256": "68e7be51536371d054b0950cc9902ca95c1430e1319b3cfa4b4157773b3ad5d2"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part012",
+      "bytes": 2097152,
+      "sha256": "17b1052b5b6b80c939b6be0982d4ec57d12d88b165a8f557bea459fe2bd36b46"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part013",
+      "bytes": 2097152,
+      "sha256": "0dcea5a118e3f0c43def62adde7bc5a38d5da222b5ee0a3e68f046cec317b02b"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part014",
+      "bytes": 2097152,
+      "sha256": "99eadbe55623ec33bdbe0ce00f9c2e7b66f1110ce82114985566dacb90a97543"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part015",
+      "bytes": 2097152,
+      "sha256": "469a5293a91737bae4ed15e8c7c8951494486d271a7264a7f2d129e20cd79fd1"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part016",
+      "bytes": 2097152,
+      "sha256": "b1ec630b32dbfc2baa49b08f967f2553429957edc7d5661b9f16520fbcc0d993"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part017",
+      "bytes": 2097152,
+      "sha256": "746592a726ee4f960332efcd1b6023d2e75d326525af1ea2bd930cefb84890a3"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part018",
+      "bytes": 2097152,
+      "sha256": "86e8d1d9995874a0f6043540205829a7764a9a6ab83e1e8342c663247390cae7"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part019",
+      "bytes": 2097152,
+      "sha256": "91c10529aed97da21e9119f6d88c3e26a46b4094d3466f2037ec143f9dcc5b0e"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part020",
+      "bytes": 2097152,
+      "sha256": "541ce2cb261a8caaec8dbc9fcc1a9978bf37a66ea715af4220b67e1f1168a8b9"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part021",
+      "bytes": 2097152,
+      "sha256": "16e49916006569de0ffec1d50706c1df5c6af9d77516c6d4eb6af0d851315bdf"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part022",
+      "bytes": 2097152,
+      "sha256": "92181d6b2b8d7429550d36267f73cbcfb164cf0c973cbd0e3ddfadbb0462d738"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part023",
+      "bytes": 2097152,
+      "sha256": "6fe937a893f0cbf1ef0453371042cb02caba0ad9b988afc1b2e0b63dee3addd4"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part024",
+      "bytes": 2097152,
+      "sha256": "4d1b50e77e3043fe877043d5827177c0cd5927863d1c06881e4f156020a130ce"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part025",
+      "bytes": 2097152,
+      "sha256": "0750e61b4514fe8cb18cfd506ef8c20a4cc4a843863532f3f611dea53dee7f28"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part026",
+      "bytes": 2097152,
+      "sha256": "6e709ccef30d8b035894681a07085c24c8fe8182810df1851c9d928aadbbb9a3"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part027",
+      "bytes": 2097152,
+      "sha256": "e406ada134d37c206a690e22864da8b0573089de657e3a4b3ee21dfd49c42f90"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part028",
+      "bytes": 2097152,
+      "sha256": "616effdf6ded0fe37cb914c2681c57d0a42290ee760ab45a3572a59869d26ed9"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part029",
+      "bytes": 2097152,
+      "sha256": "4be22d48939336c5678100b0c6f83ddc349b05ea8e317e0858f4d72c9b318d86"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part030",
+      "bytes": 2097152,
+      "sha256": "0d1adab338864fb2c63ac508f3bf03a05e7b649b04ff5f7108efd06f1fbde6b2"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part031",
+      "bytes": 2097152,
+      "sha256": "024529fb37eca58143481a26f81a6204fe9f0409e10c88a8d58f5f542e4c8505"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part032",
+      "bytes": 2097152,
+      "sha256": "dacd5719c6478cb54e830fed5562390ac14a8ce1fa3c047022941b90f363c9b6"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part033",
+      "bytes": 2097152,
+      "sha256": "d4442058c6bd5b83dfb3a8fdee78303f26313c5d7e1911fe96e03e6806d70cf1"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part034",
+      "bytes": 2097152,
+      "sha256": "4070426197a7fcae010ed4b634e398b7d5f82ad848ccab6981c7a934b8dafadd"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part035",
+      "bytes": 2097152,
+      "sha256": "20e31fd01466a0735951357286cd80bbc34b1bbe30f8a6a0ada9472ee6b1b124"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part036",
+      "bytes": 2097152,
+      "sha256": "2135aa8811474da5f8a493aec749078fbe903116c11da1732dc7e93354d0a161"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part037",
+      "bytes": 2097152,
+      "sha256": "657635dd2c3b13123bae800016a4018af51f7a8ab4198a1c5affebbb1e26ab66"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part038",
+      "bytes": 2097152,
+      "sha256": "840c9b099af04441d9ba5d4cf55939f4743ec9595d5fff83001a41a4e1120b4b"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part039",
+      "bytes": 2097152,
+      "sha256": "476239ef941cecf364167a5027fc2db1b24be43b3233a2a6c522f5edc5bd37d3"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part040",
+      "bytes": 2097152,
+      "sha256": "f79e56727a0b417c8d33ad192da8c9ed47ba175d4a5bae30c04c3ea36039c255"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part041",
+      "bytes": 2097152,
+      "sha256": "fa0cdb32555fe5ef6d14355eb4673cfe1e5522366f0e0821f53480a5e8402edf"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part042",
+      "bytes": 2097152,
+      "sha256": "0bc4ad77ff648df699d15fe539fafb481109ce26a4cfb8422163e71735e64ede"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part043",
+      "bytes": 2097152,
+      "sha256": "2d33de0642925853831ee4a819633e92e0a1a95bdd8107547429b1699022f780"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part044",
+      "bytes": 2097152,
+      "sha256": "760eca4db5c7cc4e21793c4362db2bde3ab7298733cf7882335fcfc73708edfb"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part045",
+      "bytes": 2097152,
+      "sha256": "bd1d341cfbaeae882a78f2e5acc09a0c0091fc18939815230c1ad637041396d1"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part046",
+      "bytes": 2097152,
+      "sha256": "feef894635a824ed6a7054cc4edca23f5e63621be3008387f1f1a1f2b0a6c025"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part047",
+      "bytes": 2097152,
+      "sha256": "380307ba6c793464761a8a70ed5517dd8c4e17f120a50f360083845ec1c4882e"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part048",
+      "bytes": 2097152,
+      "sha256": "9e9abacca04dbe5ee5e34c8a3a20b97a6d98429edf8bafa802dac5c071bbf9f6"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part049",
+      "bytes": 2097152,
+      "sha256": "3d23f783c7a49457d304434a5b67e5df98110721cd9cc3faa1e91325009ea9d5"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part050",
+      "bytes": 2097152,
+      "sha256": "22588e43803a5ac17433757422bca81b0f38d9abe5638ce55a5dcbc0f9001eac"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part051",
+      "bytes": 2097152,
+      "sha256": "6e6f5ebbca0b9903b332092e96396b25981cf6ce95139149b5c59f17d58aed59"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part052",
+      "bytes": 2097152,
+      "sha256": "e41888cacc2b2d2d681d7f78af641237bd8abd43c8e9f3a4a4f5e414976a3567"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part053",
+      "bytes": 2097152,
+      "sha256": "f0f5bfdcd0213e4ff5bfe9bd88da27d5b1879a549bf5b7fc09aeafee1cf196a0"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part054",
+      "bytes": 2097152,
+      "sha256": "b29c2ca91d7a1d54f757378d16631a73d64526db5856d3e286e5642992d4b78f"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part055",
+      "bytes": 2097152,
+      "sha256": "3b5b359d5aa0ae6216521a810cb97f1390538f62893be22942156f2568efb563"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part056",
+      "bytes": 2097152,
+      "sha256": "b81a2dbbd2cc0749578e2c6e3b61c6d886e1897156844e109b7620b0540cfbf3"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part057",
+      "bytes": 2097152,
+      "sha256": "bae88e89b78caf86ac6deaf9ae1fd2c90d5bfe8d8ff6a9eb9cfbd75503566d72"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part058",
+      "bytes": 2097152,
+      "sha256": "edef2e181523e75ea0933dc17696394a4eb79a213566dac183b6c22f0101aad7"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part059",
+      "bytes": 2097152,
+      "sha256": "c678e4d4ce2cd38cf0c1320bd6de3cce8f2bb91ecdcc36be121a08c133638da9"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part060",
+      "bytes": 2097152,
+      "sha256": "95d2d00952aa998efd18402e915bc5d944226d23262b2e3e8e495c42ba8de636"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part061",
+      "bytes": 2097152,
+      "sha256": "c28761bfe02bb5f67544bf4a198cc0deb522de5a5dbb82357d0424b9078073e7"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part062",
+      "bytes": 2097152,
+      "sha256": "08963a4222efcedee63c2e1a671622c7f01f20a624cd856f6022ccf4d003d182"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part063",
+      "bytes": 2097152,
+      "sha256": "4fbbf34adc58ee81785c75b952c28b1ecd45655a47c4f070f22d3bc6bdf58aa2"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part064",
+      "bytes": 2097152,
+      "sha256": "2e11bd038263c16784f99cb1864fdfa66a38ed5f2f7994be90c17c1a25365530"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part065",
+      "bytes": 2097152,
+      "sha256": "24697a4f551b41674e73af06335cb95fb9a20182d6965ef4a2617871e7036f97"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part066",
+      "bytes": 2097152,
+      "sha256": "3935fc508baa1d437ef4d145e8b855423e3a96da1160c8bcede79599409e6445"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part067",
+      "bytes": 2097152,
+      "sha256": "bcffa169027cb907ffb6413b5637c4f54b5f9829fc7ccdbd2eb8798119905c54"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part068",
+      "bytes": 2097152,
+      "sha256": "f86d117f0665073ade950093f6153cbf71cadf6c8b525899a29c47e53223eae8"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part069",
+      "bytes": 2097152,
+      "sha256": "5664f97769be9ddd7cfb21cdedc98ed8e8b24449c514077bae249d835051c197"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part070",
+      "bytes": 2097152,
+      "sha256": "c3b06fb1258d6e03a319de98ae6585cab2646649efa021d5d1cb4e4a9b8be604"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part071",
+      "bytes": 2097152,
+      "sha256": "7c7833592df03020542bda32fcaa3153482e09c4f523f6b41f1830e1e7d53edf"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part072",
+      "bytes": 2097152,
+      "sha256": "81ed1701eb0d75bb3883562c835c3490aa53c537bf4245c71e75a654f1c37363"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part073",
+      "bytes": 2097152,
+      "sha256": "8f14d622b50f7802e9d2a15d9e57f5b5c8eca6665fd851337a93635af49f6e57"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part074",
+      "bytes": 2097152,
+      "sha256": "9f9fbff86fc762b5997da9cdc90312004a062b0aca6120e14c6891c7f835caa2"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part075",
+      "bytes": 2097152,
+      "sha256": "f91582676a01e1f4e5e1f71bdba4846462b0a332f26485731a4e9e3a7ca86a97"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part076",
+      "bytes": 2097152,
+      "sha256": "ece53e1f15d82a9c1e76c024500bcaef3b08308c1d3773dbf06ff85b72c08dc5"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part077",
+      "bytes": 2097152,
+      "sha256": "ad513bcd6c97a8a91e404b3419957675bb2aa9a42c51acac74ce8663aa85c833"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part078",
+      "bytes": 2097152,
+      "sha256": "5ac3fc6a9245774112924ba8c25d2f7d59a7c2795ed48274c352023fde8c7d5b"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part079",
+      "bytes": 2097152,
+      "sha256": "7f5d2c10a1b9819684320f3d4d3276b4e2832dea103c8b824e6db9f27f2e3dcd"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part080",
+      "bytes": 2097152,
+      "sha256": "fa580ca3cd79e31de785e59ee3d2de32501fdbe4bc5217148ff6106c6fd11508"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part081",
+      "bytes": 2097152,
+      "sha256": "c9645160351c1adcc046265991d531145bb0e2f04f3707f8b740e05ca015eaa8"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part082",
+      "bytes": 2097152,
+      "sha256": "a99de9800acc3c17a7523e608ce058c496f289e07570bf94859f62818b3537d7"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part083",
+      "bytes": 2097152,
+      "sha256": "09d7cca0f37930f8d4eebe7913fe3ec37d4bbe476f409ed13f9769ac2227ce4a"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part084",
+      "bytes": 2097152,
+      "sha256": "0fe0ac722bd841afe84ed9e037cb28f92367770c6eb937f2bab39f2aa1ed88d1"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part085",
+      "bytes": 2097152,
+      "sha256": "d1708b74c3b75c9102a2c0ff5a7117dbe5b8f1b84a3de40cf6dd69716d7d83fc"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part086",
+      "bytes": 2097152,
+      "sha256": "073960eff461f46c318c35aef224700ef4332575010771fe9eb2b1b09f5b80e4"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part087",
+      "bytes": 2097152,
+      "sha256": "b427086e3c7464a0f935b91b07e72af22c7b5240268312d7979f5395b253f619"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part088",
+      "bytes": 2097152,
+      "sha256": "901701098e20664548af43a47e7d46589bffc33f07caae67835b7d42fce1a948"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part089",
+      "bytes": 2097152,
+      "sha256": "b0afb52f869fed3206abeb714d12c76b0e80c7fa1b9fa40a824ee843054a9263"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part090",
+      "bytes": 2097152,
+      "sha256": "64e52dc623e227ddda88674acc9588a5079a7da2266a788174768890bde02dbd"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part091",
+      "bytes": 2097152,
+      "sha256": "cb4f727fafe1037e4c3cd739ce0f9ec6b8665faa7a0a4d5985cc3f55459f9455"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part092",
+      "bytes": 2097152,
+      "sha256": "ed6f6c329153dc1fe7d41252d29914bffbf8a921c478509196a57eddd0a9af53"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part093",
+      "bytes": 2097152,
+      "sha256": "3d709057601e2549afef5c7ca5c9f95c2c81dd534ddda5a5f239c5b1059595da"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part094",
+      "bytes": 2097152,
+      "sha256": "0e242b86db69019b2407c0ddf328080310e3238894d65bc66aedc332293352a0"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part095",
+      "bytes": 2097152,
+      "sha256": "f8ebf69501fdd08964f446c495d40589bd19c052d6f623baebb31bad4935c2fc"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part096",
+      "bytes": 2097152,
+      "sha256": "c1b8bb59a72f58803de5cafc6d648ca28933f0784cad1a08bb57a9ec57f4f459"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part097",
+      "bytes": 2097152,
+      "sha256": "5e263c6996b02783623c61de2b70a247355a5d39a105e51bccf4904b8f409d08"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part098",
+      "bytes": 2097152,
+      "sha256": "c7d7fbb1cd5eccdf5abb879e5cc302be93ea21adda8138dbf6ba27573dca9b22"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part099",
+      "bytes": 2097152,
+      "sha256": "664293143a1788573fc5e33a9faebc7ba3fa4dcf28e071f96ccf53aded87807e"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part100",
+      "bytes": 2097152,
+      "sha256": "e14e23800e7c56ebfb8a1044520d72cf99da55579470f8dc723fd83c9991939c"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part101",
+      "bytes": 2097152,
+      "sha256": "33d78cabe3e890dc50979159a08957ace5c46f2b4ca7213bbb4f8c003ff2c6ab"
+    },
+    {
+      "path": "artifacts/minexp/payload.zip.part102",
+      "bytes": 501015,
+      "sha256": "1041b34f8872937fc08f205d80e121e9195fbd86eafb497dc5bb4d53f07efd4d"
+    },
+    {
+      "path": "artifacts/minexp/restore.py",
+      "bytes": 2704,
+      "sha256": "da752ea14bdb38c84cd91a764beec5211a504249e2ed400608e4e1b0207aae8c"
+    },
+    {
+      "path": "artifacts/minexp/summary.json",
+      "bytes": 25439,
+      "sha256": "8f22b0c03641a5f41b4a2dd2a1da23140ba602afb5225a295304ee81ed33bcae"
+    },
+    {
       "path": "build.ps1",
       "bytes": 4572,
       "sha256": "b2ec135ca083aa0ac1d4cc8c772728e172f6493d2eb283b54bdc50c860df4e3a"
@@ -190,11 +740,6 @@
       "path": "cmake/gpu_configuration.cmake",
       "bytes": 461,
       "sha256": "a70d48c31969f0e3e865bdfd8aceb07a69bd7ed4967e5146d9bd49a236fdaf9f"
-    },
-    {
-      "path": "CMakeLists.txt",
-      "bytes": 21073,
-      "sha256": "359fd7bbb35bc4f60f5426cad87ae1df67fdf7c6655e5059d8393d5d74f7906b"
     },
     {
       "path": "configs/integrated/README.md",
@@ -217,21 +762,6 @@
       "sha256": "cbf07246492de24b8b508ec66e166e32aa8988802eee24fff15e8addf2bbaa7a"
     },
     {
-      "path": "docs/architecture.pdf",
-      "bytes": 46844,
-      "sha256": "57d97b7b8d10f34ca916510a1583dbd72f827c63f55eb124ddc9055fffa67099"
-    },
-    {
-      "path": "docs/architecture.png",
-      "bytes": 303265,
-      "sha256": "f62370c7191e86d2ac8b47bbdbbe627633af969f85e0c5ef6438e6b7c749b3e7"
-    },
-    {
-      "path": "docs/architecture.svg",
-      "bytes": 156025,
-      "sha256": "1bd1b9b706f6f92fab02607c7052ad70ae372c5b289211ec6dd1abe375c31c02"
-    },
-    {
       "path": "docs/DEPENDENCIES.md",
       "bytes": 1606,
       "sha256": "460ff1e3a9a9a1f4b4df232cf5c173785d42831edf773532341aef6c4cd339a8"
@@ -247,6 +777,26 @@
       "sha256": "e79d2230b2801bd5d8b7dd8e8341ec052552ce79d1e32448915fd45766fb005d"
     },
     {
+      "path": "docs/GPU_MINEXP_DATA_MANIFEST.md",
+      "bytes": 1376,
+      "sha256": "ee0c4f7295bd915c1f57ff0ae2b0f20cc177b24c505b7eef1a3989fe8107e96a"
+    },
+    {
+      "path": "docs/GPU_S6_RESULTS.md",
+      "bytes": 4300,
+      "sha256": "1c1ccd24857185ba99463a1cbc01f5b2dfd9928cb0a2c0c256720402b5d50cce"
+    },
+    {
+      "path": "docs/GPU_S8_RESULTS.md",
+      "bytes": 6258,
+      "sha256": "5499a74296e2b03cb582200f0a1c64f9f2ce51296a18fdd3955bba02f44fb470"
+    },
+    {
+      "path": "docs/GPU_SNAPSHOT_REPRODUCTION_20261103.md",
+      "bytes": 2530,
+      "sha256": "936b237eaa6ae1f41839e424c4bab0cd535f5a390076bd23b46d67ac32078427"
+    },
+    {
       "path": "docs/INCREMENTAL_BACKEND.md",
       "bytes": 8201,
       "sha256": "716c30234cedbd5dc6084565a069c8bf8307259aaabf3432ce01a9b53fdceb33"
@@ -260,6 +810,26 @@
       "path": "docs/PUBLICATION.md",
       "bytes": 1069,
       "sha256": "3af31c5bd589871552951cc509d987884b5d73287f316dd5606a9f9b16497e7a"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 2458,
+      "sha256": "4a04a869288ff30869219248fc93051639ad07117e2578540117b29be087a89f"
+    },
+    {
+      "path": "docs/architecture.pdf",
+      "bytes": 46844,
+      "sha256": "57d97b7b8d10f34ca916510a1583dbd72f827c63f55eb124ddc9055fffa67099"
+    },
+    {
+      "path": "docs/architecture.png",
+      "bytes": 303265,
+      "sha256": "f62370c7191e86d2ac8b47bbdbbe627633af969f85e0c5ef6438e6b7c749b3e7"
+    },
+    {
+      "path": "docs/architecture.svg",
+      "bytes": 156025,
+      "sha256": "1bd1b9b706f6f92fab02607c7052ad70ae372c5b289211ec6dd1abe375c31c02"
     },
     {
       "path": "docs/validation/backend-provenance.json",
@@ -285,6 +855,11 @@
       "path": "docs/validation/environment-adaptation.json",
       "bytes": 1277,
       "sha256": "6ff9f1035995fa2522923a337ee778df74912327acf5a0c473a53b86c839326f"
+    },
+    {
+      "path": "docs/validation/gpu-snapshot-reproduction-20261103.json",
+      "bytes": 1399,
+      "sha256": "f9ce1b3a4015c71c880f08979fa3ea2290e14f7562e57743902cffde1c9787e3"
     },
     {
       "path": "docs/validation/model-validation.json",
@@ -317,11 +892,6 @@
       "sha256": "6ce19fe5c6e39322ca0b13f5b467573e2eeec70d41fbf64d3e414ddbe59845d6"
     },
     {
-      "path": "docs/VALIDATION.md",
-      "bytes": 2458,
-      "sha256": "4a04a869288ff30869219248fc93051639ad07117e2578540117b29be087a89f"
-    },
-    {
       "path": "examples/async_reads.cu",
       "bytes": 2235,
       "sha256": "b4d22db8ff3c160a39fdffd7037b5ccc7dbcaae53011b0c64324478cc4e738c1"
@@ -340,6 +910,11 @@
       "path": "examples/readonly.ptx",
       "bytes": 513,
       "sha256": "eed0149f5357e87a63540a95f6c3528a4a3aa3bc381ff7e81b6f664327ff6256"
+    },
+    {
+      "path": "experiments/gpu_s/reproduce_snapshots.py",
+      "bytes": 6666,
+      "sha256": "37e90a6d5437dcae5cadeb5f68bb96ed6005fed9235a81557de45ee5c6c2c60e"
     },
     {
       "path": "include/hbflab/async_device.cuh",
@@ -440,16 +1015,6 @@
       "path": "include/hbflab/runtime.hpp",
       "bytes": 1684,
       "sha256": "556f70ad96dce79a3663916f1eb4c593d6deba3c95f5da4d6187d8a21829cd03"
-    },
-    {
-      "path": "README.md",
-      "bytes": 7021,
-      "sha256": "25d7ae971303d62c5e2c6b1eba185e5c20f434d00aa0134f4002cc3116bf4fd4"
-    },
-    {
-      "path": "RELEASE_STATUS.md",
-      "bytes": 1115,
-      "sha256": "0a94a4adc28bd0f1071c3979bb19f573376ac0a75abb1d7b8ce1000aeaa78014"
     },
     {
       "path": "requirements-dev.txt",
@@ -697,86 +1262,6 @@
       "sha256": "12c8622ad37bddb4b108c6bccb2cb941175adab1d845550e008ebb9bb036872f"
     },
     {
-      "path": "third_party/detours/creatwth.cpp",
-      "bytes": 55994,
-      "sha256": "062533627bfa775246948fad92f9f3c0ef7841cc1a83c15db9178be12f2dbf4f"
-    },
-    {
-      "path": "third_party/detours/detours.cpp",
-      "bytes": 79717,
-      "sha256": "df415e05f985afe88f4b03ba34d6f5abce47edda11cd66d4f72902b801113eb7"
-    },
-    {
-      "path": "third_party/detours/detours.h",
-      "bytes": 37571,
-      "sha256": "7b498657d8db4cff2d488b1e65cfeeb5b1305de7f32d23588b1fa86aaa46fcf7"
-    },
-    {
-      "path": "third_party/detours/detver.h",
-      "bytes": 720,
-      "sha256": "1324bbf731d202a37d2f9874279e1b5e2e47118c62662c0372208d4a88342549"
-    },
-    {
-      "path": "third_party/detours/disasm.cpp",
-      "bytes": 162724,
-      "sha256": "6c44283ac6987d77d92aca93a6a8e9f0dc1f7caf8a2b310e4b374853e9136236"
-    },
-    {
-      "path": "third_party/detours/disolarm.cpp",
-      "bytes": 58,
-      "sha256": "20900e34f4afa968f4182fc9ae2d94d00ad15ddf1a17c53a034b18b38a9a4592"
-    },
-    {
-      "path": "third_party/detours/disolarm64.cpp",
-      "bytes": 60,
-      "sha256": "b93f39ba5691b9ffb98aae45c7fa5f5a6975a8fed001704ec97f7867a59998ce"
-    },
-    {
-      "path": "third_party/detours/disolia64.cpp",
-      "bytes": 59,
-      "sha256": "8ce93f70257c11a7b1015fac5ff801e7b72bbb9621f302a74f9d0bc1db49d334"
-    },
-    {
-      "path": "third_party/detours/disolx64.cpp",
-      "bytes": 58,
-      "sha256": "dcac45e9bf07b916e454e141f850856b76e3e0f7b502bd5dd56e18aa2250e020"
-    },
-    {
-      "path": "third_party/detours/disolx86.cpp",
-      "bytes": 58,
-      "sha256": "045d4b00029e810a9a156c1e17b33c2becdda1cc652a7cadfe61d9d1c66c81b6"
-    },
-    {
-      "path": "third_party/detours/image.cpp",
-      "bytes": 66562,
-      "sha256": "8e7c94b335237565f3dce14b6dfd9dd88876cf10fb55b9c910f12ae9c38bd190"
-    },
-    {
-      "path": "third_party/detours/LICENSE.md",
-      "bytes": 1099,
-      "sha256": "b301808b732cfaa60df2b4b422d78cd97d2a15058b207e7e33f0535ba5170dd6"
-    },
-    {
-      "path": "third_party/detours/modules.cpp",
-      "bytes": 32397,
-      "sha256": "4a3f970eb539a4379996eb17e14bd75902fe4f34d566cfd19682ff19315cbc6f"
-    },
-    {
-      "path": "third_party/detours/README.hbflab.md",
-      "bytes": 629,
-      "sha256": "2b86beaf21c7d3a7bae2aec5f64cf33a7ec21d61400f827eaffd58999a5c7c9d"
-    },
-    {
-      "path": "third_party/detours/uimports.cpp",
-      "bytes": 9771,
-      "sha256": "2b2d92df4c5412906d7e6830a7c2836d78e368a6bef509be028566cbd921e83b"
-    },
-    {
-      "path": "third_party/detours/upstream-Makefile.txt",
-      "bytes": 3248,
-      "sha256": "0071c68d96a6adafa7b1e6d24a0640f19ca76a91aa8de7116c943d4405db6e84"
-    },
-    {
       "path": "third_party/HBF-EventLab/.gitattributes",
       "bytes": 156,
       "sha256": "c701a84d38a6fd2c85d5d625e6e241ad18c0af727b3ec2b22582f0a118635b28"
@@ -785,6 +1270,26 @@
       "path": "third_party/HBF-EventLab/.gitignore",
       "bytes": 470,
       "sha256": "49419a0162390248dbaf1fb3c8e747254499c42d35be9d7bf509836fcc85f2b2"
+    },
+    {
+      "path": "third_party/HBF-EventLab/CMakeLists.txt",
+      "bytes": 25372,
+      "sha256": "f75882f3e3e1f74d45b305e78aba6f73d5ea1782f6453580778996c5264ce54c"
+    },
+    {
+      "path": "third_party/HBF-EventLab/CONTRIBUTING.md",
+      "bytes": 11879,
+      "sha256": "10a13ead88be9fd70c334a050b1202cd4ba8d398d9edd510040b46cf67dffbe7"
+    },
+    {
+      "path": "third_party/HBF-EventLab/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "third_party/HBF-EventLab/README.md",
+      "bytes": 14685,
+      "sha256": "768c268c6393cd320925d38a038b52329dcb33468882fd851d9118a494e62210"
     },
     {
       "path": "third_party/HBF-EventLab/build.ps1",
@@ -797,19 +1302,9 @@
       "sha256": "2515d717fdd92efa8a351a600e954fd2029690092c57c6243ed4c279b6970384"
     },
     {
-      "path": "third_party/HBF-EventLab/CMakeLists.txt",
-      "bytes": 25372,
-      "sha256": "f75882f3e3e1f74d45b305e78aba6f73d5ea1782f6453580778996c5264ce54c"
-    },
-    {
       "path": "third_party/HBF-EventLab/configs/functional.ini",
       "bytes": 1002,
       "sha256": "ffedb80ac198ca5a7477bb419e61db4183ce0eec5eac104f12e512dab89defb1"
-    },
-    {
-      "path": "third_party/HBF-EventLab/CONTRIBUTING.md",
-      "bytes": 11879,
-      "sha256": "10a13ead88be9fd70c334a050b1202cd4ba8d398d9edd510040b46cf67dffbe7"
     },
     {
       "path": "third_party/HBF-EventLab/docs/architecture.md",
@@ -937,6 +1432,16 @@
       "sha256": "89ee2b4b627d8ce9d191170269e4e553ce1906417618522ffb4b54dc90f8df70"
     },
     {
+      "path": "third_party/HBF-EventLab/experiments/README.md",
+      "bytes": 4531,
+      "sha256": "6fa10f264d8e5f1dca60d32e490c11f58d16019d60376ceb4647eea059a4db0f"
+    },
+    {
+      "path": "third_party/HBF-EventLab/experiments/arrival_policy/README.md",
+      "bytes": 6985,
+      "sha256": "c93dd3238dbb00ae492c387ba4f3ddc4f256dd171da47e6a635f73621127538b"
+    },
+    {
       "path": "third_party/HBF-EventLab/experiments/arrival_policy/analyze.py",
       "bytes": 9883,
       "sha256": "c8fd419a36f7a09def79f1048101576cdb47754e99f0d8a723bb98b0db683aa4"
@@ -947,11 +1452,6 @@
       "sha256": "f3a0019be5742c728ef8f7b652e5e5e2d632038f566b7feb7af02ca0fb9c85f5"
     },
     {
-      "path": "third_party/HBF-EventLab/experiments/arrival_policy/README.md",
-      "bytes": 6985,
-      "sha256": "c93dd3238dbb00ae492c387ba4f3ddc4f256dd171da47e6a635f73621127538b"
-    },
-    {
       "path": "third_party/HBF-EventLab/experiments/arrival_policy/run.py",
       "bytes": 6212,
       "sha256": "5e9df5be22cf34e6e687ff7eacf75d5b594ab150943382dafd1348c7260cc656"
@@ -960,6 +1460,11 @@
       "path": "third_party/HBF-EventLab/experiments/arrival_policy/workload.py",
       "bytes": 2692,
       "sha256": "025581c038d05127d6ca607a40d8a919bcb10956818606e430a24b6fbf45c271"
+    },
+    {
+      "path": "third_party/HBF-EventLab/experiments/capacity/README.md",
+      "bytes": 10036,
+      "sha256": "efd9c1da80d6fb082e5979327252bb6c7219e7cd16e17731198f9ceed542d6ba"
     },
     {
       "path": "third_party/HBF-EventLab/experiments/capacity/analyze.py",
@@ -990,11 +1495,6 @@
       "path": "third_party/HBF-EventLab/experiments/capacity/plot.py",
       "bytes": 5831,
       "sha256": "71eef764ef6f520a7ecfd920808ff773840842b1d6fc587fa7afea3b26802c6d"
-    },
-    {
-      "path": "third_party/HBF-EventLab/experiments/capacity/README.md",
-      "bytes": 10036,
-      "sha256": "efd9c1da80d6fb082e5979327252bb6c7219e7cd16e17731198f9ceed542d6ba"
     },
     {
       "path": "third_party/HBF-EventLab/experiments/capacity/run.py",
@@ -1037,6 +1537,11 @@
       "sha256": "a45f719c2ae5dd04d01b100385657116848bbf46e1b53ebb79da134456ae00cd"
     },
     {
+      "path": "third_party/HBF-EventLab/experiments/interleave_arrival/README.md",
+      "bytes": 11405,
+      "sha256": "4e065789603f831a2fe5d5b4f8c7e2b7fa0639e5f2b914873ad6e4c0feece9c8"
+    },
+    {
       "path": "third_party/HBF-EventLab/experiments/interleave_arrival/analyze.py",
       "bytes": 18604,
       "sha256": "a5c792afc9a4ed13abe101e2e985b103ef79a9db0caf64a84b4f55ecaf153b71"
@@ -1062,11 +1567,6 @@
       "sha256": "2a3ec9bf66500918fd47a93bcac943ca01a77e719baf8cb5bcab8f20c6de186f"
     },
     {
-      "path": "third_party/HBF-EventLab/experiments/interleave_arrival/README.md",
-      "bytes": 11405,
-      "sha256": "4e065789603f831a2fe5d5b4f8c7e2b7fa0639e5f2b914873ad6e4c0feece9c8"
-    },
-    {
       "path": "third_party/HBF-EventLab/experiments/interleave_arrival/run.py",
       "bytes": 5618,
       "sha256": "c33143cb2f5d8da597473f1103b70af0678c742b5fb42a6e0e572b467450282f"
@@ -1077,14 +1577,14 @@
       "sha256": "abc0dd4abfeb78a76845b4a70889eb2db21a960495ce8020468c737f0f0c4cf4"
     },
     {
-      "path": "third_party/HBF-EventLab/experiments/qwen_online/access_plan.hpp",
-      "bytes": 1301,
-      "sha256": "37fa7e80f12014c9dff6c09cb89e9e130af0bb09094a8b4736d006ce06219e3a"
-    },
-    {
       "path": "third_party/HBF-EventLab/experiments/qwen_online/CMakeLists.txt",
       "bytes": 1704,
       "sha256": "a94eb87a72f84ee547d5f913dbf543b37b0fa0ffa171ebd149836d603c34ac9c"
+    },
+    {
+      "path": "third_party/HBF-EventLab/experiments/qwen_online/access_plan.hpp",
+      "bytes": 1301,
+      "sha256": "37fa7e80f12014c9dff6c09cb89e9e130af0bb09094a8b4736d006ce06219e3a"
     },
     {
       "path": "third_party/HBF-EventLab/experiments/qwen_online/driver.cpp",
@@ -1112,6 +1612,11 @@
       "sha256": "707e6937091914e7112a450325413367d3bc6ac63369a7d86fcf7f386cb7f9f5"
     },
     {
+      "path": "third_party/HBF-EventLab/experiments/read_scheduling/README.md",
+      "bytes": 7140,
+      "sha256": "cdfeaf8c0b0908e21bf3dec64d1efad662c6d5b651a82544aaae563652fbf988"
+    },
+    {
       "path": "third_party/HBF-EventLab/experiments/read_scheduling/analyze.py",
       "bytes": 8736,
       "sha256": "7f36c8a1f3b788bdec80219cd9a95351db5ff61eeeaf9b4f92d395d0f6016feb"
@@ -1122,11 +1627,6 @@
       "sha256": "e5ecf7860f9e7958dca99b06062fcd3cc46c394224d497da89d598fb29387da6"
     },
     {
-      "path": "third_party/HBF-EventLab/experiments/read_scheduling/README.md",
-      "bytes": 7140,
-      "sha256": "cdfeaf8c0b0908e21bf3dec64d1efad662c6d5b651a82544aaae563652fbf988"
-    },
-    {
       "path": "third_party/HBF-EventLab/experiments/read_scheduling/run.py",
       "bytes": 5872,
       "sha256": "ced34539b2e8c273887799cdaf7cdfda6e29bd2d9cc1683a34e1f962f7ed76d1"
@@ -1135,11 +1635,6 @@
       "path": "third_party/HBF-EventLab/experiments/read_scheduling/workload.py",
       "bytes": 3978,
       "sha256": "7965c0e261b85c027460c1eb14cd5269bd100ff71fa957dabcc76d5789b4a809"
-    },
-    {
-      "path": "third_party/HBF-EventLab/experiments/README.md",
-      "bytes": 4531,
-      "sha256": "6fa10f264d8e5f1dca60d32e490c11f58d16019d60376ceb4647eea059a4db0f"
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/adapters/tensor_access_bridge.hpp",
@@ -1422,19 +1917,9 @@
       "sha256": "6da42b70d13b56bce2ac8a78b2301981a27acb44969794567e1ba59e1ae0f3ab"
     },
     {
-      "path": "third_party/HBF-EventLab/LICENSE",
-      "bytes": 11357,
-      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
-    },
-    {
       "path": "third_party/HBF-EventLab/pyproject.toml",
       "bytes": 576,
       "sha256": "32228b0c21e195fe7cf8f28a9cd7546eba3dfb68d455f83b0b6bd2260562fe5f"
-    },
-    {
-      "path": "third_party/HBF-EventLab/README.md",
-      "bytes": 14685,
-      "sha256": "768c268c6393cd320925d38a038b52329dcb33468882fd851d9118a494e62210"
     },
     {
       "path": "third_party/HBF-EventLab/src/adapters/tensor_access_bridge.cpp",
@@ -1802,6 +2287,86 @@
       "sha256": "981f0fd265e7659a2a52706a28da59063b329b298155b7a925eb7724967a3c36"
     },
     {
+      "path": "third_party/detours/LICENSE.md",
+      "bytes": 1099,
+      "sha256": "b301808b732cfaa60df2b4b422d78cd97d2a15058b207e7e33f0535ba5170dd6"
+    },
+    {
+      "path": "third_party/detours/README.hbflab.md",
+      "bytes": 629,
+      "sha256": "2b86beaf21c7d3a7bae2aec5f64cf33a7ec21d61400f827eaffd58999a5c7c9d"
+    },
+    {
+      "path": "third_party/detours/creatwth.cpp",
+      "bytes": 55994,
+      "sha256": "062533627bfa775246948fad92f9f3c0ef7841cc1a83c15db9178be12f2dbf4f"
+    },
+    {
+      "path": "third_party/detours/detours.cpp",
+      "bytes": 79717,
+      "sha256": "df415e05f985afe88f4b03ba34d6f5abce47edda11cd66d4f72902b801113eb7"
+    },
+    {
+      "path": "third_party/detours/detours.h",
+      "bytes": 37571,
+      "sha256": "7b498657d8db4cff2d488b1e65cfeeb5b1305de7f32d23588b1fa86aaa46fcf7"
+    },
+    {
+      "path": "third_party/detours/detver.h",
+      "bytes": 720,
+      "sha256": "1324bbf731d202a37d2f9874279e1b5e2e47118c62662c0372208d4a88342549"
+    },
+    {
+      "path": "third_party/detours/disasm.cpp",
+      "bytes": 162724,
+      "sha256": "6c44283ac6987d77d92aca93a6a8e9f0dc1f7caf8a2b310e4b374853e9136236"
+    },
+    {
+      "path": "third_party/detours/disolarm.cpp",
+      "bytes": 58,
+      "sha256": "20900e34f4afa968f4182fc9ae2d94d00ad15ddf1a17c53a034b18b38a9a4592"
+    },
+    {
+      "path": "third_party/detours/disolarm64.cpp",
+      "bytes": 60,
+      "sha256": "b93f39ba5691b9ffb98aae45c7fa5f5a6975a8fed001704ec97f7867a59998ce"
+    },
+    {
+      "path": "third_party/detours/disolia64.cpp",
+      "bytes": 59,
+      "sha256": "8ce93f70257c11a7b1015fac5ff801e7b72bbb9621f302a74f9d0bc1db49d334"
+    },
+    {
+      "path": "third_party/detours/disolx64.cpp",
+      "bytes": 58,
+      "sha256": "dcac45e9bf07b916e454e141f850856b76e3e0f7b502bd5dd56e18aa2250e020"
+    },
+    {
+      "path": "third_party/detours/disolx86.cpp",
+      "bytes": 58,
+      "sha256": "045d4b00029e810a9a156c1e17b33c2becdda1cc652a7cadfe61d9d1c66c81b6"
+    },
+    {
+      "path": "third_party/detours/image.cpp",
+      "bytes": 66562,
+      "sha256": "8e7c94b335237565f3dce14b6dfd9dd88876cf10fb55b9c910f12ae9c38bd190"
+    },
+    {
+      "path": "third_party/detours/modules.cpp",
+      "bytes": 32397,
+      "sha256": "4a3f970eb539a4379996eb17e14bd75902fe4f34d566cfd19682ff19315cbc6f"
+    },
+    {
+      "path": "third_party/detours/uimports.cpp",
+      "bytes": 9771,
+      "sha256": "2b2d92df4c5412906d7e6830a7c2836d78e368a6bef509be028566cbd921e83b"
+    },
+    {
+      "path": "third_party/detours/upstream-Makefile.txt",
+      "bytes": 3248,
+      "sha256": "0071c68d96a6adafa7b1e6d24a0640f19ca76a91aa8de7116c943d4405db6e84"
+    },
+    {
       "path": "third_party/hbf-eventlab-origin.json",
       "bytes": 2238,
       "sha256": "0571cc2aec6976d29a2c950745b953dea090fa91221d58d9fe6c7adcc9f1e4b7"
@@ -1967,6 +2532,41 @@
       "sha256": "b5248b5d92ade3131173d39405c333835a8b3d074838799b7c07dcb6bf44f931"
     },
     {
+      "path": "third_party/llama.cpp-integrated/.github/ISSUE_TEMPLATE/010-bug-compilation.yml",
+      "bytes": 3499,
+      "sha256": "676184439a4eea7d846ad7e9c487e2a7783320b247ad6404d00a4233700deb74"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/.github/ISSUE_TEMPLATE/011-bug-results.yml",
+      "bytes": 4765,
+      "sha256": "7dd59ef373c5da4e137a292842ba88484ff5db63770964013f05edf77b1429e7"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/.github/ISSUE_TEMPLATE/019-bug-misc.yml",
+      "bytes": 4015,
+      "sha256": "107681ff1ed3f40a8a85baab9f5edb823e98bfc3517f6ff33c04951bcfadf675"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/.github/ISSUE_TEMPLATE/020-enhancement.yml",
+      "bytes": 2652,
+      "sha256": "f9b8111d54f93dfbdbfae006281fcb913efd2f1c2b9397243b06f83d7fe69b2d"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/.github/ISSUE_TEMPLATE/030-research.yml",
+      "bytes": 1978,
+      "sha256": "d735e913a22ede7c091ee31a881218972d5b6fb1a60a95d972b882dfb32061f9"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/.github/ISSUE_TEMPLATE/040-refactor.yml",
+      "bytes": 1446,
+      "sha256": "5a2a203f56f312148adc1050e940f819a913a424e59ad783cac593b7a3e979ef"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/.github/ISSUE_TEMPLATE/config.yml",
+      "bytes": 533,
+      "sha256": "3ca513effb393743c5646ed858a2cbfae6266b538f87290c07774aa38753ce18"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/.github/actions/ccache-buckets/action.yml",
       "bytes": 4024,
       "sha256": "389510476f0106d6f2271f7f766035cd0168a795f5f36981114c0a2f79fe7f5e"
@@ -2015,41 +2615,6 @@
       "path": "third_party/llama.cpp-integrated/.github/actions/windows-setup-rocm/action.yml",
       "bytes": 1314,
       "sha256": "4ccc27414b3726ff75b4d9e6d34c5f5b2d15d6505ee1d5f7bb3a652bc4b4b70c"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/.github/ISSUE_TEMPLATE/010-bug-compilation.yml",
-      "bytes": 3499,
-      "sha256": "676184439a4eea7d846ad7e9c487e2a7783320b247ad6404d00a4233700deb74"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/.github/ISSUE_TEMPLATE/011-bug-results.yml",
-      "bytes": 4765,
-      "sha256": "7dd59ef373c5da4e137a292842ba88484ff5db63770964013f05edf77b1429e7"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/.github/ISSUE_TEMPLATE/019-bug-misc.yml",
-      "bytes": 4015,
-      "sha256": "107681ff1ed3f40a8a85baab9f5edb823e98bfc3517f6ff33c04951bcfadf675"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/.github/ISSUE_TEMPLATE/020-enhancement.yml",
-      "bytes": 2652,
-      "sha256": "f9b8111d54f93dfbdbfae006281fcb913efd2f1c2b9397243b06f83d7fe69b2d"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/.github/ISSUE_TEMPLATE/030-research.yml",
-      "bytes": 1978,
-      "sha256": "d735e913a22ede7c091ee31a881218972d5b6fb1a60a95d972b882dfb32061f9"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/.github/ISSUE_TEMPLATE/040-refactor.yml",
-      "bytes": 1446,
-      "sha256": "5a2a203f56f312148adc1050e940f819a913a424e59ad783cac593b7a3e979ef"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/.github/ISSUE_TEMPLATE/config.yml",
-      "bytes": 533,
-      "sha256": "3ca513effb393743c5646ed858a2cbfae6266b538f87290c07774aa38753ce18"
     },
     {
       "path": "third_party/llama.cpp-integrated/.github/labeler.yml",
@@ -2392,6 +2957,56 @@
       "sha256": "da1f6bb4cde262dadb2f02dbda37b9ac67856aafb5efb72d471f06f65ee22e92"
     },
     {
+      "path": "third_party/llama.cpp-integrated/AUTHORS",
+      "bytes": 91307,
+      "sha256": "958eac0af29bdd8dc4976930e5c239d69d66d3dca9b943ea91b6094c5c13e046"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/CLAUDE.md",
+      "bytes": 107,
+      "sha256": "ba793e4ec0caccb8dd4012d596b80149bf04ff1c687d44299e2c4eb54c1efafc"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/CMakeLists.txt",
+      "bytes": 11355,
+      "sha256": "950e3e902b3a25d04398c90420ee837f662b5ed29b54a78fcdedd2de99054b54"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/CMakePresets.json",
+      "bytes": 4665,
+      "sha256": "a7abeee95211607d6e62e54eb9ee2c8182f046d0769f397cc3c6e251f89a090a"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/CODEOWNERS",
+      "bytes": 6672,
+      "sha256": "4f5d56ea9596862a04b4e1f80709ea4765c5bc82e570335b6d5de1de0452eba9"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/CONTRIBUTING.md",
+      "bytes": 13119,
+      "sha256": "83f2d0e37a0ffb04aa70fa418b757db3d1fbc77ac27c366b950579426ef428a4"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/LICENSE",
+      "bytes": 1099,
+      "sha256": "bcd8ec749126d45cb06737d0690295d73df4b6e7e194205bcf91190368f27285"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/Makefile",
+      "bytes": 266,
+      "sha256": "bddfc7c94a7cc34bbb07b0c38e778f54e621e3861fba29fb0eb08744eb632b0a"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/README.md",
+      "bytes": 7604,
+      "sha256": "578209109932ce15c1416f60409f18a43dd5bcd35108a2605a661650728a9468"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/SECURITY.md",
+      "bytes": 7611,
+      "sha256": "3d02a553605c04d3a922db4a5b1031138a1eea95a0c7ba477e5337e6273ebb9c"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/app/CMakeLists.txt",
       "bytes": 903,
       "sha256": "190dc5bf266fa6d86eb96fdeac6fbd037e1e503aeed886ac2394b8bd3452fb4a"
@@ -2405,11 +3020,6 @@
       "path": "third_party/llama.cpp-integrated/app/llama.cpp",
       "bytes": 5189,
       "sha256": "3ec79e73ef003876d9b19d23f4dc94460668ac11f0c4ea2b45cd788aeaac5a22"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/AUTHORS",
-      "bytes": 91307,
-      "sha256": "958eac0af29bdd8dc4976930e5c239d69d66d3dca9b943ea91b6094c5c13e046"
     },
     {
       "path": "third_party/llama.cpp-integrated/benches/dgx-spark/aime25_openai__gpt-oss-120b-high_temp1.0_20251109_094547.html",
@@ -2465,11 +3075,6 @@
       "path": "third_party/llama.cpp-integrated/ci/run.sh",
       "bytes": 25947,
       "sha256": "110a8b9d9928e653964dd8609f3b25a23fe6cdc32c5b8e3cc5481445898b558e"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/CLAUDE.md",
-      "bytes": 107,
-      "sha256": "ba793e4ec0caccb8dd4012d596b80149bf04ff1c687d44299e2c4eb54c1efafc"
     },
     {
       "path": "third_party/llama.cpp-integrated/cmake/arm64-apple-clang.cmake",
@@ -2537,19 +3142,9 @@
       "sha256": "b3c86d8760afd805396a4c8fcf480a7aaab4b0ac72f46c0b71ce3816cb5df29b"
     },
     {
-      "path": "third_party/llama.cpp-integrated/CMakeLists.txt",
-      "bytes": 11355,
-      "sha256": "950e3e902b3a25d04398c90420ee837f662b5ed29b54a78fcdedd2de99054b54"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/CMakePresets.json",
-      "bytes": 4665,
-      "sha256": "a7abeee95211607d6e62e54eb9ee2c8182f046d0769f397cc3c6e251f89a090a"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/CODEOWNERS",
-      "bytes": 6672,
-      "sha256": "4f5d56ea9596862a04b4e1f80709ea4765c5bc82e570335b6d5de1de0452eba9"
+      "path": "third_party/llama.cpp-integrated/common/CMakeLists.txt",
+      "bytes": 5393,
+      "sha256": "7332bb275af0992ebf1012fa3ba654424d0d9a32221b212b0add3716bbcbc26b"
     },
     {
       "path": "third_party/llama.cpp-integrated/common/arg.cpp",
@@ -2620,11 +3215,6 @@
       "path": "third_party/llama.cpp-integrated/common/chat.h",
       "bytes": 20323,
       "sha256": "20503dc910e929606871815577d00ac91f8f1becd7fc52d2a7ef84d2f6ccfc01"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/common/CMakeLists.txt",
-      "bytes": 5393,
-      "sha256": "7332bb275af0992ebf1012fa3ba654424d0d9a32221b212b0add3716bbcbc26b"
     },
     {
       "path": "third_party/llama.cpp-integrated/common/common.cpp",
@@ -2712,6 +3302,11 @@
       "sha256": "0901fc5c4a2d6486a88bba5202714dd4b178e327d4e892131c5c5df5497c1686"
     },
     {
+      "path": "third_party/llama.cpp-integrated/common/jinja/README.md",
+      "bytes": 4421,
+      "sha256": "061037a2158cd4022caadf74b99497e8da0ea435ff4271c1a1a608452348d6a4"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/common/jinja/caps.cpp",
       "bytes": 21939,
       "sha256": "0f59bf9e9915447a12c75b11bd4872c2d3cec298d9f9d55c6de32b8f1ca1c71d"
@@ -2740,11 +3335,6 @@
       "path": "third_party/llama.cpp-integrated/common/jinja/parser.h",
       "bytes": 554,
       "sha256": "efb9f4521dcac89a56d60d8366d65c410f0e84fe5d35aff96f14c55b406d0a68"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/common/jinja/README.md",
-      "bytes": 4421,
-      "sha256": "061037a2158cd4022caadf74b99497e8da0ea435ff4271c1a1a608452348d6a4"
     },
     {
       "path": "third_party/llama.cpp-integrated/common/jinja/runtime.cpp",
@@ -3050,11 +3640,6 @@
       "path": "third_party/llama.cpp-integrated/common/unicode.h",
       "bytes": 1169,
       "sha256": "c72de5382c2ebaf82baff7e360234af76a959d19f046ea41a8faef606de3b519"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/CONTRIBUTING.md",
-      "bytes": 13119,
-      "sha256": "83f2d0e37a0ffb04aa70fa418b757db3d1fbc77ac27c366b950579426ef428a4"
     },
     {
       "path": "third_party/llama.cpp-integrated/conversion/__init__.py",
@@ -3617,14 +4202,14 @@
       "sha256": "ecfe41c32d788a58de9da64ba988b2c97d4131880ff838b1e4e5f641bd415d2e"
     },
     {
-      "path": "third_party/llama.cpp-integrated/docs/android/imported-into-android-studio.jpg",
-      "bytes": 490930,
-      "sha256": "3cc2c2bf6582bf748216ba5d19fc6ff355d054f8f9d3321212407ace06e4b8d9"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/docs/android.md",
       "bytes": 6538,
       "sha256": "283b6602477f2a9f9eba620ecf63899fd3e25f23f0619a5508e302ad112da33a"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/docs/android/imported-into-android-studio.jpg",
+      "bytes": 490930,
+      "sha256": "3cc2c2bf6582bf748216ba5d19fc6ff355d054f8f9d3321212407ace06e4b8d9"
     },
     {
       "path": "third_party/llama.cpp-integrated/docs/autoparser.md",
@@ -3667,34 +4252,14 @@
       "sha256": "506ddfb49d1b4119f15c4c5054d690b35b9a87a414701f749321564569e7b20c"
     },
     {
-      "path": "third_party/llama.cpp-integrated/docs/backend/snapdragon/CMakeUserPresets.json",
-      "bytes": 4727,
-      "sha256": "34135fea1e3840de6fef2b0a7379109bc72833f96c2d58a49155606bf212cd1b"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/docs/backend/snapdragon/developer.md",
-      "bytes": 30032,
-      "sha256": "144a40fc3de7520bdb098f5c56572fc132a16c39cc0363d15d0490100c233a49"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/docs/backend/snapdragon/linux.md",
-      "bytes": 3904,
-      "sha256": "665a9178fef956277f9346ee5e2631b8cb55751f63cd4e779def1f90bf909854"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/docs/backend/snapdragon/README.md",
-      "bytes": 19499,
-      "sha256": "9f600c4257dba12041d29ec06a98722b123f7a40006a5b5e543e1414df82e0a1"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/docs/backend/snapdragon/windows.md",
-      "bytes": 7179,
-      "sha256": "c4d5e0031812c4e8a46dfc9da5eb3ebe1e0ce936a4f02936b74b4ebd456da647"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/docs/backend/SYCL.md",
       "bytes": 51576,
       "sha256": "6ad6d54ed8b14e2fe14b1556402cddd5662fa9c1360f7f8a10856590944ab8b7"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/docs/backend/VirtGPU.md",
+      "bytes": 6409,
+      "sha256": "212808ead1abde64b1d5be08962673751bcadf502f4d3d8384fe714973d6f043"
     },
     {
       "path": "third_party/llama.cpp-integrated/docs/backend/VirtGPU/configuration.md",
@@ -3707,19 +4272,39 @@
       "sha256": "6d976d51b2386b558c562af5f00a67cd8267ee6dd5f34f426178e80c59a90345"
     },
     {
-      "path": "third_party/llama.cpp-integrated/docs/backend/VirtGPU.md",
-      "bytes": 6409,
-      "sha256": "212808ead1abde64b1d5be08962673751bcadf502f4d3d8384fe714973d6f043"
+      "path": "third_party/llama.cpp-integrated/docs/backend/ZenDNN.md",
+      "bytes": 10738,
+      "sha256": "381b072e79eee33c7e9c9ddbfca2a4dd3c2fe99db9e9ec9a6f6f24619bd5df76"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/docs/backend/snapdragon/CMakeUserPresets.json",
+      "bytes": 4727,
+      "sha256": "34135fea1e3840de6fef2b0a7379109bc72833f96c2d58a49155606bf212cd1b"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/docs/backend/snapdragon/README.md",
+      "bytes": 19499,
+      "sha256": "9f600c4257dba12041d29ec06a98722b123f7a40006a5b5e543e1414df82e0a1"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/docs/backend/snapdragon/developer.md",
+      "bytes": 30032,
+      "sha256": "144a40fc3de7520bdb098f5c56572fc132a16c39cc0363d15d0490100c233a49"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/docs/backend/snapdragon/linux.md",
+      "bytes": 3904,
+      "sha256": "665a9178fef956277f9346ee5e2631b8cb55751f63cd4e779def1f90bf909854"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/docs/backend/snapdragon/windows.md",
+      "bytes": 7179,
+      "sha256": "c4d5e0031812c4e8a46dfc9da5eb3ebe1e0ce936a4f02936b74b4ebd456da647"
     },
     {
       "path": "third_party/llama.cpp-integrated/docs/backend/zDNN.md",
       "bytes": 4605,
       "sha256": "72372f08408d25303f35390042ab38f32127b626f5101e8c27f6e958cd59095d"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/docs/backend/ZenDNN.md",
-      "bytes": 10738,
-      "sha256": "381b072e79eee33c7e9c9ddbfca2a4dd3c2fe99db9e9ec9a6f6f24619bd5df76"
     },
     {
       "path": "third_party/llama.cpp-integrated/docs/build-profiling.md",
@@ -3747,14 +4332,14 @@
       "sha256": "c00faa080f1b5aa337da332a603fe11b688ab9d0a153c3b7b055c4f988424796"
     },
     {
-      "path": "third_party/llama.cpp-integrated/docs/development/debugging-tests.md",
-      "bytes": 3283,
-      "sha256": "7bd09293d21dc7581d1bacfc7a3345c475ada17f48f54ed6f9101fef6e6795a1"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/docs/development/HOWTO-add-model.md",
       "bytes": 14037,
       "sha256": "f5aaa9ea4b582c06a193b67529088cf5e6c634d8950f078f30e5df7ab258f8e8"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/docs/development/debugging-tests.md",
+      "bytes": 3283,
+      "sha256": "7bd09293d21dc7581d1bacfc7a3345c475ada17f48f54ed6f9101fef6e6795a1"
     },
     {
       "path": "third_party/llama.cpp-integrated/docs/development/llama-star/idea-arch.key",
@@ -3805,6 +4390,16 @@
       "path": "third_party/llama.cpp-integrated/docs/multi-gpu.md",
       "bytes": 10275,
       "sha256": "ca117174de1bc4d94f1535f6497e0b9f49b0967a6abb24be17a8e0ff4f480bbb"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/docs/multimodal.md",
+      "bytes": 5198,
+      "sha256": "2018b9c3d65c695b7e33c51535282010d3262a33569d2fb9d0954f05f3cfefc0"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/docs/multimodal/MobileVLM.md",
+      "bytes": 18909,
+      "sha256": "61fd65aa9549251f38d05298a576eb5961e90ccef87945c03ecedba2c8de1dd1"
     },
     {
       "path": "third_party/llama.cpp-integrated/docs/multimodal/gemma3.md",
@@ -3867,14 +4462,9 @@
       "sha256": "54e95b5d9ba2d3cf61dd4796d7feea37020fe145365bcadd1aba4c6f00497c65"
     },
     {
-      "path": "third_party/llama.cpp-integrated/docs/multimodal/MobileVLM.md",
-      "bytes": 18909,
-      "sha256": "61fd65aa9549251f38d05298a576eb5961e90ccef87945c03ecedba2c8de1dd1"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/docs/multimodal.md",
-      "bytes": 5198,
-      "sha256": "2018b9c3d65c695b7e33c51535282010d3262a33569d2fb9d0954f05f3cfefc0"
+      "path": "third_party/llama.cpp-integrated/docs/ops.md",
+      "bytes": 14486,
+      "sha256": "6c6e688811be9847de4567779b921f0aa68230a559e39e9cee56fabf0f2b2fb3"
     },
     {
       "path": "third_party/llama.cpp-integrated/docs/ops/BLAS.csv",
@@ -3932,19 +4522,14 @@
       "sha256": "373a2ea22c523d01c529541b506406058843fd0cf3126a336ff757eca681273b"
     },
     {
-      "path": "third_party/llama.cpp-integrated/docs/ops/zDNN.csv",
-      "bytes": 3789664,
-      "sha256": "6ac1cfea9e15dc90e9c0923a25f10b5c4841c2f4beb087d57538665f660aae7e"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/docs/ops/ZenDNN.csv",
       "bytes": 2245466,
       "sha256": "f172e4ee65deab3d78757f51e73c2673360b09d9314191abf7fc37cf2380c157"
     },
     {
-      "path": "third_party/llama.cpp-integrated/docs/ops.md",
-      "bytes": 14486,
-      "sha256": "6c6e688811be9847de4567779b921f0aa68230a559e39e9cee56fabf0f2b2fb3"
+      "path": "third_party/llama.cpp-integrated/docs/ops/zDNN.csv",
+      "bytes": 3789664,
+      "sha256": "6ac1cfea9e15dc90e9c0923a25f10b5c4841c2f4beb087d57538665f660aae7e"
     },
     {
       "path": "third_party/llama.cpp-integrated/docs/preset.md",
@@ -3967,19 +4552,9 @@
       "sha256": "3551d3d7e5ef262ce81c8f25cba977f1981376a853415eed8f5727deacae7b6c"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/batched/batched.cpp",
-      "bytes": 8307,
-      "sha256": "0c0c56f40090568df427ff4d89ed8615f8c6cdaa8101e2ef61ff0df8064ad926"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/examples/batched/CMakeLists.txt",
-      "bytes": 244,
-      "sha256": "cf31fc3ffe9c8b1cfa9196e3cacb2339f3b9bd1897c1401ca5a10674ba5d1107"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/examples/batched/README.md",
-      "bytes": 1479,
-      "sha256": "b663711cf8dbf33266305a57f0dd2ecdd8c188b6d138ff37de901668a9c9bb80"
+      "path": "third_party/llama.cpp-integrated/examples/CMakeLists.txt",
+      "bytes": 1049,
+      "sha256": "2419af7162bdf0de9da22ac363af212a349c24a1cf1e171afce1268a7e3a8731"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/batched.swift/.gitignore",
@@ -4007,9 +4582,19 @@
       "sha256": "5708cfc9cf7f0774790fd628692ca14932b39e009f9a73c7e69368fb4a0580fe"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/CMakeLists.txt",
-      "bytes": 1049,
-      "sha256": "2419af7162bdf0de9da22ac363af212a349c24a1cf1e171afce1268a7e3a8731"
+      "path": "third_party/llama.cpp-integrated/examples/batched/CMakeLists.txt",
+      "bytes": 244,
+      "sha256": "cf31fc3ffe9c8b1cfa9196e3cacb2339f3b9bd1897c1401ca5a10674ba5d1107"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/batched/README.md",
+      "bytes": 1479,
+      "sha256": "b663711cf8dbf33266305a57f0dd2ecdd8c188b6d138ff37de901668a9c9bb80"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/batched/batched.cpp",
+      "bytes": 8307,
+      "sha256": "0c0c56f40090568df427ff4d89ed8615f8c6cdaa8101e2ef61ff0df8064ad926"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/convert-llama2c-to-ggml/CMakeLists.txt",
@@ -4017,14 +4602,14 @@
       "sha256": "44ebd2f42d7c98b7ced3f8692711f50ee81c99e999ec30227db96a04c16065cc"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/convert-llama2c-to-ggml/convert-llama2c-to-ggml.cpp",
-      "bytes": 37201,
-      "sha256": "16c977954b60594c167eb8a981fc5c4b7baea7af59649ff0c24a6e53293c25ac"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/examples/convert-llama2c-to-ggml/README.md",
       "bytes": 1500,
       "sha256": "25692e64bd1202616afc3802f5d2c8279a8ca4dc693b62ede5f65937d3ba5a08"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/convert-llama2c-to-ggml/convert-llama2c-to-ggml.cpp",
+      "bytes": 37201,
+      "sha256": "16c977954b60594c167eb8a981fc5c4b7baea7af59649ff0c24a6e53293c25ac"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/convert_legacy_llama.py",
@@ -4037,19 +4622,14 @@
       "sha256": "b40eac769ccfee60c1d828d65cd41bad18e29de26dbe2d73636a28bdb90e7359"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/debug/debug.cpp",
-      "bytes": 8954,
-      "sha256": "c42909be91df3b1972d6ae0547f54a482fc3d162c4417993ac75efa9dfe840a0"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/examples/debug/README.md",
       "bytes": 2140,
       "sha256": "f6ae928107cd96bb42fcf7236792482f0de9e9461d7495f5872a73ba934517be"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/deprecation-warning/deprecation-warning.cpp",
-      "bytes": 1270,
-      "sha256": "0ee5041813eb4c0a785e2c1bbaf12f95325346e5f0c5b5d4643195ab4a70abfc"
+      "path": "third_party/llama.cpp-integrated/examples/debug/debug.cpp",
+      "bytes": 8954,
+      "sha256": "c42909be91df3b1972d6ae0547f54a482fc3d162c4417993ac75efa9dfe840a0"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/deprecation-warning/README.md",
@@ -4057,9 +4637,19 @@
       "sha256": "b205e8c258d9e6d8005e970c5febacbaef943a53cc12367d59567742537f8e1c"
     },
     {
+      "path": "third_party/llama.cpp-integrated/examples/deprecation-warning/deprecation-warning.cpp",
+      "bytes": 1270,
+      "sha256": "0ee5041813eb4c0a785e2c1bbaf12f95325346e5f0c5b5d4643195ab4a70abfc"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/examples/diffusion/CMakeLists.txt",
       "bytes": 500,
       "sha256": "2d49a937cf89ba926f67c55e432ad9ddf158ce5a80490726e411c66c276fa8d3"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/diffusion/README.md",
+      "bytes": 2392,
+      "sha256": "ca13fb2516d8286c3f88b0faea07666599f37db1cb9aa41030b3347b85f025cc"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/diffusion/diffusion-cli.cpp",
@@ -4077,19 +4667,9 @@
       "sha256": "b2e4cb94677ef4db9ea60699dc5196023a2f5f0f396c4825630d6290f5d56a4b"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/diffusion/README.md",
-      "bytes": 2392,
-      "sha256": "ca13fb2516d8286c3f88b0faea07666599f37db1cb9aa41030b3347b85f025cc"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/examples/embedding/CMakeLists.txt",
       "bytes": 248,
       "sha256": "a6aa77d0840b5f4b253a6ddefc086d8ab425faafa3e57111ed1537023da5f3c9"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/examples/embedding/embedding.cpp",
-      "bytes": 16090,
-      "sha256": "1cbc26b837a0f95fbb54354f2615e35533260d5a83abf74a58defbe04d8e845c"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/embedding/README.md",
@@ -4097,19 +4677,24 @@
       "sha256": "5d650f6751fb61e2b3acc0ecee7260b169b4a85129dcae573e6e1825a4227d52"
     },
     {
+      "path": "third_party/llama.cpp-integrated/examples/embedding/embedding.cpp",
+      "bytes": 16090,
+      "sha256": "1cbc26b837a0f95fbb54354f2615e35533260d5a83abf74a58defbe04d8e845c"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/examples/eval-callback/CMakeLists.txt",
       "bytes": 1348,
       "sha256": "489eef4a98f1d5f41bb6e5a62ca1fc19a73d0a42e8376c1133402374f3eedcf8"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/eval-callback/eval-callback.cpp",
-      "bytes": 2283,
-      "sha256": "4cf3164b27cc3cc252c925aee95b3f7626e38c4ceadc9a2e5ff265e6d3bffa44"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/examples/eval-callback/README.md",
       "bytes": 4819,
       "sha256": "5936b20e1bb4c75ea9e216a4b52626a2b600ed36bc12196b79b3f4c6b7fb0f3a"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/eval-callback/eval-callback.cpp",
+      "bytes": 2283,
+      "sha256": "4cf3164b27cc3cc252c925aee95b3f7626e38c4ceadc9a2e5ff265e6d3bffa44"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/gen-docs/CMakeLists.txt",
@@ -4122,6 +4707,21 @@
       "sha256": "6f5cc6fc098dde74a9e5308bf157ffb52f5a8781f68ca948ac88490e393c541b"
     },
     {
+      "path": "third_party/llama.cpp-integrated/examples/gguf-hash/CMakeLists.txt",
+      "bytes": 249,
+      "sha256": "732d3eef27fafeede2fbb1e0da8da8ab08923ef513adb44ed67ab72cf0ca531c"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/gguf-hash/README.md",
+      "bytes": 10868,
+      "sha256": "713aed50760b9bc46260b54be30006c4470da050a393310f6430a07eb84be5ed"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/gguf-hash/gguf-hash.cpp",
+      "bytes": 24838,
+      "sha256": "9a3f8b463f9cd95f9d19ec16065e6d42e36efb877affd7a1ea0b6fd33d9bdb81"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/examples/gguf/CMakeLists.txt",
       "bytes": 224,
       "sha256": "cb042cd41af20e13a432f4115e4b489f42480aaea30b7f8035a48837544be306"
@@ -4132,29 +4732,9 @@
       "sha256": "a050c61d296d294e33fd004de0e39b770d4fd9a62b2da845afdac063b98e8a44"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/gguf-hash/CMakeLists.txt",
-      "bytes": 249,
-      "sha256": "732d3eef27fafeede2fbb1e0da8da8ab08923ef513adb44ed67ab72cf0ca531c"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/examples/gguf-hash/gguf-hash.cpp",
-      "bytes": 24838,
-      "sha256": "9a3f8b463f9cd95f9d19ec16065e6d42e36efb877affd7a1ea0b6fd33d9bdb81"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/examples/gguf-hash/README.md",
-      "bytes": 10868,
-      "sha256": "713aed50760b9bc46260b54be30006c4470da050a393310f6430a07eb84be5ed"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/examples/idle/CMakeLists.txt",
       "bytes": 238,
       "sha256": "0f845b4edeb73cd29b2b4593339b7c4629242500cdfee384c298a02c43d85efd"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/examples/idle/idle.cpp",
-      "bytes": 3416,
-      "sha256": "0136b11ae27b746ad66e0691d43dec809107e63557a519140c409454e51a0a6e"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/idle/README.md",
@@ -4162,9 +4742,19 @@
       "sha256": "b055ee8ba9ae5fbaa5bb7fa9ad91c82ae5e946351e493fbbddfa5f7954147e5a"
     },
     {
+      "path": "third_party/llama.cpp-integrated/examples/idle/idle.cpp",
+      "bytes": 3416,
+      "sha256": "0136b11ae27b746ad66e0691d43dec809107e63557a519140c409454e51a0a6e"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/examples/json_schema_pydantic_example.py",
       "bytes": 3296,
       "sha256": "bb5cd5a1d78de3d3c0724f35d3b5bc992cda469fbf363866c6be7b31161c5659"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/llama-eval/README.md",
+      "bytes": 14039,
+      "sha256": "79c2bbdde02d241b742e0d1a2344050985e97cc6f585a6e867ea1e2ab3b1b03b"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/llama-eval/agentic_eval.py",
@@ -4185,11 +4775,6 @@
       "path": "third_party/llama.cpp-integrated/examples/llama-eval/llama-server-simulator.py",
       "bytes": 16343,
       "sha256": "912c93e978c93048891d60b5a360a746d51c8ede5273e3d8eba9ac1fba3eee8a"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/examples/llama-eval/README.md",
-      "bytes": 14039,
-      "sha256": "79c2bbdde02d241b742e0d1a2344050985e97cc6f585a6e867ea1e2ab3b1b03b"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/llama-eval/test-simulator.sh",
@@ -4367,6 +4952,11 @@
       "sha256": "1ab1e34f03220809bdf1f3f9aa3a36095fc7438a44bb687d5aab4a05247963db"
     },
     {
+      "path": "third_party/llama.cpp-integrated/examples/llama.android/gradle.properties",
+      "bytes": 1418,
+      "sha256": "7ca01ddbd2a071ce5acf254c2145e4d4a0b1d2e7b5e46e28020842a29dcdabae"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/examples/llama.android/gradle/libs.versions.toml",
       "bytes": 1757,
       "sha256": "c622185b4d8013542b91639e3d155a3d9e8148aa08594a0d1635e50d65dd7954"
@@ -4380,11 +4970,6 @@
       "path": "third_party/llama.cpp-integrated/examples/llama.android/gradle/wrapper/gradle-wrapper.properties",
       "bytes": 239,
       "sha256": "00742ff6a9c554cc691d0e09c039467b7ba1e47582e3f9ed3d019e69cef56010"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/examples/llama.android/gradle.properties",
-      "bytes": 1418,
-      "sha256": "7ca01ddbd2a071ce5acf254c2145e4d4a0b1d2e7b5e46e28020842a29dcdabae"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/llama.android/gradlew",
@@ -4422,14 +5007,14 @@
       "sha256": "3fece6f1d33d82f5b8d56e4ae92591645978130f500caf854fe83c42449fdd82"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/llama.android/lib/src/main/cpp/ai_chat.cpp",
-      "bytes": 20229,
-      "sha256": "b1da1a076934d1c556200b5b5140dd5f1ebea73eb3af2507b285df248e87c58f"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/examples/llama.android/lib/src/main/cpp/CMakeLists.txt",
       "bytes": 1714,
       "sha256": "825ddc929cda8b0b5b9ea8272275f9a5d63638fe03e0d52b68529fe817e75a6f"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/llama.android/lib/src/main/cpp/ai_chat.cpp",
+      "bytes": 20229,
+      "sha256": "b1da1a076934d1c556200b5b5140dd5f1ebea73eb3af2507b285df248e87c58f"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/llama.android/lib/src/main/cpp/logging.h",
@@ -4440,6 +5025,11 @@
       "path": "third_party/llama.cpp-integrated/examples/llama.android/lib/src/main/java/com/arm/aichat/AiChat.kt",
       "bytes": 347,
       "sha256": "ea54cd8909a77eab55a675ded124dae0d0dfe8975e11ffe1395f7a15f9465c8b"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/llama.android/lib/src/main/java/com/arm/aichat/InferenceEngine.kt",
+      "bytes": 2457,
+      "sha256": "36b858c19997321fdca4279edd6db078620f638a096919b28bc7f1816d1ec6f9"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/llama.android/lib/src/main/java/com/arm/aichat/gguf/FileType.kt",
@@ -4457,19 +5047,14 @@
       "sha256": "a5638e21ecc8d86e0176754cf7aa9e043035b71bb4afc48ccc5539b433d6b246"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/llama.android/lib/src/main/java/com/arm/aichat/InferenceEngine.kt",
-      "bytes": 2457,
-      "sha256": "36b858c19997321fdca4279edd6db078620f638a096919b28bc7f1816d1ec6f9"
+      "path": "third_party/llama.cpp-integrated/examples/llama.android/lib/src/main/java/com/arm/aichat/internal/InferenceEngineImpl.kt",
+      "bytes": 12403,
+      "sha256": "ed7bd67a4957ad15eac1da40ab2f80676dfa93e30b38ae18d4b184e86b839646"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/llama.android/lib/src/main/java/com/arm/aichat/internal/gguf/GgufMetadataReaderImpl.kt",
       "bytes": 29107,
       "sha256": "327eacda3f36010d7d016668c342642eb3f0209fca66db93fea3be864c5a68b5"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/examples/llama.android/lib/src/main/java/com/arm/aichat/internal/InferenceEngineImpl.kt",
-      "bytes": 12403,
-      "sha256": "ed7bd67a4957ad15eac1da40ab2f80676dfa93e30b38ae18d4b184e86b839646"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/llama.android/lib/src/test/java/android/llama/cpp/ExampleUnitTest.kt",
@@ -4487,9 +5072,29 @@
       "sha256": "a2dc0870eb736ee3477ce2ed206fd7339a9859c82f1e5584ad6637e973612751"
     },
     {
+      "path": "third_party/llama.cpp-integrated/examples/llama.swiftui/README.md",
+      "bytes": 1195,
+      "sha256": "6f9e86689c3d638654a48df76d1e9d985e0a4b4843f1ee17358f201e2e199b89"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/examples/llama.swiftui/llama.cpp.swift/LibLlama.swift",
       "bytes": 11919,
       "sha256": "005a013246769d5f47be767fcf3ef79685587270ace6baaa757847775de874fb"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/llama.swiftui/llama.swiftui.xcodeproj/project.pbxproj",
+      "bytes": 19624,
+      "sha256": "26928a915e3bd957c872050dd49e5a1d5a7d3e4144e794129c7ab9065217eb18"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/llama.swiftui/llama.swiftui.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
+      "bytes": 142,
+      "sha256": "ac28b35c2b940210bec0fff8e424b07fd0efe9112ab178a10533583f251a386c"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/llama.swiftui/llama.swiftui.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+      "bytes": 252,
+      "sha256": "9c3f7c73e39d9dbcc007dc7508d08bc8e47eba3474512423a59265b043c1d790"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/llama.swiftui/llama.swiftui/Assets.xcassets/AppIcon.appiconset/Contents.json",
@@ -4500,11 +5105,6 @@
       "path": "third_party/llama.cpp-integrated/examples/llama.swiftui/llama.swiftui/Assets.xcassets/Contents.json",
       "bytes": 69,
       "sha256": "73d83da8f89d57a704aa6df8b476cd9c2a22221daf3b9e949cecdd61e77f7cdc"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/examples/llama.swiftui/llama.swiftui/llama_swiftuiApp.swift",
-      "bytes": 156,
-      "sha256": "2b2644161f985511b8b8a67eb8ff0817f419c0fbf31e74bba92a1db9aba31b17"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/llama.swiftui/llama.swiftui/Models/LlamaState.swift",
@@ -4537,24 +5137,9 @@
       "sha256": "8cdc448174217c2628dea43c025841f75b428d2c19054a3b209f601a2ed56911"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/llama.swiftui/llama.swiftui.xcodeproj/project.pbxproj",
-      "bytes": 19624,
-      "sha256": "26928a915e3bd957c872050dd49e5a1d5a7d3e4144e794129c7ab9065217eb18"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/examples/llama.swiftui/llama.swiftui.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
-      "bytes": 142,
-      "sha256": "ac28b35c2b940210bec0fff8e424b07fd0efe9112ab178a10533583f251a386c"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/examples/llama.swiftui/llama.swiftui.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
-      "bytes": 252,
-      "sha256": "9c3f7c73e39d9dbcc007dc7508d08bc8e47eba3474512423a59265b043c1d790"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/examples/llama.swiftui/README.md",
-      "bytes": 1195,
-      "sha256": "6f9e86689c3d638654a48df76d1e9d985e0a4b4843f1ee17358f201e2e199b89"
+      "path": "third_party/llama.cpp-integrated/examples/llama.swiftui/llama.swiftui/llama_swiftuiApp.swift",
+      "bytes": 156,
+      "sha256": "2b2644161f985511b8b8a67eb8ff0817f419c0fbf31e74bba92a1db9aba31b17"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/llama.vim",
@@ -4567,19 +5152,24 @@
       "sha256": "7b01e0daef3d286f7bbd3b3970ea9b98864a28f20f99fc076f5e23301d878e23"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/lookahead/lookahead.cpp",
-      "bytes": 16664,
-      "sha256": "c4c969f18277f7efc34c6de7dab176e290c66238852c73aece364a9a3f2e6bbd"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/examples/lookahead/README.md",
       "bytes": 406,
       "sha256": "1b737984e0388b5f7543af577cb50b530dfa14cff816005b0720daae03ec7be7"
     },
     {
+      "path": "third_party/llama.cpp-integrated/examples/lookahead/lookahead.cpp",
+      "bytes": 16664,
+      "sha256": "c4c969f18277f7efc34c6de7dab176e290c66238852c73aece364a9a3f2e6bbd"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/examples/lookup/CMakeLists.txt",
       "bytes": 1012,
       "sha256": "7524bae5f7bb8599d7fb2ab8907a189617e43cb92def2c340dfabb42b1b363da"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/lookup/README.md",
+      "bytes": 497,
+      "sha256": "801fdca2bc6c0ade00786d72d52285cbd134973f1927e59338f062437a7ff250"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/lookup/lookup-create.cpp",
@@ -4600,11 +5190,6 @@
       "path": "third_party/llama.cpp-integrated/examples/lookup/lookup.cpp",
       "bytes": 8773,
       "sha256": "cc1cf467e6a2217508824bfaf7b423597f7aab04591fd7dfa4b51ad796c74528"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/examples/lookup/README.md",
-      "bytes": 497,
-      "sha256": "801fdca2bc6c0ade00786d72d52285cbd134973f1927e59338f062437a7ff250"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/model-conversion/.gitignore",
@@ -4787,14 +5372,14 @@
       "sha256": "01c811b21b8160ae2d945be64caf50349c057f541692be1f393972cce35d05e2"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/parallel/parallel.cpp",
-      "bytes": 19761,
-      "sha256": "e9dc960385ea9396a30e03117ab649dc9cc76a9f68f3537a5f16a88c938049ba"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/examples/parallel/README.md",
       "bytes": 694,
       "sha256": "cd738d43a9e32ee00abab2be51f8ac2a128313f5a01d60a58f24130b2ab516d9"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/parallel/parallel.cpp",
+      "bytes": 19761,
+      "sha256": "e9dc960385ea9396a30e03117ab649dc9cc76a9f68f3537a5f16a88c938049ba"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/passkey/CMakeLists.txt",
@@ -4802,14 +5387,14 @@
       "sha256": "47ccb6e17ff7dcd36358a29f4a93b70c0e1dd8f3f4cf3ad3a87f49e86805e231"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/passkey/passkey.cpp",
-      "bytes": 8559,
-      "sha256": "5c0725639de389d99a1ddc6a438842c75bbdd656e4ad543f930011c9c3d3f896"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/examples/passkey/README.md",
       "bytes": 409,
       "sha256": "094f0ea60cd33bfd5eecfac875c0318622153050fa9ec82f573c219aabf51aba"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/passkey/passkey.cpp",
+      "bytes": 8559,
+      "sha256": "5c0725639de389d99a1ddc6a438842c75bbdd656e4ad543f930011c9c3d3f896"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/pydantic_models_to_grammar.py",
@@ -4852,21 +5437,6 @@
       "sha256": "7eff798c694a356d50e6c0a5114fe45d6f89f48cff54a49537df613be7541587"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/simple/CMakeLists.txt",
-      "bytes": 229,
-      "sha256": "aaa4be64d3f97e2c552f4b93b86b952a7707299413e1c7b8e7bb1f7c628e9211"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/examples/simple/README.md",
-      "bytes": 933,
-      "sha256": "701802f124d621a390949550bd3fbc230db24d5765c5c7e4034335d3e34cf8bc"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/examples/simple/simple.cpp",
-      "bytes": 7769,
-      "sha256": "a529fb2c8801e91025ecb9bc84d6fa497cae9ef37dd4bf8d60b2dfcc5b031720"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/examples/simple-chat/CMakeLists.txt",
       "bytes": 239,
       "sha256": "fc7db399191ea893221748abc2107d28c146871d00069590d7da92206b96883d"
@@ -4897,19 +5467,19 @@
       "sha256": "61721b89fdaaac653ba373372ba1825b2c7b907e93739ae4828970b132f1e4f0"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/speculative/CMakeLists.txt",
-      "bytes": 252,
-      "sha256": "bbb988b92227d80b7c95398097d7b71216ceca6f507573ae77430c7ddf57b265"
+      "path": "third_party/llama.cpp-integrated/examples/simple/CMakeLists.txt",
+      "bytes": 229,
+      "sha256": "aaa4be64d3f97e2c552f4b93b86b952a7707299413e1c7b8e7bb1f7c628e9211"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/speculative/README.md",
-      "bytes": 291,
-      "sha256": "3b996987c442eec104373b7f4ece4edd904977f34e2c4ec98c8adcf42e4c6f53"
+      "path": "third_party/llama.cpp-integrated/examples/simple/README.md",
+      "bytes": 933,
+      "sha256": "701802f124d621a390949550bd3fbc230db24d5765c5c7e4034335d3e34cf8bc"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/speculative/speculative.cpp",
-      "bytes": 27593,
-      "sha256": "9645b5bbdf05793e6d51313a71c311db8b65932d4456f809f23d158989a7c9a7"
+      "path": "third_party/llama.cpp-integrated/examples/simple/simple.cpp",
+      "bytes": 7769,
+      "sha256": "a529fb2c8801e91025ecb9bc84d6fa497cae9ef37dd4bf8d60b2dfcc5b031720"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/speculative-simple/CMakeLists.txt",
@@ -4927,9 +5497,19 @@
       "sha256": "c735d1cf1720041606b1616fdc5eac467fd43d91df158e14167795d8698e3665"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/sycl/build.sh",
-      "bytes": 1937,
-      "sha256": "7bbce3fb99ab5adf693a88c2d82a8bf85dcc81b46b683872ed26e5360286c6cc"
+      "path": "third_party/llama.cpp-integrated/examples/speculative/CMakeLists.txt",
+      "bytes": 252,
+      "sha256": "bbb988b92227d80b7c95398097d7b71216ceca6f507573ae77430c7ddf57b265"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/speculative/README.md",
+      "bytes": 291,
+      "sha256": "3b996987c442eec104373b7f4ece4edd904977f34e2c4ec98c8adcf42e4c6f53"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/speculative/speculative.cpp",
+      "bytes": 27593,
+      "sha256": "9645b5bbdf05793e6d51313a71c311db8b65932d4456f809f23d158989a7c9a7"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/sycl/CMakeLists.txt",
@@ -4937,14 +5517,19 @@
       "sha256": "fba84c0f76d76a0895c3308e0efa3fa4413cddfa66740aa41aff50737ce838b0"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/sycl/ls-sycl-device.cpp",
-      "bytes": 266,
-      "sha256": "ab7fe27dbb0c64a83c41704bc6a955a55347ff90889fa3eabf163a4f5eb55667"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/examples/sycl/README.md",
       "bytes": 1502,
       "sha256": "171c1d1dd57b1c9c4ce3894922133bde50790579ac127f1ce8714df3acdbc3c7"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/sycl/build.sh",
+      "bytes": 1937,
+      "sha256": "7bbce3fb99ab5adf693a88c2d82a8bf85dcc81b46b683872ed26e5360286c6cc"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/sycl/ls-sycl-device.cpp",
+      "bytes": 266,
+      "sha256": "ab7fe27dbb0c64a83c41704bc6a955a55347ff90889fa3eabf163a4f5eb55667"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/sycl/run-llama2.sh",
@@ -4997,16 +5582,6 @@
       "sha256": "fb64383dd7cdc3465fb6d300e4337779b52e35d2fa771a5cd59196aff70f3c8f"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/test-cmake/build-install.sh",
-      "bytes": 594,
-      "sha256": "2d87d0867504a3176e707882f28266811febdcdbb56b1b1afeb7eff957a2eb36"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/examples/test-cmake/build.sh",
-      "bytes": 612,
-      "sha256": "9996d8950cbacd731b5edf5a117b28dc89e28194ece98d44d71b6118f850e04b"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/examples/test-cmake/CMakeLists.txt",
       "bytes": 598,
       "sha256": "0a025bc07d575395aac8d4688a58844928640e437e25f44bdbd51d6ab895d2fb"
@@ -5015,6 +5590,16 @@
       "path": "third_party/llama.cpp-integrated/examples/test-cmake/README.md",
       "bytes": 1787,
       "sha256": "3f9e8b9116f17056b1d939d8aa6d41ba129aad128debbeda78959f51c204a568"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/test-cmake/build-install.sh",
+      "bytes": 594,
+      "sha256": "2d87d0867504a3176e707882f28266811febdcdbb56b1b1afeb7eff957a2eb36"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/test-cmake/build.sh",
+      "bytes": 612,
+      "sha256": "9996d8950cbacd731b5edf5a117b28dc89e28194ece98d44d71b6118f850e04b"
     },
     {
       "path": "third_party/llama.cpp-integrated/examples/test-cmake/test-cmake.cpp",
@@ -5027,14 +5612,14 @@
       "sha256": "099b4202e1ab49cba7c6b3e4a0b7c6f077d967ecacf45dc26f4e1df0d095844d"
     },
     {
-      "path": "third_party/llama.cpp-integrated/examples/training/finetune.cpp",
-      "bytes": 3456,
-      "sha256": "ae1a6cc32799e8845c5dbe4cc0c298763cecf0af4523296ebd11ea0734442242"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/examples/training/README.md",
       "bytes": 1022,
       "sha256": "552624b6a2e9e42294f10c7481b5beed8228fd5fe3cc38d257ece25ea56e8fad"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/examples/training/finetune.cpp",
+      "bytes": 3456,
+      "sha256": "ae1a6cc32799e8845c5dbe4cc0c298763cecf0af4523296ebd11ea0734442242"
     },
     {
       "path": "third_party/llama.cpp-integrated/flake.nix",
@@ -5047,9 +5632,9 @@
       "sha256": "93cebfd20ff2c968b10d22866ce22c08e7afd5463fd5dff437e6da838f74476a"
     },
     {
-      "path": "third_party/llama.cpp-integrated/ggml/cmake/common.cmake",
-      "bytes": 5546,
-      "sha256": "b45523514b7095bbe9db2f13e81de8f0513650edf71407d9ad4fb2844fc3f0ab"
+      "path": "third_party/llama.cpp-integrated/ggml/CMakeLists.txt",
+      "bytes": 22303,
+      "sha256": "387981f99f76758517728dd3c190cc78ef73fdfe8e44187bdfa06a4426e3535a"
     },
     {
       "path": "third_party/llama.cpp-integrated/ggml/cmake/FindNCCL.cmake",
@@ -5057,19 +5642,19 @@
       "sha256": "d3f2a1e12697da40fc4802550eb8361b65c866afa55ddae746754607cb5400e2"
     },
     {
-      "path": "third_party/llama.cpp-integrated/ggml/cmake/ggml-config.cmake.in",
-      "bytes": 8234,
-      "sha256": "0cb10fdbd7924d7c9e9a31a55ff98552c32599d9069c25ebabe21f6dd9af90b9"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/ggml/cmake/GitVars.cmake",
       "bytes": 739,
       "sha256": "7aa39ffb7f2e9b8d9eb8a67adf578b3de4ba20b6e8d631683f738d1ded088620"
     },
     {
-      "path": "third_party/llama.cpp-integrated/ggml/CMakeLists.txt",
-      "bytes": 22303,
-      "sha256": "387981f99f76758517728dd3c190cc78ef73fdfe8e44187bdfa06a4426e3535a"
+      "path": "third_party/llama.cpp-integrated/ggml/cmake/common.cmake",
+      "bytes": 5546,
+      "sha256": "b45523514b7095bbe9db2f13e81de8f0513650edf71407d9ad4fb2844fc3f0ab"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/cmake/ggml-config.cmake.in",
+      "bytes": 8234,
+      "sha256": "0cb10fdbd7924d7c9e9a31a55ff98552c32599d9069c25ebabe21f6dd9af90b9"
     },
     {
       "path": "third_party/llama.cpp-integrated/ggml/include/ggml-alloc.h",
@@ -5232,6 +5817,11 @@
       "sha256": "25786ed153b7026ae920642832c80007ac9f6a7b3a3ba6482c8728d2e8253891"
     },
     {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cann/CMakeLists.txt",
+      "bytes": 3565,
+      "sha256": "13571700eee1fc37945c0c72c336c808290473d02382d1402c1d0ac0791e1b06"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cann/acl_tensor.cpp",
       "bytes": 8422,
       "sha256": "3d37d68293b781cabf758b67f53052946c38435a1dcba950dc844cb250319c37"
@@ -5252,11 +5842,6 @@
       "sha256": "95aaac36fc7195ed3a7b55603544ebe9e03a8de4f350f045d3ef3e03b7c5ad57"
     },
     {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cann/CMakeLists.txt",
-      "bytes": 3565,
-      "sha256": "13571700eee1fc37945c0c72c336c808290473d02382d1402c1d0ac0791e1b06"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cann/common.h",
       "bytes": 23992,
       "sha256": "4a8b97cce4519674ba14614f5a8d1add7a997ad29f96738f63844f1674c4412d"
@@ -5270,6 +5855,11 @@
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-common.h",
       "bytes": 137072,
       "sha256": "3ac6eed12695ceea1acd18f556845023a45f92f6ce0530c18c70bb10450207ea"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cpu/CMakeLists.txt",
+      "bytes": 33890,
+      "sha256": "177dc382aec5e716f3b5db71a874045c88bd18e5bbce8f9a69662293f0110c42"
     },
     {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cpu/amx/amx.cpp",
@@ -5295,6 +5885,11 @@
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cpu/amx/mmq.h",
       "bytes": 407,
       "sha256": "d0ff177ec6041264ac16d727f86857002a792e5b1afafc6a078d74c4da0de8d4"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cpu/arch-fallback.h",
+      "bytes": 23510,
+      "sha256": "2f52d83a91441283940d7d33201745ff636da64e65b4e719574e7372d9de9e10"
     },
     {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cpu/arch/arm/cpu-feats.cpp",
@@ -5377,11 +5972,6 @@
       "sha256": "0a717ddb7426715cee1905d296894c8101b38b6fddefd2cc0eb05627fe045e4f"
     },
     {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cpu/arch-fallback.h",
-      "bytes": 23510,
-      "sha256": "2f52d83a91441283940d7d33201745ff636da64e65b4e719574e7372d9de9e10"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cpu/binary-ops.cpp",
       "bytes": 6863,
       "sha256": "b0616d13f04bcabcf62975a94a34071ed933662aa3c943238ec5833c3e6ecfbf"
@@ -5400,11 +5990,6 @@
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cpu/cmake/FindSMTIME.cmake",
       "bytes": 2107,
       "sha256": "d1798423d72424d63b7d1bea99354537de86083ab2eb5dd9fb3c45eabcee4172"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cpu/CMakeLists.txt",
-      "bytes": 33890,
-      "sha256": "177dc382aec5e716f3b5db71a874045c88bd18e5bbce8f9a69662293f0110c42"
     },
     {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cpu/common.h",
@@ -5637,6 +6222,11 @@
       "sha256": "ec5a9718502e4a07119b6ca6a4f9a3e8b3edc2a3d770e929ded23166d43ee2b7"
     },
     {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cuda/CMakeLists.txt",
+      "bytes": 11413,
+      "sha256": "6778637b98ff7d4dc8233a8d2e0f71246241122d4d3910ebacf59c0923b44420"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cuda/acc.cu",
       "bytes": 2487,
       "sha256": "461048014a04df2f2ecc2e8fad68229147f2eb0e6389eed1dcfa2ea89db7de69"
@@ -5715,11 +6305,6 @@
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cuda/clamp.cuh",
       "bytes": 140,
       "sha256": "9acfd9d639c1bb5f223de779ac06b5dbb12d56e67d011f280cdc575e71765f23"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cuda/CMakeLists.txt",
-      "bytes": 11413,
-      "sha256": "6778637b98ff7d4dc8233a8d2e0f71246241122d4d3910ebacf59c0923b44420"
     },
     {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-cuda/col2im-1d.cu",
@@ -7077,6 +7662,11 @@
       "sha256": "72f34a6d82d3ef50c36eecd24b1b930dd5472516646b7260ca76e5662808540d"
     },
     {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/CMakeLists.txt",
+      "bytes": 6761,
+      "sha256": "13b6e5f95f85d531d08df425412d4a80b771a8a36d9eb521dd7b9d89a511b536"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/cmake/embed_one_kernel.cmake",
       "bytes": 532,
       "sha256": "a9d541d936fafcc11d447f27145b2e661e3e8b71cf5e886aaec569baa47d1c1c"
@@ -7102,11 +7692,6 @@
       "sha256": "af4b588c7462d79b31beafe18a6b9392e691115bf67d944c98140ff9e6e5e10f"
     },
     {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/CMakeLists.txt",
-      "bytes": 6761,
-      "sha256": "13b6e5f95f85d531d08df425412d4a80b771a8a36d9eb521dd7b9d89a511b536"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/et-kernels/CMakeLists.txt",
       "bytes": 5696,
       "sha256": "e8d6fa95c11b96f5aaf553ea4e2eaffa6dd498d7f001e073b8bce1cd84279d85"
@@ -7115,6 +7700,11 @@
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/et-kernels/scripts/check_unimplemented_instructions.sh",
       "bytes": 1406,
       "sha256": "a4e3aff562649f611bc754e03d0b82437736400c1b4d51e89e2b34376e81be2b"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/et-kernels/src/RunBackend.sh",
+      "bytes": 540,
+      "sha256": "906032c9cd9a169effcd8ceeca16d868b4d7aa7281ba0255b3be2e09c06e6b84"
     },
     {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/et-kernels/src/block_ops.h",
@@ -7242,6 +7832,21 @@
       "sha256": "5945acfb6d6c4e10e38dd18f36655dfbaf185dce789f2f814b8d2d7f890522f3"
     },
     {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/et-kernels/src/mul_mat_Q4_0.c",
+      "bytes": 18123,
+      "sha256": "b76540ecfe13805fe8f254f19eea50b236ab40ea4dd91e9652ef8087c74f0e13"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/et-kernels/src/mul_mat_Q4_0_matrix_engine.c",
+      "bytes": 15292,
+      "sha256": "96160f95554fddbcefaff0a276496ba16cee7d667bf825066a4a7a3e38351eb4"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/et-kernels/src/mul_mat_Q8_0.c",
+      "bytes": 21466,
+      "sha256": "0a7f68be16ad0b49c1bd40014744bb6d7699a4ee19cab75305f0e5908912221a"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/et-kernels/src/mul_mat_f16.c",
       "bytes": 6039,
       "sha256": "50d6bb6cbb4cabe78f58001342cd0062db9db80e7b11fb2965bf1b21327841b7"
@@ -7262,11 +7867,6 @@
       "sha256": "3fe13b5818f983789fd1e2f09ba3890b2c13622eb539540a02b58689a1408747"
     },
     {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/et-kernels/src/mul_mat_id_f32.c",
-      "bytes": 13215,
-      "sha256": "3bad34f728dd2b71fffc69313caa63a03aa685adf0fa177a8d58f6b67925344a"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/et-kernels/src/mul_mat_id_Q4_0.c",
       "bytes": 6726,
       "sha256": "fa0c444c5ba3c139df596811c5f2b651f2bb60a89f953ad5c5d69772ae44198b"
@@ -7277,19 +7877,9 @@
       "sha256": "913201ea361bcf2038a8d6e767d9f23eb83b137d37641b83c3c320b86e983f7c"
     },
     {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/et-kernels/src/mul_mat_Q4_0.c",
-      "bytes": 18123,
-      "sha256": "b76540ecfe13805fe8f254f19eea50b236ab40ea4dd91e9652ef8087c74f0e13"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/et-kernels/src/mul_mat_Q4_0_matrix_engine.c",
-      "bytes": 15292,
-      "sha256": "96160f95554fddbcefaff0a276496ba16cee7d667bf825066a4a7a3e38351eb4"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/et-kernels/src/mul_mat_Q8_0.c",
-      "bytes": 21466,
-      "sha256": "0a7f68be16ad0b49c1bd40014744bb6d7699a4ee19cab75305f0e5908912221a"
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/et-kernels/src/mul_mat_id_f32.c",
+      "bytes": 13215,
+      "sha256": "3bad34f728dd2b71fffc69313caa63a03aa685adf0fa177a8d58f6b67925344a"
     },
     {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/et-kernels/src/norm_f32.c",
@@ -7330,11 +7920,6 @@
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/et-kernels/src/rope_f32.c",
       "bytes": 26970,
       "sha256": "bd3105ba894447dbe665156c556d87ae02bd08c2baedc05b8ad2b626ca0b323f"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/et-kernels/src/RunBackend.sh",
-      "bytes": 540,
-      "sha256": "906032c9cd9a169effcd8ceeca16d868b4d7aa7281ba0255b3be2e09c06e6b84"
     },
     {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-et/et-kernels/src/rwkv_wkv6_f32.c",
@@ -7482,6 +8067,66 @@
       "sha256": "2ef08925a9defe48915114106771c7c426d844e46dbdb3febcbe189bae5f993f"
     },
     {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-common.h",
+      "bytes": 3322,
+      "sha256": "8736e18747c4f8a8a168895d0e42c7e630f0c5a86cc1dfa48bfb6b5e673e8fee"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-drv.cpp",
+      "bytes": 18886,
+      "sha256": "0f4098f316d52621270ae8382c691f53e97c7fc65e9617256f47c2566e9c9fa7"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-drv.h",
+      "bytes": 3239,
+      "sha256": "4cb2bbccd058eb2869bdad66e79a200df595565f287404157d709f8a70870496"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-fusion.cpp",
+      "bytes": 27433,
+      "sha256": "16c8cbc361671a94b50c2fa665486db8c106a072568bab0e5b1bb70d039ec395"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-fusion.h",
+      "bytes": 1313,
+      "sha256": "797af52857aa4e7321ff761ae58bad79b9fc5ffca583c26fb58337f0d254279b"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-kparams.cpp",
+      "bytes": 138783,
+      "sha256": "aa94b6b2ccc95cddcb5dcacda1349efd647df063062161a8ebb6dc2d101bb647"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-kparams.h",
+      "bytes": 3703,
+      "sha256": "12ec9de6af1866e50cc1ea065f582597df8a4c999e2d99fdc8db8445f0a3c000"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-opnode.cpp",
+      "bytes": 12090,
+      "sha256": "1ccbf001e5ea0b59acdba677682540ce174e16025143beaf5498aa81a6a10434"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-opnode.h",
+      "bytes": 5985,
+      "sha256": "fadba292731a0aa4f393901c677d7b2d30eef59746ac53265eb690b45c96c12f"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-repack.cpp",
+      "bytes": 75160,
+      "sha256": "62af615cd56e850e76f0d86bf65b90de6e27f82b7bd2594f0fc165b1e0253086"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-repack.h",
+      "bytes": 2558,
+      "sha256": "a9fdd35a89d8b71f83d177bfee3e47150bd28621b8b10a6999ef8d1d3f26afa6"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp/CMakeLists.txt",
+      "bytes": 1766,
+      "sha256": "1b0caa9afc39411ece6b2b4439c71f57cf866332f56e5f5a5dda6e6a50477036"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp/allreduce-ops.c",
       "bytes": 38565,
       "sha256": "2b3a74116cf5d0139af93bd1a283c25f6783127ecab853dc7872321bbf5d6cf3"
@@ -7515,11 +8160,6 @@
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp/cmake-toolchain.cmake",
       "bytes": 5635,
       "sha256": "b99b8883ba6687daf7dc2daf66c254e214e5c6e25c16ee22987e833dcf1ed903"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp/CMakeLists.txt",
-      "bytes": 1766,
-      "sha256": "1b0caa9afc39411ece6b2b4439c71f57cf866332f56e5f5a5dda6e6a50477036"
     },
     {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp/concat-ops.c",
@@ -8007,61 +8647,6 @@
       "sha256": "54d7d04670d699782bc8728dca618e8fc8e7057981e9955a8f1c9f8b73e22d47"
     },
     {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-common.h",
-      "bytes": 3322,
-      "sha256": "8736e18747c4f8a8a168895d0e42c7e630f0c5a86cc1dfa48bfb6b5e673e8fee"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-drv.cpp",
-      "bytes": 18886,
-      "sha256": "0f4098f316d52621270ae8382c691f53e97c7fc65e9617256f47c2566e9c9fa7"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-drv.h",
-      "bytes": 3239,
-      "sha256": "4cb2bbccd058eb2869bdad66e79a200df595565f287404157d709f8a70870496"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-fusion.cpp",
-      "bytes": 27433,
-      "sha256": "16c8cbc361671a94b50c2fa665486db8c106a072568bab0e5b1bb70d039ec395"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-fusion.h",
-      "bytes": 1313,
-      "sha256": "797af52857aa4e7321ff761ae58bad79b9fc5ffca583c26fb58337f0d254279b"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-kparams.cpp",
-      "bytes": 138783,
-      "sha256": "aa94b6b2ccc95cddcb5dcacda1349efd647df063062161a8ebb6dc2d101bb647"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-kparams.h",
-      "bytes": 3703,
-      "sha256": "12ec9de6af1866e50cc1ea065f582597df8a4c999e2d99fdc8db8445f0a3c000"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-opnode.cpp",
-      "bytes": 12090,
-      "sha256": "1ccbf001e5ea0b59acdba677682540ce174e16025143beaf5498aa81a6a10434"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-opnode.h",
-      "bytes": 5985,
-      "sha256": "fadba292731a0aa4f393901c677d7b2d30eef59746ac53265eb690b45c96c12f"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-repack.cpp",
-      "bytes": 75160,
-      "sha256": "62af615cd56e850e76f0d86bf65b90de6e27f82b7bd2594f0fc165b1e0253086"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/htp-repack.h",
-      "bytes": 2558,
-      "sha256": "a9fdd35a89d8b71f83d177bfee3e47150bd28621b8b10a6999ef8d1d3f26afa6"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-hexagon/libdl.h",
       "bytes": 1739,
       "sha256": "c628040f582d477adb72c296db6fcac47c76fa9b06420e4a7c455ae77f061151"
@@ -8382,6 +8967,11 @@
       "sha256": "15c6c9f5b7d1c3865b03eca9ff85f1c07d3878788c3bca1ff05a4407f4f908d7"
     },
     {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-opencl/CMakeLists.txt",
+      "bytes": 6903,
+      "sha256": "58294568d400694e60f90a64c6a9a2a58738c5e989f565db11a2ef5f23cfe982"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-opencl/cl-program-cache.cpp",
       "bytes": 16635,
       "sha256": "14783f0289ce9e1ea13a87a8131f81e577fc30608e722ef193c127cd130c347f"
@@ -8390,11 +8980,6 @@
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-opencl/cl-program-cache.h",
       "bytes": 3496,
       "sha256": "0ea54d061301a85f9445cde488b917bcb60861b4b3a9bb526fe850e674e7a121"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-opencl/CMakeLists.txt",
-      "bytes": 6903,
-      "sha256": "58294568d400694e60f90a64c6a9a2a58738c5e989f565db11a2ef5f23cfe982"
     },
     {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-opencl/fa_tune.h",
@@ -9377,6 +9962,11 @@
       "sha256": "8fba1ca6503bd0d4092efdd27514e13531684d924cc2acd44da24351f670d5bf"
     },
     {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-openvino/README.md",
+      "bytes": 4624,
+      "sha256": "b8fc5ac0abc782621f485d9d2b20552cbc16b2396a294da41a37fa2e383115bf"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-openvino/ggml-decoder.cpp",
       "bytes": 113419,
       "sha256": "cef2df6cd73e59ab740c621ce238266137b00af6e7cf184f284f593340b3c90b"
@@ -9822,11 +10412,6 @@
       "sha256": "b2c9e281cab66ffb1a153879aeb5771ee7d0602d3c3c3373f6c1858a19d5c137"
     },
     {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-openvino/README.md",
-      "bytes": 4624,
-      "sha256": "b8fc5ac0abc782621f485d9d2b20552cbc16b2396a294da41a37fa2e383115bf"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-openvino/utils.cpp",
       "bytes": 103588,
       "sha256": "db940979ba834e54287bee15bc9bab76113d377890239cb4d345969dfca8d47f"
@@ -9892,6 +10477,11 @@
       "sha256": "5f37e60c8a723a255d52cab3ad5a16288f7acdb5a568d6299c7544b9927965f0"
     },
     {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-sycl/CMakeLists.txt",
+      "bytes": 12507,
+      "sha256": "ab86d2273d47f175ab5518298f3b72a9f9b6833c0ae0a653bff4507341bc0dd1"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-sycl/add-id.cpp",
       "bytes": 2670,
       "sha256": "c65cf98cc9b58b0e216f49ed1ea7dad77e98ac8f11ef77a79fab887f34dca896"
@@ -9920,11 +10510,6 @@
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-sycl/binbcast.hpp",
       "bytes": 2202,
       "sha256": "a314c158f144876913a6c0bb21b0c2289c2d3848e7ac9f4af587567a6526bfe2"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-sycl/CMakeLists.txt",
-      "bytes": 12507,
-      "sha256": "ab86d2273d47f175ab5518298f3b72a9f9b6833c0ae0a653bff4507341bc0dd1"
     },
     {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-sycl/col2im-1d.cpp",
@@ -10787,9 +11372,19 @@
       "sha256": "9c1ce795d59943fc3f5a79fc0ba0cf74aef7af30e17e8b9d5ad3ed7cb9231729"
     },
     {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-virtgpu/CMakeLists.txt",
+      "bytes": 2776,
+      "sha256": "f5765615aa4c0764d6996b6c6cfc31c34cba711022ff233b85821394aa0e28fc"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-virtgpu/apir_cs_ggml-rpc-front.cpp",
       "bytes": 3592,
       "sha256": "e2bbf7b3de93eedf9b752691e7678b476aa692cb572dcab6c4bda3c058991e04"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-virtgpu/backend/CMakeLists.txt",
+      "bytes": 902,
+      "sha256": "2d821e8ef300045d6379723e92d78ba0bc309b722fc859a9fb3662a8d127645c"
     },
     {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-virtgpu/backend/apir_cs_ggml-rpc-back.cpp",
@@ -10847,11 +11442,6 @@
       "sha256": "e4f54abdd254954f0cd2822f883d40b29326214f3b6f6610e8ae89ab96c6d88c"
     },
     {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-virtgpu/backend/CMakeLists.txt",
-      "bytes": 902,
-      "sha256": "2d821e8ef300045d6379723e92d78ba0bc309b722fc859a9fb3662a8d127645c"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-virtgpu/backend/shared/api_remoting.h",
       "bytes": 3407,
       "sha256": "722a24f394d5d44deda0c4db44d66c1b28e333a9d61c32bf39e6c3e19f4832a3"
@@ -10880,11 +11470,6 @@
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-virtgpu/backend/shared/apir_cs_rpc.h",
       "bytes": 2145,
       "sha256": "85f97f12b35f874f2632c6135ac4703edde6d6873f0c1803f575ad0d606e5bef"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-virtgpu/CMakeLists.txt",
-      "bytes": 2776,
-      "sha256": "f5765615aa4c0764d6996b6c6cfc31c34cba711022ff233b85821394aa0e28fc"
     },
     {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-virtgpu/ggml-backend-buffer-type.cpp",
@@ -10997,14 +11582,14 @@
       "sha256": "8d21dd24e60485ec43854459b2dd0277334e96a1e56b8e4dc467988cdc5166dc"
     },
     {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-vulkan/cmake/host-toolchain.cmake.in",
-      "bytes": 612,
-      "sha256": "99f642a7da431b2fe34759d39dbd93eff2eb5d6661a8dbbc32baf5b4ea0a8a67"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-vulkan/CMakeLists.txt",
       "bytes": 11037,
       "sha256": "bb2ac88f630fe52fa7005c6be67750e4eefcb3ea473a2ce12ed66de544b63936"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-vulkan/cmake/host-toolchain.cmake.in",
+      "bytes": 612,
+      "sha256": "99f642a7da431b2fe34759d39dbd93eff2eb5d6661a8dbbc32baf5b4ea0a8a67"
     },
     {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-vulkan/ggml-vulkan-buffers.cpp",
@@ -11035,6 +11620,11 @@
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-vulkan/ggml-vulkan.cpp",
       "bytes": 908268,
       "sha256": "38cdb1aee485bc3142663befdd0ff26f43095caea2945115eec168848ccb3ca0"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-vulkan/vulkan-shaders/CMakeLists.txt",
+      "bytes": 1739,
+      "sha256": "a1f789afdc9221ce91cb4a28a1f50814fdb34f5021d70bc72ec6174d8bf7b5fd"
     },
     {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-vulkan/vulkan-shaders/acc.comp",
@@ -11075,11 +11665,6 @@
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-vulkan/vulkan-shaders/argsort_large.comp",
       "bytes": 4390,
       "sha256": "f4a131230ca501e474bbcb0a33e3d8de192f22c7431d912fa31cc7b7beb7dcb5"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/ggml/src/ggml-vulkan/vulkan-shaders/CMakeLists.txt",
-      "bytes": 1739,
-      "sha256": "a1f789afdc9221ce91cb4a28a1f50814fdb34f5021d70bc72ec6174d8bf7b5fd"
     },
     {
       "path": "third_party/llama.cpp-integrated/ggml/src/ggml-vulkan/vulkan-shaders/col2im_1d.comp",
@@ -12387,6 +12972,16 @@
       "sha256": "0b0bda15971a9e67cc25c13ffd2aac4ed6c4d443f2562192d3f7c8e1152e7816"
     },
     {
+      "path": "third_party/llama.cpp-integrated/gguf-py/LICENSE",
+      "bytes": 1093,
+      "sha256": "52a7fb6af4bf1e8e1ea0b5bdb2b6dbb1996c110c8b54c988bfd68652270dc999"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/gguf-py/README.md",
+      "bytes": 3438,
+      "sha256": "5e4827890653322bc374c1add75905b564b8fdcbb8a6e5984fab5162e7a0bce1"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/gguf-py/examples/reader.py",
       "bytes": 1675,
       "sha256": "9aab83cafadccdbca35eb00c53a820f6f66102796c1d4b9af9d6367316066362"
@@ -12487,19 +13082,9 @@
       "sha256": "1296c966020f4bfbeb1f976ab76abe7094e25f5daac358255f2aeed59c760a9e"
     },
     {
-      "path": "third_party/llama.cpp-integrated/gguf-py/LICENSE",
-      "bytes": 1093,
-      "sha256": "52a7fb6af4bf1e8e1ea0b5bdb2b6dbb1996c110c8b54c988bfd68652270dc999"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/gguf-py/pyproject.toml",
       "bytes": 1341,
       "sha256": "1e905a792e56d1cdbf22a6eda15d267789c18e8c54c367447f63cf5e886939d8"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/gguf-py/README.md",
-      "bytes": 3438,
-      "sha256": "5e4827890653322bc374c1add75905b564b8fdcbb8a6e5984fab5162e7a0bce1"
     },
     {
       "path": "third_party/llama.cpp-integrated/gguf-py/tests/__init__.py",
@@ -12520,6 +13105,11 @@
       "path": "third_party/llama.cpp-integrated/gguf-py/tests/test_quants.py",
       "bytes": 10803,
       "sha256": "7a3ee30935dee4d8e0ce1a0a549ad56147ee2b856908d1b90fd4897b6702695e"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/grammars/README.md",
+      "bytes": 18453,
+      "sha256": "5f710053768ef7d7d8654864b53005be919f753601399f259cddef135fa0c0ee"
     },
     {
       "path": "third_party/llama.cpp-integrated/grammars/arithmetic.gbnf",
@@ -12562,11 +13152,6 @@
       "sha256": "1117d2eddbe98842afd69c5092240ef1e071684c3654f05c0d4efa8f19553b7a"
     },
     {
-      "path": "third_party/llama.cpp-integrated/grammars/README.md",
-      "bytes": 18453,
-      "sha256": "5f710053768ef7d7d8654864b53005be919f753601399f259cddef135fa0c0ee"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/hbflab-overlay.json",
       "bytes": 791,
       "sha256": "44e33703f66a6f8694b4129aa6695d4721d8e79afcaae594b6baed4993a02eec"
@@ -12582,19 +13167,9 @@
       "sha256": "40e575013eb8c05980916b2fad2dc3da3677891c5a231163b706cfa4dca9efee"
     },
     {
-      "path": "third_party/llama.cpp-integrated/LICENSE",
-      "bytes": 1099,
-      "sha256": "bcd8ec749126d45cb06737d0690295d73df4b6e7e194205bcf91190368f27285"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/licenses/LICENSE-jsonhpp",
       "bytes": 1096,
       "sha256": "61e08da79c44061654015ce6b0c4061c23ee1dd18237fbf09e9bfda3c0ea2831"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/Makefile",
-      "bytes": 266,
-      "sha256": "bddfc7c94a7cc34bbb07b0c38e778f54e621e3861fba29fb0eb08744eb632b0a"
     },
     {
       "path": "third_party/llama.cpp-integrated/media/llama0-banner.png",
@@ -12937,6 +13512,156 @@
       "sha256": "d9aa52a7ded9355378c348c80e905d2729b3c193e73505360187af3fa82260b7"
     },
     {
+      "path": "third_party/llama.cpp-integrated/models/templates/GLM-4.6.jinja",
+      "bytes": 3480,
+      "sha256": "013c3cd1bc77f6d522e3eac378b95adb0caafae3cea902bd3795fed2cf2421ab"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/GLM-4.7-Flash.jinja",
+      "bytes": 3205,
+      "sha256": "44cd636b31a39ef30af699cc5dac9de3228ebc10fc91529a65c9fe08cb7427c8"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/GigaChat3-10B-A1.8B.jinja",
+      "bytes": 14331,
+      "sha256": "8df3dc230823fe2795b3b4218fd553c948958465efcff6ca290fcfa28fff3de0"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/GigaChat3.1-10B-A1.8B.jinja",
+      "bytes": 13713,
+      "sha256": "f8e59676d35f9e0aa6f0da9fcbc6c2902564ca6320ecb297b7b45f634c187bd3"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/HuggingFaceTB-SmolLM3-3B.jinja",
+      "bytes": 3856,
+      "sha256": "638b79fd69d482ae34e7da1153b60acde82ec38244a21749b02b21e443957057"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/IFM-K2-Horizon.jinja",
+      "bytes": 52028,
+      "sha256": "3ac02fc78f982f014a69dcdcb76a5628d49c6b8af39a9c8f22a686130ef22825"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/Kimi-K2-Instruct.jinja",
+      "bytes": 2579,
+      "sha256": "5d86da3d51884d94bbe3775c96733bd89ef796808ff9406c5d9c84a4f9ba3b06"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/Kimi-K2-Thinking.jinja",
+      "bytes": 4238,
+      "sha256": "f0f04a95ad639ed72601cd5dd51d4b51c7eb876eb17bf11c43896e9fb0037737"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/Kimi-K3.jinja",
+      "bytes": 15233,
+      "sha256": "a8abcada88dc03f4bf5b156fa288495251e7b25b3ad1df324bba2b95729bb99c"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/LFM2-8B-A1B.jinja",
+      "bytes": 1385,
+      "sha256": "33ae680c64a5a7004f5dc3fff17bebecd59fa1c4bcadded90a08846278ff0fdb"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/LFM2.5-8B-A1B.jinja",
+      "bytes": 4735,
+      "sha256": "633adbac62a2120c3376e72f8a35f8c9af2bea42a9be3fd63caf8c15cabdbf4e"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/LFM2.5-Instruct.jinja",
+      "bytes": 1827,
+      "sha256": "65fc3846d705a68ecd96d59c52023e961e5e839434a341b0b94b516294744f41"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/MiMo-VL.jinja",
+      "bytes": 2525,
+      "sha256": "4f113fcefe17abce7f0540c8d36d32ad652a45afb53c9ee12b60d0809eb7cbbc"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/MiniMax-M1.jinja",
+      "bytes": 3532,
+      "sha256": "6dada1ea9d2ab030086364cab69f41c0ed8e751ead734ffa1a2b0a455f4b9753"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/MiniMax-M2.jinja",
+      "bytes": 6641,
+      "sha256": "709d54a6e41ed51e8385c8bef6d299a5059b423b42eef7848f0e9dd1b519286e"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/MiniMax-M3.jinja",
+      "bytes": 12003,
+      "sha256": "b9449d49140ec1eb4e4a46a7dcdaa83763df662718eaac6ba2da947595572b00"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/Mistral-Small-3.2-24B-Instruct-2506.jinja",
+      "bytes": 6828,
+      "sha256": "29e3375a5224fd34dbfd4c0a809f4ce0e823c9a082da9701c6c1e00f7db0308c"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16.jinja",
+      "bytes": 10708,
+      "sha256": "650b9d301337fd103f9014f6f6ae89b46660ae92e4421d95bd3157115e5b02ce"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/NVIDIA-Nemotron-Nano-v2.jinja",
+      "bytes": 5657,
+      "sha256": "06eac15b89df8c358d5b8fa8884378e9d09b7f45a3316c2a05b84da730efe334"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/NousResearch-Hermes-2-Pro-Llama-3-8B-tool_use.jinja",
+      "bytes": 5156,
+      "sha256": "2d55fc1e5d25db88b6fd29e55f120a6ecb6ce06cf34c8b2701fcb9f09cc36ee6"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/NousResearch-Hermes-3-Llama-3.1-8B-tool_use.jinja",
+      "bytes": 5156,
+      "sha256": "2d55fc1e5d25db88b6fd29e55f120a6ecb6ce06cf34c8b2701fcb9f09cc36ee6"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/Qwen-QwQ-32B.jinja",
+      "bytes": 2892,
+      "sha256": "ecb19c6f694c84cb7bbd600d968efbc73cfd835ffcf08e68dad96ee8892117a0"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/Qwen-Qwen2.5-7B-Instruct.jinja",
+      "bytes": 2561,
+      "sha256": "8aa40ce145adb73cb3a75194dc0224702a95850ec5275cabb728496bbd749fc6"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/Qwen-Qwen3-0.6B.jinja",
+      "bytes": 4200,
+      "sha256": "bfbcd7bf3f08041bdcff4afb09f83677fe4f7e5b8b9c07e6be43651d88696aab"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/Qwen3-Coder.jinja",
+      "bytes": 6265,
+      "sha256": "c3a4e171e8ae17146b931acba7e6e4c830aa3b115bfc8ae6e818c2df9b603cde"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/Qwen3.5-4B.jinja",
+      "bytes": 7909,
+      "sha256": "a92e1dd97cb1cb175c9b70c0828e146bea4371c2643319b661b777e89811972e"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/README.md",
+      "bytes": 3299,
+      "sha256": "56b3ccfdb3c2769d91ae47f563c8e513bd6d3bd2de601ef2073d2d2d2b080816"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/Reka-Edge.jinja",
+      "bytes": 8301,
+      "sha256": "61cc69fdfd1cc06da9c262137c76c99810dfc3d2b774236e849660caee352ec3"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/Spark2.5.jinja",
+      "bytes": 4748,
+      "sha256": "1c05de0145f6cf150507571440a718e6333a90af099ad98615bd1b33e1d2bec4"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/models/templates/StepFun3.5-Flash.jinja",
+      "bytes": 5084,
+      "sha256": "a24258300bc4e3cca0d91bf82f529d871a43e532c9d7ef297a9da6aa4ce63880"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/models/templates/deepseek-ai-DeepSeek-R1-Distill-Llama-8B.jinja",
       "bytes": 2521,
       "sha256": "bf5139bf38d24e66193b92fa90b8a6898e4f1a006b03da2002c3934f48111eca"
@@ -12972,26 +13697,6 @@
       "sha256": "9673a0d5d3cf9eeb0da8c9c7e2e68c22d10eb69edabbc3e6a1cf9681909dfc41"
     },
     {
-      "path": "third_party/llama.cpp-integrated/models/templates/GigaChat3-10B-A1.8B.jinja",
-      "bytes": 14331,
-      "sha256": "8df3dc230823fe2795b3b4218fd553c948958465efcff6ca290fcfa28fff3de0"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/GigaChat3.1-10B-A1.8B.jinja",
-      "bytes": 13713,
-      "sha256": "f8e59676d35f9e0aa6f0da9fcbc6c2902564ca6320ecb297b7b45f634c187bd3"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/GLM-4.6.jinja",
-      "bytes": 3480,
-      "sha256": "013c3cd1bc77f6d522e3eac378b95adb0caafae3cea902bd3795fed2cf2421ab"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/GLM-4.7-Flash.jinja",
-      "bytes": 3205,
-      "sha256": "44cd636b31a39ef30af699cc5dac9de3228ebc10fc91529a65c9fe08cb7427c8"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/models/templates/google-gemma-2-2b-it.jinja",
       "bytes": 594,
       "sha256": "f2bced8fd992f22f081f65a5bdc4319d41c30c823e1ebde3cfe22b9e5447b426"
@@ -13012,11 +13717,6 @@
       "sha256": "d9b0d51b4f99f3104083d55cb44ceaac963695d79ee2b3d01bc9bef0f2d40111"
     },
     {
-      "path": "third_party/llama.cpp-integrated/models/templates/HuggingFaceTB-SmolLM3-3B.jinja",
-      "bytes": 3856,
-      "sha256": "638b79fd69d482ae34e7da1153b60acde82ec38244a21749b02b21e443957057"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/models/templates/ibm-granite-granite-3.3-2B-Instruct.jinja",
       "bytes": 4626,
       "sha256": "91d3edb8e01a8eaa97e5a72bf7fb655fec14f2cbd55f736d9d84179eb636c4ad"
@@ -13032,44 +13732,9 @@
       "sha256": "735184a4c7cadc955b11f322926ac95a5961a106ae9028f85d984fc08f122073"
     },
     {
-      "path": "third_party/llama.cpp-integrated/models/templates/IFM-K2-Horizon.jinja",
-      "bytes": 52028,
-      "sha256": "3ac02fc78f982f014a69dcdcb76a5628d49c6b8af39a9c8f22a686130ef22825"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/models/templates/inclusionai-ling-3.0-flash.jinja",
       "bytes": 6202,
       "sha256": "2828e4c6660d178a4fed994de6c0d37dae90c2901950cf90319f3e56ab90eb4c"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/Kimi-K2-Instruct.jinja",
-      "bytes": 2579,
-      "sha256": "5d86da3d51884d94bbe3775c96733bd89ef796808ff9406c5d9c84a4f9ba3b06"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/Kimi-K2-Thinking.jinja",
-      "bytes": 4238,
-      "sha256": "f0f04a95ad639ed72601cd5dd51d4b51c7eb876eb17bf11c43896e9fb0037737"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/Kimi-K3.jinja",
-      "bytes": 15233,
-      "sha256": "a8abcada88dc03f4bf5b156fa288495251e7b25b3ad1df324bba2b95729bb99c"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/LFM2-8B-A1B.jinja",
-      "bytes": 1385,
-      "sha256": "33ae680c64a5a7004f5dc3fff17bebecd59fa1c4bcadded90a08846278ff0fdb"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/LFM2.5-8B-A1B.jinja",
-      "bytes": 4735,
-      "sha256": "633adbac62a2120c3376e72f8a35f8c9af2bea42a9be3fd63caf8c15cabdbf4e"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/LFM2.5-Instruct.jinja",
-      "bytes": 1827,
-      "sha256": "65fc3846d705a68ecd96d59c52023e961e5e839434a341b0b94b516294744f41"
     },
     {
       "path": "third_party/llama.cpp-integrated/models/templates/llama-cpp-deepseek-r1.jinja",
@@ -13117,31 +13782,6 @@
       "sha256": "e935669d5264a298f2f552facb460d75effb08985d23d768780c94c67f9d9b83"
     },
     {
-      "path": "third_party/llama.cpp-integrated/models/templates/MiMo-VL.jinja",
-      "bytes": 2525,
-      "sha256": "4f113fcefe17abce7f0540c8d36d32ad652a45afb53c9ee12b60d0809eb7cbbc"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/MiniMax-M1.jinja",
-      "bytes": 3532,
-      "sha256": "6dada1ea9d2ab030086364cab69f41c0ed8e751ead734ffa1a2b0a455f4b9753"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/MiniMax-M2.jinja",
-      "bytes": 6641,
-      "sha256": "709d54a6e41ed51e8385c8bef6d299a5059b423b42eef7848f0e9dd1b519286e"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/MiniMax-M3.jinja",
-      "bytes": 12003,
-      "sha256": "b9449d49140ec1eb4e4a46a7dcdaa83763df662718eaac6ba2da947595572b00"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/Mistral-Small-3.2-24B-Instruct-2506.jinja",
-      "bytes": 6828,
-      "sha256": "29e3375a5224fd34dbfd4c0a809f4ce0e823c9a082da9701c6c1e00f7db0308c"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/models/templates/mistralai-Ministral-3-14B-Reasoning-2512.jinja",
       "bytes": 6332,
       "sha256": "72f84af4ea36b82409c35e31b584361534305ef7c0d90fce20d0dc38a7efead8"
@@ -13167,26 +13807,6 @@
       "sha256": "baca5b555e5fb4960bf13c02eecacbba285b25a1f2dc6c4dd26579ba9cdc3d92"
     },
     {
-      "path": "third_party/llama.cpp-integrated/models/templates/NousResearch-Hermes-2-Pro-Llama-3-8B-tool_use.jinja",
-      "bytes": 5156,
-      "sha256": "2d55fc1e5d25db88b6fd29e55f120a6ecb6ce06cf34c8b2701fcb9f09cc36ee6"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/NousResearch-Hermes-3-Llama-3.1-8B-tool_use.jinja",
-      "bytes": 5156,
-      "sha256": "2d55fc1e5d25db88b6fd29e55f120a6ecb6ce06cf34c8b2701fcb9f09cc36ee6"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16.jinja",
-      "bytes": 10708,
-      "sha256": "650b9d301337fd103f9014f6f6ae89b46660ae92e4421d95bd3157115e5b02ce"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/NVIDIA-Nemotron-Nano-v2.jinja",
-      "bytes": 5657,
-      "sha256": "06eac15b89df8c358d5b8fa8884378e9d09b7f45a3316c2a05b84da730efe334"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/models/templates/openai-gpt-oss-120b.jinja",
       "bytes": 17068,
       "sha256": "27a1a6bead2a8b3dcd40c96c405002d5df81baff2ba4108a913fb43bc6648c39"
@@ -13210,51 +13830,6 @@
       "path": "third_party/llama.cpp-integrated/models/templates/poolside-Laguna-XS.2.jinja",
       "bytes": 6364,
       "sha256": "4c45f5a29dd1c75a960b2a39461def1c288933978d1287a63fe6a4f2279d2268"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/Qwen-Qwen2.5-7B-Instruct.jinja",
-      "bytes": 2561,
-      "sha256": "8aa40ce145adb73cb3a75194dc0224702a95850ec5275cabb728496bbd749fc6"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/Qwen-Qwen3-0.6B.jinja",
-      "bytes": 4200,
-      "sha256": "bfbcd7bf3f08041bdcff4afb09f83677fe4f7e5b8b9c07e6be43651d88696aab"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/Qwen-QwQ-32B.jinja",
-      "bytes": 2892,
-      "sha256": "ecb19c6f694c84cb7bbd600d968efbc73cfd835ffcf08e68dad96ee8892117a0"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/Qwen3-Coder.jinja",
-      "bytes": 6265,
-      "sha256": "c3a4e171e8ae17146b931acba7e6e4c830aa3b115bfc8ae6e818c2df9b603cde"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/Qwen3.5-4B.jinja",
-      "bytes": 7909,
-      "sha256": "a92e1dd97cb1cb175c9b70c0828e146bea4371c2643319b661b777e89811972e"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/README.md",
-      "bytes": 3299,
-      "sha256": "56b3ccfdb3c2769d91ae47f563c8e513bd6d3bd2de601ef2073d2d2d2b080816"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/Reka-Edge.jinja",
-      "bytes": 8301,
-      "sha256": "61cc69fdfd1cc06da9c262137c76c99810dfc3d2b774236e849660caee352ec3"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/Spark2.5.jinja",
-      "bytes": 4748,
-      "sha256": "1c05de0145f6cf150507571440a718e6333a90af099ad98615bd1b33e1d2bec4"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/models/templates/StepFun3.5-Flash.jinja",
-      "bytes": 5084,
-      "sha256": "a24258300bc4e3cca0d91bf82f529d871a43e532c9d7ef297a9da6aa4ce63880"
     },
     {
       "path": "third_party/llama.cpp-integrated/models/templates/tencent-Hy3.jinja",
@@ -13312,9 +13887,9 @@
       "sha256": "24112a90880b9ae3b053b20d7dffcf66b5a1ff9140a975969fa885ad9d25d55a"
     },
     {
-      "path": "third_party/llama.cpp-integrated/README.md",
-      "bytes": 7604,
-      "sha256": "578209109932ce15c1416f60409f18a43dd5bcd35108a2605a661650728a9468"
+      "path": "third_party/llama.cpp-integrated/requirements.txt",
+      "bytes": 564,
+      "sha256": "0d7204f1f7e98e230ffd04b23c4e035cead5a350f59528ac3b867e1e25a3e5ff"
     },
     {
       "path": "third_party/llama.cpp-integrated/requirements/requirements-all.txt",
@@ -13375,11 +13950,6 @@
       "path": "third_party/llama.cpp-integrated/requirements/requirements-tool_bench.txt",
       "bytes": 184,
       "sha256": "d913a7b6e471e71c9a115f584b947e6f22519791a86bffda54379d8ff89f0d4f"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/requirements.txt",
-      "bytes": 564,
-      "sha256": "0d7204f1f7e98e230ffd04b23c4e035cead5a350f59528ac3b867e1e25a3e5ff"
     },
     {
       "path": "third_party/llama.cpp-integrated/scripts/apple/validate-apps.sh",
@@ -13735,11 +14305,6 @@
       "path": "third_party/llama.cpp-integrated/scripts/wc2wt.sh",
       "bytes": 1299,
       "sha256": "97b6515ef0e55d583ca10ea4fc71a894d5e85f5186864724b7f280a20a50f222"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/SECURITY.md",
-      "bytes": 7611,
-      "sha256": "3d02a553605c04d3a922db4a5b1031138a1eea95a0c7ba477e5337e6273ebb9c"
     },
     {
       "path": "third_party/llama.cpp-integrated/skills/add-new-model/SKILL.md",
@@ -15457,9 +16022,9 @@
       "sha256": "5d63c89d04cc4197e9c9327646a65fb47bd2eff8a17568fade87055bf56d19b1"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/batched-bench/batched-bench.cpp",
-      "bytes": 9547,
-      "sha256": "1a4dba174a60da26315ce267e533802d38d4d7652037cb791962a9c38541f58e"
+      "path": "third_party/llama.cpp-integrated/tools/CMakeLists.txt",
+      "bytes": 1132,
+      "sha256": "4a419f92872d9a06af096961dc9e1e7fd310931964bef8d8ba33e969c317224c"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/batched-bench/CMakeLists.txt",
@@ -15467,14 +16032,29 @@
       "sha256": "b2b2fd9a6b7c43584638dc96239e99c19c5fccf034e9c91a4ffa8db755be32d8"
     },
     {
+      "path": "third_party/llama.cpp-integrated/tools/batched-bench/README.md",
+      "bytes": 3597,
+      "sha256": "2b35d359a69dddbee6e39f38d59b440053fdf8819b2c04d3efb27e0d5bfd5210"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/batched-bench/batched-bench.cpp",
+      "bytes": 9547,
+      "sha256": "1a4dba174a60da26315ce267e533802d38d4d7652037cb791962a9c38541f58e"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/tools/batched-bench/main.cpp",
       "bytes": 136,
       "sha256": "d5d99f8a1ebf96484c926e18c539b6955574af53ceb24f2834bef9c43c2d3057"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/batched-bench/README.md",
-      "bytes": 3597,
-      "sha256": "2b35d359a69dddbee6e39f38d59b440053fdf8819b2c04d3efb27e0d5bfd5210"
+      "path": "third_party/llama.cpp-integrated/tools/cli/CMakeLists.txt",
+      "bytes": 799,
+      "sha256": "a242d521d16a4931f7513adcb6ac01c9ec3455e4d43d18c100884ba2033489c0"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/cli/README.md",
+      "bytes": 32014,
+      "sha256": "241ba2a4670a47dde422d4c0d6f3c9c75f43c19ad279394de067697014eb6dab"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/cli/cli-client.cpp",
@@ -15512,29 +16092,19 @@
       "sha256": "3ab0cb2a61dd22c2c4219c47ddd983958d2a49a7a826f09239da0f5cb351f84f"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/cli/CMakeLists.txt",
-      "bytes": 799,
-      "sha256": "a242d521d16a4931f7513adcb6ac01c9ec3455e4d43d18c100884ba2033489c0"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/cli/main.cpp",
       "bytes": 116,
       "sha256": "b820839ddf78dd81e98185cd0cc7edb16a8468679dc406ac7ad3bfcd7e4eb69e"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/cli/README.md",
-      "bytes": 32014,
-      "sha256": "241ba2a4670a47dde422d4c0d6f3c9c75f43c19ad279394de067697014eb6dab"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/CMakeLists.txt",
-      "bytes": 1132,
-      "sha256": "4a419f92872d9a06af096961dc9e1e7fd310931964bef8d8ba33e969c317224c"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/completion/CMakeLists.txt",
       "bytes": 749,
       "sha256": "723c62dec7c171975838f0d1a9bda010100f405562cf422990cbaf757980545f"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/completion/README.md",
+      "bytes": 57933,
+      "sha256": "c49b84394b1036dbe4f6547c300e9ead384ccd14ff9a8020f97eeee1e45cf913"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/completion/completion.cpp",
@@ -15547,11 +16117,6 @@
       "sha256": "b3e6838887f10f6a1f8d72f6b53f228a1c42edd2c71bdd2143036203540f5326"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/completion/README.md",
-      "bytes": 57933,
-      "sha256": "c49b84394b1036dbe4f6547c300e9ead384ccd14ff9a8020f97eeee1e45cf913"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/connect/CMakeLists.txt",
       "bytes": 3302,
       "sha256": "5f10f9a0e614a8449c63fc26edc64083600648a1519144acd0f5897e1c53e220"
@@ -15560,6 +16125,11 @@
       "path": "third_party/llama.cpp-integrated/tools/cvector-generator/CMakeLists.txt",
       "bytes": 312,
       "sha256": "991cf6cd9792f0751a95a9d5ca80bbaa95c8165a289cafb393a5311eab420976"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/cvector-generator/README.md",
+      "bytes": 1620,
+      "sha256": "3a5573b51f4ac7b5da9ba6df2403ebbeae942fcd4ae0b0b251fa415d75c127ca"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/cvector-generator/completions.txt",
@@ -15592,19 +16162,9 @@
       "sha256": "aeea935005fe7ea1024066fb7d138b954d4460842eaeb33209de7d0121a809b5"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/cvector-generator/README.md",
-      "bytes": 1620,
-      "sha256": "3a5573b51f4ac7b5da9ba6df2403ebbeae942fcd4ae0b0b251fa415d75c127ca"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/export-lora/CMakeLists.txt",
       "bytes": 292,
       "sha256": "ad766ac371536d2903aa15895a13d7830b6391e63172b4d77c405b93723a00c2"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/export-lora/export-lora.cpp",
-      "bytes": 17362,
-      "sha256": "95d5d94551d4cd342896bf089efdf8d4656e9bdb1d417b224e8c6869ea42e0e9"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/export-lora/README.md",
@@ -15612,9 +16172,19 @@
       "sha256": "6b9e3a1fde2b4737ee992589df3bc1a1a8109e154ece3ab8be0fc68be4c913b0"
     },
     {
+      "path": "third_party/llama.cpp-integrated/tools/export-lora/export-lora.cpp",
+      "bytes": 17362,
+      "sha256": "95d5d94551d4cd342896bf089efdf8d4656e9bdb1d417b224e8c6869ea42e0e9"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/tools/fit-params/CMakeLists.txt",
       "bytes": 749,
       "sha256": "dd6bb2277abc9420a2a7833b44cee89d7ce0d3b763c7d819d3bf4c3c4eea7bfb"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/fit-params/README.md",
+      "bytes": 5116,
+      "sha256": "374c480c06cece1ad9344fc2782f314c1874b6f4898e379463e77a809d917134"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/fit-params/fit-params.cpp",
@@ -15627,24 +16197,19 @@
       "sha256": "a102e6b43c6b80a560a85bb25758e4c26e2dadaf344b4e7377bf3d38492f767b"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/fit-params/README.md",
-      "bytes": 5116,
-      "sha256": "374c480c06cece1ad9344fc2782f314c1874b6f4898e379463e77a809d917134"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/gguf-split/CMakeLists.txt",
       "bytes": 290,
       "sha256": "cb23b6f87862bec10d01c9cefad6daeacd35586eb27aa6d42fdf87a36580f146"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/gguf-split/gguf-split.cpp",
-      "bytes": 22890,
-      "sha256": "035f127cf5c662c405ba11defc2bee58af5411c8b093ea9a71353ad91c030b1c"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/gguf-split/README.md",
       "bytes": 515,
       "sha256": "e6a196a831eede2b617dbf152f803d71511b8cfc3e7f713cd9f929592699c6be"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/gguf-split/gguf-split.cpp",
+      "bytes": 22890,
+      "sha256": "035f127cf5c662c405ba11defc2bee58af5411c8b093ea9a71353ad91c030b1c"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/gguf-split/tests.sh",
@@ -15657,19 +16222,24 @@
       "sha256": "7e347d2633bffc86619e01d837f2936981bb0a8db37fcd522765027ebfcf7de2"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/imatrix/imatrix.cpp",
-      "bytes": 80245,
-      "sha256": "200dc38f9ab2e2009467bc069c64fc0213629fc176630f12d43656752ab2015a"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/imatrix/README.md",
       "bytes": 9550,
       "sha256": "e0773bc677af6aa951194d82bf6bfcc315599661a36d44f3bed9e84796a05197"
     },
     {
+      "path": "third_party/llama.cpp-integrated/tools/imatrix/imatrix.cpp",
+      "bytes": 80245,
+      "sha256": "200dc38f9ab2e2009467bc069c64fc0213629fc176630f12d43656752ab2015a"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/tools/llama-bench/CMakeLists.txt",
       "bytes": 724,
       "sha256": "ed80c963468834529cd8acef5200a4b57c4baff61f34bc4cc8e443c9693ea3d6"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/llama-bench/README.md",
+      "bytes": 22680,
+      "sha256": "65e701429878c6fcba1eb50b27c85d1b5a9fd5b383d9857385c188f5f4e0d0aa"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/llama-bench/llama-bench.cpp",
@@ -15682,9 +16252,19 @@
       "sha256": "6ad8fa8f96311f27dfbcb4aa7e95a7effcdab2596e3aa4a764932936de27d835"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/llama-bench/README.md",
-      "bytes": 22680,
-      "sha256": "65e701429878c6fcba1eb50b27c85d1b5a9fd5b383d9857385c188f5f4e0d0aa"
+      "path": "third_party/llama.cpp-integrated/tools/mtmd/CMakeLists.txt",
+      "bytes": 6298,
+      "sha256": "866053345837fe38cfcf160dfb896bf4346f0e4261f98e25969787429a1e4c35"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/mtmd/README-dev.md",
+      "bytes": 6625,
+      "sha256": "74bf3ae4b121b0ee1c76c378129b1c385fba4454cf26d7b43f39e64acb7795dc"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/mtmd/README.md",
+      "bytes": 5694,
+      "sha256": "5a29d8c8ae21d6e5068b5460b6d08960cd57bd7917a9a367fde5b92059b09a97"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/mtmd/clip-graph.h",
@@ -15710,11 +16290,6 @@
       "path": "third_party/llama.cpp-integrated/tools/mtmd/clip.h",
       "bytes": 6091,
       "sha256": "9b896ff7f8d58ee73b3484921ad26945605fe008eda438d368ca817fcc271323"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/mtmd/CMakeLists.txt",
-      "bytes": 6298,
-      "sha256": "866053345837fe38cfcf160dfb896bf4346f0e4261f98e25969787429a1e4c35"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/mtmd/debug/mtmd-debug.cpp",
@@ -16087,16 +16662,6 @@
       "sha256": "ac5d2d6c76c4fe046238150ccbeef0be30fe4ff54608b24edadc7bd61fca9295"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/mtmd/README-dev.md",
-      "bytes": 6625,
-      "sha256": "74bf3ae4b121b0ee1c76c378129b1c385fba4454cf26d7b43f39e64acb7795dc"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/mtmd/README.md",
-      "bytes": 5694,
-      "sha256": "5a29d8c8ae21d6e5068b5460b6d08960cd57bd7917a9a367fde5b92059b09a97"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/mtmd/requirements.txt",
       "bytes": 268,
       "sha256": "aa5f75d65b066f41954cff7b09cefa6de26989656af0612008534636f93cb639"
@@ -16115,6 +16680,11 @@
       "path": "third_party/llama.cpp-integrated/tools/mtmd/test-3.mp4",
       "bytes": 661813,
       "sha256": "95a9776a0e7f8d6ab1ba67a31dbb09a4c04ffda3c853fd933624e3496fa970a5"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/mtmd/tests.sh",
+      "bytes": 8246,
+      "sha256": "b652f3f6e61e6db5cacddee42ccb3a83d59c308fa02f78f994dfb19ccf337732"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/mtmd/tests/test-1-ground-truth.txt",
@@ -16137,14 +16707,14 @@
       "sha256": "dbb96a441c360740b602514f036ab026e7ab6e21055ce516c6f6dd56129c7aeb"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/mtmd/tests.sh",
-      "bytes": 8246,
-      "sha256": "b652f3f6e61e6db5cacddee42ccb3a83d59c308fa02f78f994dfb19ccf337732"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/perplexity/CMakeLists.txt",
       "bytes": 749,
       "sha256": "4f8880c0d99cd9bbc3aec6643c4a64bea7883aac9048ac213f1fc25d5430e18e"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/perplexity/README.md",
+      "bytes": 20175,
+      "sha256": "3808410e588fe33c4dff736c5ef41dd0f46f43cffb94a0ef09f8fb7b0cae1249"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/perplexity/main.cpp",
@@ -16157,14 +16727,14 @@
       "sha256": "7ba25b54f9f1ff5c0d4c822a272f8ae700a23f581078a26dd54ffd4e2d81583f"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/perplexity/README.md",
-      "bytes": 20175,
-      "sha256": "3808410e588fe33c4dff736c5ef41dd0f46f43cffb94a0ef09f8fb7b0cae1249"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/quantize/CMakeLists.txt",
       "bytes": 735,
       "sha256": "27530f59b6d77c41631b88eba138277daf39dc901693b1fe740dc618538db292"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/quantize/README.md",
+      "bytes": 12602,
+      "sha256": "941224c118fc07ed0a2c7849637ddde2b337c2f96d509bee5ac5ab750e4b792c"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/quantize/main.cpp",
@@ -16175,11 +16745,6 @@
       "path": "third_party/llama.cpp-integrated/tools/quantize/quantize.cpp",
       "bytes": 28696,
       "sha256": "4e2c24585f9adbd97c94cbb56f906ddc83ed60ab82b94a931c52b3569a4bdf9d"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/quantize/README.md",
-      "bytes": 12602,
-      "sha256": "941224c118fc07ed0a2c7849637ddde2b337c2f96d509bee5ac5ab750e4b792c"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/quantize/tests.sh",
@@ -16217,6 +16782,26 @@
       "sha256": "a3888a0f3b2f68f3d404a071eda574620be23f82899fe7f90c44c6b5cbdb2c30"
     },
     {
+      "path": "third_party/llama.cpp-integrated/tools/server/CMakeLists.txt",
+      "bytes": 1941,
+      "sha256": "598ea1e29e84dc9ad3f32967bf0e92b56a41eb6373108c8643f534cb4f7fd178"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/server/README-dev.md",
+      "bytes": 24625,
+      "sha256": "5379c9631221109135012845e7ef6571869a34897dfd18b71076cd24f802b400"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/server/README.md",
+      "bytes": 129132,
+      "sha256": "3b9cfe5402361408e4bb67734937f00ded370d9620cc8436a5b56c998e46903c"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/server/bench/README.md",
+      "bytes": 4452,
+      "sha256": "343e1633456827572cd73ddeaba72cbe787c72db2c87b2b0e1dd7cfd9bb7771c"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/tools/server/bench/bench.py",
       "bytes": 14220,
       "sha256": "bb527f46470e3fa49e43dbc770dc68a2dd5d8246f4efe52259f2f661c39cb059"
@@ -16225,11 +16810,6 @@
       "path": "third_party/llama.cpp-integrated/tools/server/bench/prometheus.yml",
       "bytes": 192,
       "sha256": "0288b1137e748375c93c1d2adfd6f771d6c8f5f44fa9e71d8b26e9844ef65ffb"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/server/bench/README.md",
-      "bytes": 4452,
-      "sha256": "343e1633456827572cd73ddeaba72cbe787c72db2c87b2b0e1dd7cfd9bb7771c"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/server/bench/requirements.txt",
@@ -16262,24 +16842,9 @@
       "sha256": "72dbb1a439dae92d760659ac8a30d7b093acfa57211da51557aa52ad13508d25"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/server/CMakeLists.txt",
-      "bytes": 1941,
-      "sha256": "598ea1e29e84dc9ad3f32967bf0e92b56a41eb6373108c8643f534cb4f7fd178"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/server/main.cpp",
       "bytes": 122,
       "sha256": "0b6410559cf09fcdf123048df37137d215deb4d4a2c3ee93a5633fa9e48fbd14"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/server/README-dev.md",
-      "bytes": 24625,
-      "sha256": "5379c9631221109135012845e7ef6571869a34897dfd18b71076cd24f802b400"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/server/README.md",
-      "bytes": 129132,
-      "sha256": "3b9cfe5402361408e4bb67734937f00ded370d9620cc8436a5b56c998e46903c"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/server/server-chat.cpp",
@@ -16427,6 +16992,11 @@
       "sha256": "1357239b65c0c511a25a5840fc8a30bf6cf5e79655227767e48cb7c2dc39a8fd"
     },
     {
+      "path": "third_party/llama.cpp-integrated/tools/server/tests/README.md",
+      "bytes": 3579,
+      "sha256": "8f6af333ef6f34c6947712bb2ec892b2b34ec5d070e31c05f4d7be010e1e6ca5"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/tools/server/tests/conftest.py",
       "bytes": 1276,
       "sha256": "040e47c98b5403c695b8a73ebb739c2fb6aefaba834de57f2682d92cdbd112d5"
@@ -16465,11 +17035,6 @@
       "path": "third_party/llama.cpp-integrated/tools/server/tests/pytest.ini",
       "bytes": 96,
       "sha256": "f54b9107676eaf68cce74232f5eb564e41981683b60ca592ee67a888fe5bca2a"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/server/tests/README.md",
-      "bytes": 3579,
-      "sha256": "8f6af333ef6f34c6947712bb2ec892b2b34ec5d070e31c05f4d7be010e1e6ca5"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/server/tests/requirements.txt",
@@ -16652,6 +17217,16 @@
       "sha256": "52f7156ee1b3baf484206ded089bdbc82a048b817b7aed3b16825d20b2dd539c"
     },
     {
+      "path": "third_party/llama.cpp-integrated/tools/tuning/CMakeLists.txt",
+      "bytes": 383,
+      "sha256": "3acf18638c432f894e1391e05e0eb98dea30d53875e616e3460155ad35dd615a"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/tuning/README.md",
+      "bytes": 3951,
+      "sha256": "1cbe03abffda99d5574e5031d35fbf59781b270a234e0eaea3a4fc11d54d0ba5"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/tools/tuning/bench.cpp",
       "bytes": 8503,
       "sha256": "f07be605b6e7277dd49878e055306b8c00d8f0a19458077c8820e0f9827fe897"
@@ -16660,11 +17235,6 @@
       "path": "third_party/llama.cpp-integrated/tools/tuning/bench.h",
       "bytes": 2240,
       "sha256": "6f4e8c1915c1751262445d24d436837d953d4b28678064c74744b7ca1ba7a243"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/tuning/CMakeLists.txt",
-      "bytes": 383,
-      "sha256": "3acf18638c432f894e1391e05e0eb98dea30d53875e616e3460155ad35dd615a"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/tuning/fa-vec.cpp",
@@ -16680,11 +17250,6 @@
       "path": "third_party/llama.cpp-integrated/tools/tuning/main.cpp",
       "bytes": 5246,
       "sha256": "7c7f9ef9c16942e7e67f52b9db9fe1989aa7fde16602a80f0b4aafdb43cb29e2"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/tuning/README.md",
-      "bytes": 3951,
-      "sha256": "1cbe03abffda99d5574e5031d35fbf59781b270a234e0eaea3a4fc11d54d0ba5"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/.env.example",
@@ -16737,6 +17302,11 @@
       "sha256": "3a7bc14c141ce91e1a4b3168ea60f831db85208031c173fd0807572a4e039e95"
     },
     {
+      "path": "third_party/llama.cpp-integrated/tools/ui/README.md",
+      "bytes": 32036,
+      "sha256": "d99194993fe3ddc047690394b8ee940b1f73a991459985b7c2deeee78c5df865"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/tools/ui/components.json",
       "bytes": 375,
       "sha256": "e9241ffc446087e86b3cebba0cac2a18eefd0da96d4b3f8899b55272aff0bb12"
@@ -16770,11 +17340,6 @@
       "path": "third_party/llama.cpp-integrated/tools/ui/pwa-assets.config.ts",
       "bytes": 2125,
       "sha256": "42470a8ba7c0d04700c9f2fdb401e990ced7267a08e22ce5e9dcbfafc3af1ae8"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/README.md",
-      "bytes": 32036,
-      "sha256": "d99194993fe3ddc047690394b8ee940b1f73a991459985b7c2deeee78c5df865"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/scripts/dev.sh",
@@ -16855,6 +17420,11 @@
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/assets/logo.svg",
       "bytes": 778,
       "sha256": "42ca043f242b6a2f837a89d58e1de693381d11d105582b2604f53bc0335eaf0c"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/SKILL.md",
+      "bytes": 594,
+      "sha256": "9572a92cfa944482494269e1dc15d132981cd36e5205ec535b9ff0c0644ca16c"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/actions/ActionIcon.svelte",
@@ -17012,24 +17582,19 @@
       "sha256": "d6b055aa05857a14cccb431f3b23a5b7b69cdc4f501af4a5263d193722be6baf"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatForm/ChatFormActions/ChatFormActions.svelte",
-      "bytes": 6383,
-      "sha256": "27b12c5a47feddaa013ac0ee33abc7e3f7518221419b4dec1f6565ebee462fc4"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatForm/ChatFormActions/ChatFormActionSubmit.svelte",
       "bytes": 1096,
       "sha256": "d442d48c90441ecdccc5a19e4e73d19c7fad7f60349a145b80ca56d1fb18bb26"
     },
     {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatForm/ChatFormActions/ChatFormActions.svelte",
+      "bytes": 6383,
+      "sha256": "27b12c5a47feddaa013ac0ee33abc7e3f7518221419b4dec1f6565ebee462fc4"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatForm/ChatFormContextGauge/ChatFormContextGauge.svelte",
       "bytes": 1721,
       "sha256": "4f1ef69b0208189dd36ea71a2c2cae4e6852bbfdf2cc438b4b5b35215d4d25c2"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatForm/ChatFormContextGauge/context-gauge.ts",
-      "bytes": 998,
-      "sha256": "479499790f41b5c77c5693f3ca314d0e8cd58027823435062693601a6349d26d"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatForm/ChatFormContextGauge/ContextGaugeDetailRow.svelte",
@@ -17055,6 +17620,11 @@
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatForm/ChatFormContextGauge/ContextGaugePopup.svelte",
       "bytes": 4666,
       "sha256": "a62ff52d06d93105e4714fb8ca13f94e3c17fca6d91f23615f4c824415de0449"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatForm/ChatFormContextGauge/context-gauge.ts",
+      "bytes": 998,
+      "sha256": "479499790f41b5c77c5693f3ca314d0e8cd58027823435062693601a6349d26d"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatForm/ChatFormContextGauge/gauge-popup.svelte.ts",
@@ -17277,6 +17847,11 @@
       "sha256": "e45338061fbf260547b6a80852d4478777cdce1c8244101fd349c680a9934f81"
     },
     {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatMessages/ChatMessage/ChatMessageToolCall/ToolCallBlock.svelte",
+      "bytes": 4444,
+      "sha256": "364a67037a9f3a9841787b8d7255389fe13379824c875c76ecda58b73b6a7af1"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatMessages/ChatMessage/ChatMessageToolCall/parsers/_shared.ts",
       "bytes": 4183,
       "sha256": "c10fd0e61ed2bf08400f6bfc3450b4e06f1918cf7fb505199474bbffa02a33b6"
@@ -17320,11 +17895,6 @@
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatMessages/ChatMessage/ChatMessageToolCall/parsers/write-file.ts",
       "bytes": 3302,
       "sha256": "eb6c35bf34785b4a44068a9132eac8e497945730a600d68dd365de07fc0afcfa"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatMessages/ChatMessage/ChatMessageToolCall/ToolCallBlock.svelte",
-      "bytes": 4444,
-      "sha256": "364a67037a9f3a9841787b8d7255389fe13379824c875c76ecda58b73b6a7af1"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatMessages/ChatMessage/ChatMessageUser/ChatMessageUser.svelte",
@@ -17382,11 +17952,6 @@
       "sha256": "755aa8a595467e7ed1903105dd5ef323695fbfad6d405cc284d4295d8633cd09"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatMessages/ChatMessages.svelte",
-      "bytes": 9373,
-      "sha256": "42957e47204bf3f87ed640b9b16a83c26e54da54bab8585c3c59f8b5f74011cc"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatMessages/ChatMessageStatistics/ChatMessageStatistics.svelte",
       "bytes": 8773,
       "sha256": "28d689cb50d4738201532d9bdbdc45a4efd4924f750a03db3398df69803865d3"
@@ -17395,6 +17960,11 @@
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatMessages/ChatMessageStatistics/ChatMessageStatisticsBadge.svelte",
       "bytes": 1140,
       "sha256": "9e8d10b8485929f60dd6266b65dfabea3c58e644e914f0c4a59771747749f716"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatMessages/ChatMessages.svelte",
+      "bytes": 9373,
+      "sha256": "42957e47204bf3f87ed640b9b16a83c26e54da54bab8585c3c59f8b5f74011cc"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/chat/ChatMessages/LazyChatMessage.svelte",
@@ -17472,9 +18042,9 @@
       "sha256": "9d09389e6820d39b7879ebbed2c34717f3b9f83c0a20086465c09e18aaa19f5e"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/content/index.ts",
-      "bytes": 3962,
-      "sha256": "267bef2f6168ab5a737719230b4393605650112890113de1ab3f0556db83cb4d"
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/content/MarkdownContent/MarkdownContent.svelte",
+      "bytes": 28950,
+      "sha256": "6a10b6d49738f9e29cb49e171099e2f24cf8ae7c656411bf38942fb40f8c8e00"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/content/MarkdownContent/markdown-content.css",
@@ -17495,11 +18065,6 @@
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/content/MarkdownContent/markdown-utils.ts",
       "bytes": 2819,
       "sha256": "86950f752f9d2be748c3a5e976a05830be4753e8b9b623fafb966ea5358af205"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/content/MarkdownContent/MarkdownContent.svelte",
-      "bytes": 28950,
-      "sha256": "6a10b6d49738f9e29cb49e171099e2f24cf8ae7c656411bf38942fb40f8c8e00"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/content/MarkdownContent/plugins/rehype/code-block-utils.ts",
@@ -17602,6 +18167,11 @@
       "sha256": "984f37d33fca11b1c19ffe5c316050fe90bf7d4dc8d150f71955b394f97cc944"
     },
     {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/content/index.ts",
+      "bytes": 3962,
+      "sha256": "267bef2f6168ab5a737719230b4393605650112890113de1ab3f0556db83cb4d"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/dialogs/DialogChatAttachmentsPreview.svelte",
       "bytes": 2259,
       "sha256": "667a81694a0c27d5038496cf2e3d010ef3e06a761a853dadf915c95c8e64a0a5"
@@ -17617,14 +18187,14 @@
       "sha256": "f7f8b10533cf9f6a40a25f2aadfe997437889817d0ba34bcd3f3fbd62ce218cf"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/dialogs/DialogConfirmation.svelte",
-      "bytes": 1923,
-      "sha256": "e6de96435111ca996eb08dc8d8a904a98fb6986764a9ff16f6514bc370b46675"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/dialogs/DialogConfirmDownload.svelte",
       "bytes": 2022,
       "sha256": "8e32db4fe5344f0bd5240ded95ab04e2b3bbfde605fb12d6eba3a87ced14e23e"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/dialogs/DialogConfirmation.svelte",
+      "bytes": 1923,
+      "sha256": "e6de96435111ca996eb08dc8d8a904a98fb6986764a9ff16f6514bc370b46675"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/dialogs/DialogConversationRename.svelte",
@@ -17707,11 +18277,6 @@
       "sha256": "5686a9ced418bde00e2a097ad6e5431f80adfd08ea325f180ab5b10db12eb2e0"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/forms/index.ts",
-      "bytes": 1511,
-      "sha256": "064504d89f10e773c114b4829ca38fb392b45c6e2b5d57526ee37be4848dcd58"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/forms/InputWithSuggestions.svelte",
       "bytes": 1918,
       "sha256": "ebea6a625ce6f22f21a6f29c7f71e798ca27c3a772af09217ee6fd4eb1e4bc1c"
@@ -17727,14 +18292,14 @@
       "sha256": "21538482ce110fd4f3b24104c6b962adbbe1222068e28839324d81afc388504e"
     },
     {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/forms/index.ts",
+      "bytes": 1511,
+      "sha256": "064504d89f10e773c114b4829ca38fb392b45c6e2b5d57526ee37be4848dcd58"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/index.ts",
       "bytes": 325,
       "sha256": "f8998911d8ddaf1bcbbf4ea771d62141a5402fdfba13762c693d9b754338a100"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/mcp/index.ts",
-      "bytes": 9318,
-      "sha256": "33af8f4362e04548671c35d0e078cc41b4052de5a52ef09929c990cdd2c69112"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/mcp/McpActiveServersAvatars.svelte",
@@ -17762,9 +18327,9 @@
       "sha256": "37305d79312f41818ae61b33a3d3a2532ec8985d60d5ce5ab98cd0cdc253553b"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/mcp/McpResourcesBrowser/mcp-resources-browser.ts",
-      "bytes": 3159,
-      "sha256": "b5f1cee89292fb5800c8fcaa357f4382ad8f7ee1e16ea44e9bbf92f001e5817e"
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/mcp/McpResourceTemplateForm.svelte",
+      "bytes": 5209,
+      "sha256": "cb426bcb3c35c56ce00f797f17ae9076039a99ebeb346f47cff2f0432be8af24"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/mcp/McpResourcesBrowser/McpResourcesBrowser.svelte",
@@ -17787,9 +18352,9 @@
       "sha256": "0f01dbf64c4663e0b59be4bb54f2a141801b87213340fcdaff6093dc316120f1"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/mcp/McpResourceTemplateForm.svelte",
-      "bytes": 5209,
-      "sha256": "cb426bcb3c35c56ce00f797f17ae9076039a99ebeb346f47cff2f0432be8af24"
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/mcp/McpResourcesBrowser/mcp-resources-browser.ts",
+      "bytes": 3159,
+      "sha256": "b5f1cee89292fb5800c8fcaa357f4382ad8f7ee1e16ea44e9bbf92f001e5817e"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/mcp/McpServerCard/McpServerCard.svelte",
@@ -17847,6 +18412,11 @@
       "sha256": "47dcd1a5edf76a714917033f0c579dd6d4728293c3a440cd4846116fd78170f2"
     },
     {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/mcp/index.ts",
+      "bytes": 9318,
+      "sha256": "33af8f4362e04548671c35d0e078cc41b4052de5a52ef09929c990cdd2c69112"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/misc/CodeBlockActions.svelte",
       "bytes": 857,
       "sha256": "0b3ce5dbb24bf00667f3d0eee55d0e6be4d69de4aca3cd6b013ce788857a6a8e"
@@ -17872,11 +18442,6 @@
       "sha256": "f83c06eab6fc5352fc4d210551579a9e7160386b086d47b09cfdf46779ce3f46"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/misc/index.ts",
-      "bytes": 2235,
-      "sha256": "711f15af5dafa3d162eb36e59f7745c057b7de42f9a2e8530830925b65402baf"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/misc/KeyboardShortcutInfo.svelte",
       "bytes": 990,
       "sha256": "46e64515aba27a14b6f81ceb295dcbce8c5bb3bb0725032d7822afeb84abc9ca"
@@ -17897,129 +18462,9 @@
       "sha256": "141498d5f49044b213bf6f5dee3c25da10e954c78934013fddedc57f9152d6ff"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/index.ts",
-      "bytes": 578,
-      "sha256": "1b25b60c8de64d9203a62ffb9bc7f428e6dd2e05c36ec5771bff64fcf8a52581"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscover.svelte",
-      "bytes": 6549,
-      "sha256": "2f171c3bef6816f2cb66f37208b7d222f9235766b5badfe0821249d12c252b3c"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/index.ts",
-      "bytes": 1772,
-      "sha256": "49ec3acd99727ab0bb6f2d6fc5e8dadb8be52524c4fc93bd84f55aad94b37b20"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverChatTemplateDialog.svelte",
-      "bytes": 2205,
-      "sha256": "c3fd331e1d711851b021de8555546328582ce898aca7e4133512a77fba94ba83"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetails.svelte",
-      "bytes": 3614,
-      "sha256": "1cf84a648c559b114a4ca2edce927f71bc2d29944fdd85843a169340a48fd44a"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsContainer.svelte",
-      "bytes": 1577,
-      "sha256": "3c1511a9c45fd2c26f2bc85ac054f2405dc91eb8e65db3199b675c855d302dc6"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsDownloadOptions/download-options.utils.ts",
-      "bytes": 2417,
-      "sha256": "0d38c1a37f495956cce2877717fc177ee9733a359933072644774e693b57d00f"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsDownloadOptions/index.ts",
-      "bytes": 1472,
-      "sha256": "aca0345c65c48be73e051658b8302e10b450d36bd8a0533889fced3d14c1ed3e"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsDownloadOptions/ModelsDiscoverDetailsDownloadOptions.svelte",
-      "bytes": 9345,
-      "sha256": "e10aed38f9cf5d930c3ef34342b04ca1cd1ec052d9b31ea7c4ceea67e9907fb8"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsDownloadOptions/ModelsDiscoverDetailsDownloadOptionsDownloadCommand.svelte",
-      "bytes": 4377,
-      "sha256": "40a071f472ef876eb5ad3271d202d8f428a566b5c7af10820f6c54d60d6eef6e"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsDownloadOptions/ModelsDiscoverDetailsDownloadOptionsDraftDownloadButton.svelte",
-      "bytes": 2415,
-      "sha256": "5bff39a06df413741a2113c5dbe69d7f1a665ad7b88f6bb8d3a7602ee5c6d7d4"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsDownloadOptions/ModelsDiscoverDetailsDownloadOptionsQuantDownloadButton.svelte",
-      "bytes": 11403,
-      "sha256": "4bc211ddd61a5ae40052f70942f9172c00640b43d8f6b81102c1e3cb287d373a"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsDownloadOptions/ModelsDiscoverDetailsDownloadOptionsRow.svelte",
-      "bytes": 4713,
-      "sha256": "41dd27c1d6f1fea157d78a1f17fd05cd2aef9ed575a13bcd73c258c68b65ae3b"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsHeader.svelte",
-      "bytes": 3184,
-      "sha256": "1ddae65f7f27529ed52cdc18bff2251dd0a1088ff40efb616d3a91fea8e4c5a5"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsHfHubStats.svelte",
-      "bytes": 937,
-      "sha256": "8deaa9bdcf3ed1c38c7b91b31f246e86eae99b2e4a49b646252525b0b3c57ae0"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsMetadata.svelte",
-      "bytes": 2352,
-      "sha256": "4d3c706b3c1e1ac7d0af292a34f3d3a941d21a67bc54b6179c7d6f6a66579d41"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsMetadataItem.svelte",
-      "bytes": 580,
-      "sha256": "57945385b168605cac71403fe994f858dd78690737d4738e05625bf892f3c508"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsReadme.svelte",
-      "bytes": 402,
-      "sha256": "b9cb0d1b568f74fca2382fdf3b7e0532b2791804bfa8f418f9237b39c3eaf3cb"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsSkeleton.svelte",
-      "bytes": 2916,
-      "sha256": "d59363a081aeac8898f77e5c761a0a4201484bc1aa55169a07822cfc852bdea1"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverList/index.ts",
-      "bytes": 642,
-      "sha256": "262e51999bac7a8a3eb72a87e0ad92785669305340e22cb4b580ceb8e73d154c"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverList/ModelsDiscoverList.svelte",
-      "bytes": 1076,
-      "sha256": "368a3482f2590d0de8da475b6456babae06ba5041bccfa2707b1f6988e5a1176"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverList/ModelsDiscoverListItem.svelte",
-      "bytes": 8909,
-      "sha256": "0b201f6079e329ec6d4cb855611bbec94a1c35f850fe52d63d6dc6397e41c688"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverList/ModelsDiscoverListItemSkeleton.svelte",
-      "bytes": 1162,
-      "sha256": "88cc84a77f5bb32fe5a02f95aa8a889500c4c53d302656bac4aa6490353dfd63"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverList/ModelsDiscoverListSearch.svelte",
-      "bytes": 866,
-      "sha256": "41bd90c29c0569ba2516d247df4dd363135e6b1dad19d59a5ddd4593f5a7d24f"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/index.ts",
-      "bytes": 2534,
-      "sha256": "69d1588489eddd34651dac8af676ac88ce310d2415aaec175f3bf24ece6c3f37"
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/misc/index.ts",
+      "bytes": 2235,
+      "sha256": "711f15af5dafa3d162eb36e59f7745c057b7de42f9a2e8530830925b65402baf"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/ModelAvatar.svelte",
@@ -18167,11 +18612,6 @@
       "sha256": "200b5176d50abc5cafab2708f9ff133fded552dd897d7e5f80723da5023e58bd"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/ModelsSelector/index.ts",
-      "bytes": 716,
-      "sha256": "489824291d4d5952b67fd5357df0130a8c71144b02461a83955ce621a8ce33ee"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/ModelsSelector/ModelsSelector.svelte",
       "bytes": 13175,
       "sha256": "234c6b9261d37d10dcc42a7dcbe46ce020dac555c4f38254133d08f099f4b6a1"
@@ -18207,6 +18647,136 @@
       "sha256": "9588e99561d60dbeffe7fe64cf31e69402342ab04e4c268db46c179bdabaf7c8"
     },
     {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/ModelsSelector/index.ts",
+      "bytes": 716,
+      "sha256": "489824291d4d5952b67fd5357df0130a8c71144b02461a83955ce621a8ce33ee"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscover.svelte",
+      "bytes": 6549,
+      "sha256": "2f171c3bef6816f2cb66f37208b7d222f9235766b5badfe0821249d12c252b3c"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverChatTemplateDialog.svelte",
+      "bytes": 2205,
+      "sha256": "c3fd331e1d711851b021de8555546328582ce898aca7e4133512a77fba94ba83"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetails.svelte",
+      "bytes": 3614,
+      "sha256": "1cf84a648c559b114a4ca2edce927f71bc2d29944fdd85843a169340a48fd44a"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsContainer.svelte",
+      "bytes": 1577,
+      "sha256": "3c1511a9c45fd2c26f2bc85ac054f2405dc91eb8e65db3199b675c855d302dc6"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsDownloadOptions/ModelsDiscoverDetailsDownloadOptions.svelte",
+      "bytes": 9345,
+      "sha256": "e10aed38f9cf5d930c3ef34342b04ca1cd1ec052d9b31ea7c4ceea67e9907fb8"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsDownloadOptions/ModelsDiscoverDetailsDownloadOptionsDownloadCommand.svelte",
+      "bytes": 4377,
+      "sha256": "40a071f472ef876eb5ad3271d202d8f428a566b5c7af10820f6c54d60d6eef6e"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsDownloadOptions/ModelsDiscoverDetailsDownloadOptionsDraftDownloadButton.svelte",
+      "bytes": 2415,
+      "sha256": "5bff39a06df413741a2113c5dbe69d7f1a665ad7b88f6bb8d3a7602ee5c6d7d4"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsDownloadOptions/ModelsDiscoverDetailsDownloadOptionsQuantDownloadButton.svelte",
+      "bytes": 11403,
+      "sha256": "4bc211ddd61a5ae40052f70942f9172c00640b43d8f6b81102c1e3cb287d373a"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsDownloadOptions/ModelsDiscoverDetailsDownloadOptionsRow.svelte",
+      "bytes": 4713,
+      "sha256": "41dd27c1d6f1fea157d78a1f17fd05cd2aef9ed575a13bcd73c258c68b65ae3b"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsDownloadOptions/download-options.utils.ts",
+      "bytes": 2417,
+      "sha256": "0d38c1a37f495956cce2877717fc177ee9733a359933072644774e693b57d00f"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsDownloadOptions/index.ts",
+      "bytes": 1472,
+      "sha256": "aca0345c65c48be73e051658b8302e10b450d36bd8a0533889fced3d14c1ed3e"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsHeader.svelte",
+      "bytes": 3184,
+      "sha256": "1ddae65f7f27529ed52cdc18bff2251dd0a1088ff40efb616d3a91fea8e4c5a5"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsHfHubStats.svelte",
+      "bytes": 937,
+      "sha256": "8deaa9bdcf3ed1c38c7b91b31f246e86eae99b2e4a49b646252525b0b3c57ae0"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsMetadata.svelte",
+      "bytes": 2352,
+      "sha256": "4d3c706b3c1e1ac7d0af292a34f3d3a941d21a67bc54b6179c7d6f6a66579d41"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsMetadataItem.svelte",
+      "bytes": 580,
+      "sha256": "57945385b168605cac71403fe994f858dd78690737d4738e05625bf892f3c508"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsReadme.svelte",
+      "bytes": 402,
+      "sha256": "b9cb0d1b568f74fca2382fdf3b7e0532b2791804bfa8f418f9237b39c3eaf3cb"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/ModelsDiscoverDetailsSkeleton.svelte",
+      "bytes": 2916,
+      "sha256": "d59363a081aeac8898f77e5c761a0a4201484bc1aa55169a07822cfc852bdea1"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverDetails/index.ts",
+      "bytes": 1772,
+      "sha256": "49ec3acd99727ab0bb6f2d6fc5e8dadb8be52524c4fc93bd84f55aad94b37b20"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverList/ModelsDiscoverList.svelte",
+      "bytes": 1076,
+      "sha256": "368a3482f2590d0de8da475b6456babae06ba5041bccfa2707b1f6988e5a1176"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverList/ModelsDiscoverListItem.svelte",
+      "bytes": 8909,
+      "sha256": "0b201f6079e329ec6d4cb855611bbec94a1c35f850fe52d63d6dc6397e41c688"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverList/ModelsDiscoverListItemSkeleton.svelte",
+      "bytes": 1162,
+      "sha256": "88cc84a77f5bb32fe5a02f95aa8a889500c4c53d302656bac4aa6490353dfd63"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverList/ModelsDiscoverListSearch.svelte",
+      "bytes": 866,
+      "sha256": "41bd90c29c0569ba2516d247df4dd363135e6b1dad19d59a5ddd4593f5a7d24f"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/ModelsDiscoverList/index.ts",
+      "bytes": 642,
+      "sha256": "262e51999bac7a8a3eb72a87e0ad92785669305340e22cb4b580ceb8e73d154c"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/discover/index.ts",
+      "bytes": 578,
+      "sha256": "1b25b60c8de64d9203a62ffb9bc7f428e6dd2e05c36ec5771bff64fcf8a52581"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/models/index.ts",
+      "bytes": 2534,
+      "sha256": "69d1588489eddd34651dac8af676ac88ce310d2415aaec175f3bf24ece6c3f37"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/navigation/DropdownMenuActions.svelte",
       "bytes": 5088,
       "sha256": "16300c4da6d1bd446d93837c92a3c27bbdcfdfc1c54f940b847958dd5717ca21"
@@ -18215,11 +18785,6 @@
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/navigation/DropdownMenuSearchable.svelte",
       "bytes": 2102,
       "sha256": "26f9f39701f26a6035d7392ae91efce6248fa040a9b9f5830b3c3c734041b275"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/navigation/index.ts",
-      "bytes": 7325,
-      "sha256": "9b49cb90c397b20fd6ae49ce78e24f5e6819b3107b723e95983a5c5a3bd2d3ea"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/navigation/SidebarNavigation/SidebarNavigation.svelte",
@@ -18257,9 +18822,9 @@
       "sha256": "b344857ef5c40a42467b57bf484dcebdc56d105002bceda70bbf6ec550ff1fa8"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/server/index.ts",
-      "bytes": 2320,
-      "sha256": "25f164667bd21146bc625f28373ffa5a1719c32c59f6bb22028e2e717220e37f"
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/navigation/index.ts",
+      "bytes": 7325,
+      "sha256": "9b49cb90c397b20fd6ae49ce78e24f5e6819b3107b723e95983a5c5a3bd2d3ea"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/server/ServerErrorSplash.svelte",
@@ -18277,9 +18842,9 @@
       "sha256": "a5793d4f95e62c16fb2c5b5a63cb35f53a7b606c236f6377bf0825148817d42a"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/settings/index.ts",
-      "bytes": 3311,
-      "sha256": "747041ba071cff36ad48ef9aa34812c62eab2e34fc6929c3ee834914fbca82ea"
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/server/index.ts",
+      "bytes": 2320,
+      "sha256": "25f164667bd21146bc625f28373ffa5a1719c32c59f6bb22028e2e717220e37f"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/settings/SettingsChat/SettingsChat.svelte",
@@ -18337,14 +18902,9 @@
       "sha256": "53e1ee8a38b528342829abad76cb45b9a1211ba3bd1cb90592e42f0ea9320e1d"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/SKILL.md",
-      "bytes": 594,
-      "sha256": "9572a92cfa944482494269e1dc15d132981cd36e5205ec535b9ff0c0644ca16c"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/pwa/index.ts",
-      "bytes": 136,
-      "sha256": "fb72b7b56a0354fc469ca55b020ed6ca9c099919fbcb784d487dd9a9d3f8cc83"
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/app/settings/index.ts",
+      "bytes": 3311,
+      "sha256": "747041ba071cff36ad48ef9aa34812c62eab2e34fc6929c3ee834914fbca82ea"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/pwa/PwaMetaTags.svelte",
@@ -18357,24 +18917,9 @@
       "sha256": "25c63e9adc82cf52597f6089566d97f1a492fc481dae2c41a4b44101eb489f64"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/alert/alert-description.svelte",
-      "bytes": 554,
-      "sha256": "71b95c0697c793c3bcaaee6734a859bb9dc4197ced94bad509dd964acce43254"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/alert/alert-title.svelte",
-      "bytes": 503,
-      "sha256": "20878aa01da74aab9ee077a3c0ac369dc376199fe11926f0864c8d3936d632d5"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/alert/alert.svelte",
-      "bytes": 1259,
-      "sha256": "d805d29d4901f67b1a339f34d9a21e45bd08c7ed8d96f59531b979000ff617dd"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/alert/index.ts",
-      "bytes": 329,
-      "sha256": "a5c375f1a4405ed3b8103eb5a1b3d790b06d19c63a359587da6e753f58f1216d"
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/pwa/index.ts",
+      "bytes": 136,
+      "sha256": "fb72b7b56a0354fc469ca55b020ed6ca9c099919fbcb784d487dd9a9d3f8cc83"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/alert-dialog/alert-dialog-action.svelte",
@@ -18427,6 +18972,26 @@
       "sha256": "5daf277def4bb384830eab763b186db64e0014a382a00431b2fd6eb70c8ffe83"
     },
     {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/alert/alert-description.svelte",
+      "bytes": 554,
+      "sha256": "71b95c0697c793c3bcaaee6734a859bb9dc4197ced94bad509dd964acce43254"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/alert/alert-title.svelte",
+      "bytes": 503,
+      "sha256": "20878aa01da74aab9ee077a3c0ac369dc376199fe11926f0864c8d3936d632d5"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/alert/alert.svelte",
+      "bytes": 1259,
+      "sha256": "d805d29d4901f67b1a339f34d9a21e45bd08c7ed8d96f59531b979000ff617dd"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/alert/index.ts",
+      "bytes": 329,
+      "sha256": "a5c375f1a4405ed3b8103eb5a1b3d790b06d19c63a359587da6e753f58f1216d"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/badge/badge.svelte",
       "bytes": 1945,
       "sha256": "42452027070504b3e1187400909cbdb90edf24feb1e3d8b1d159da6e4f2cbebd"
@@ -18435,16 +19000,6 @@
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/badge/index.ts",
       "bytes": 120,
       "sha256": "2b06a3f4233d4e6305bdfdee28f65b5cc0e9d5bec46eff05090971fcfb82d74d"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/button/button.svelte",
-      "bytes": 3249,
-      "sha256": "a2c78a9cb67d6f73409c67334aa33f06c76743de5a9d74970f89c2831c70eb0e"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/button/index.ts",
-      "bytes": 275,
-      "sha256": "190432c524c5d26f73aca1fac1a478d2b79a706a2aece387a7caa2d5af17a155"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/button-group/button-group-root.svelte",
@@ -18460,6 +19015,16 @@
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/button-group/index.ts",
       "bytes": 136,
       "sha256": "5a716a8a3e9ab0904040d45ee68e0ab517e7c5b7c663d2479dac1b8a8651bff7"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/button/button.svelte",
+      "bytes": 3249,
+      "sha256": "a2c78a9cb67d6f73409c67334aa33f06c76743de5a9d74970f89c2831c70eb0e"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/button/index.ts",
+      "bytes": 275,
+      "sha256": "190432c524c5d26f73aca1fac1a478d2b79a706a2aece387a7caa2d5af17a155"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/card/card-action.svelte",
@@ -18982,16 +19547,6 @@
       "sha256": "127c6aefa744303921b2718f1f4082686f42be072d1de72c8b6f127b44387d08"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/toggle/index.ts",
-      "bytes": 201,
-      "sha256": "6e0ecd9ec2aad2ae77bdc1628d662c4e29e18e99c6f0bc99e6d18694e5410a09"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/toggle/toggle.svelte",
-      "bytes": 2256,
-      "sha256": "90c160e4f227b3d2081a633b7acbee935bcdb17d08880ea0a28a8f47bcb53cfb"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/toggle-group/index.ts",
       "bytes": 177,
       "sha256": "dca3cd66cdd74d682215edf1e109f868bae001a2fd32bd5d6599d7eb15417216"
@@ -19005,6 +19560,16 @@
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/toggle-group/toggle-group.svelte",
       "bytes": 1881,
       "sha256": "2fa083a6366869f1325ee67feccbdb004637673d925fc78f9d1a489ab7020498"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/toggle/index.ts",
+      "bytes": 201,
+      "sha256": "6e0ecd9ec2aad2ae77bdc1628d662c4e29e18e99c6f0bc99e6d18694e5410a09"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/toggle/toggle.svelte",
+      "bytes": 2256,
+      "sha256": "90c160e4f227b3d2081a633b7acbee935bcdb17d08880ea0a28a8f47bcb53cfb"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/components/ui/tooltip/index.ts",
@@ -19762,6 +20327,11 @@
       "sha256": "c9e8b8091a96c3f4f1cfcbdb54bfb7b6aa903812072f73a039415435060518ca"
     },
     {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/stores/models-discover/index.svelte.ts",
+      "bytes": 8850,
+      "sha256": "78aec3bcda67e50fbc8450a9cb8a8415adc1e7ce49248a04c0780aa15149ab20"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/stores/models/index.svelte.ts",
       "bytes": 21512,
       "sha256": "3fc9d819a98219da710bfd84e507f372cd36771a6564aaa937b091469e12bdb1"
@@ -19775,11 +20345,6 @@
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/stores/models/status.svelte.ts",
       "bytes": 29198,
       "sha256": "47298e667ad4e17449cbe157be7da47c7746567b66467db1f3edef2dbcea572b"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/stores/models-discover/index.svelte.ts",
-      "bytes": 8850,
-      "sha256": "78aec3bcda67e50fbc8450a9cb8a8415adc1e7ce49248a04c0780aa15149ab20"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/stores/permissions.svelte.ts",
@@ -20332,14 +20897,14 @@
       "sha256": "e9b0e94f628e00b5ed98046cfa041696ff89eebbbdd54108ee350625bc6d0363"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/vendors/decimal.js/decimal.js",
-      "bytes": 136673,
-      "sha256": "6e99821f8204c5f611b56077e3fce056a1562d22bc341a1f4af01afe7e527d83"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/vendors/decimal.js/LICENCE.md",
       "bytes": 1104,
       "sha256": "3108b546bcff5d346923a82f48b2d252ca722f9088076db6d145f6b67757ad6c"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/vendors/decimal.js/decimal.js",
+      "bytes": 136673,
+      "sha256": "6e99821f8204c5f611b56077e3fce056a1562d22bc341a1f4af01afe7e527d83"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/vendors/nerdamer-prime/Algebra.js",
@@ -20347,19 +20912,9 @@
       "sha256": "8badff9617b848af840c94f9d43827167e50e87d4bc036c73652ac90d3edb5f1"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/vendors/nerdamer-prime/all.js",
-      "bytes": 413,
-      "sha256": "233c4a52a02e941fa6e87686bcae9bdd0f16f6d881705024fba4efbce2723ebd"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/vendors/nerdamer-prime/Calculus.js",
       "bytes": 201084,
       "sha256": "d7bd23ac0968fc86aeb1a4569849cff339f8c394ff82ed51c4dacab0bc9a9d46"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/vendors/nerdamer-prime/constants.js",
-      "bytes": 139593,
-      "sha256": "3bb13656528c0505c4c00102eb2323ac03b16a0343fb849de6727862f57753e0"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/vendors/nerdamer-prime/Extra.js",
@@ -20372,14 +20927,24 @@
       "sha256": "0c0e1b24b0f01c15747a54986781b80ebae879dcc1fb44f1cd136ebb556ba3e1"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/vendors/nerdamer-prime/nerdamer.core.js",
-      "bytes": 651754,
-      "sha256": "f58e4b1a6cf91d55774717c5c85014c7dbf668b40c517922a9a1c1e30aaa990a"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/vendors/nerdamer-prime/Solve.js",
       "bytes": 101168,
       "sha256": "d1c64ae9e693e25585d4602d7e11fac58b52f4b63150f260d5360c43af625dce"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/vendors/nerdamer-prime/all.js",
+      "bytes": 413,
+      "sha256": "233c4a52a02e941fa6e87686bcae9bdd0f16f6d881705024fba4efbce2723ebd"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/vendors/nerdamer-prime/constants.js",
+      "bytes": 139593,
+      "sha256": "3bb13656528c0505c4c00102eb2323ac03b16a0343fb849de6727862f57753e0"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/vendors/nerdamer-prime/nerdamer.core.js",
+      "bytes": 651754,
+      "sha256": "f58e4b1a6cf91d55774717c5c85014c7dbf668b40c517922a9a1c1e30aaa990a"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/src/lib/vendors/package.json",
@@ -20472,6 +21037,11 @@
       "sha256": "43c2e1985d13d721c38d30a98e61119d13cbd3a265958af3527f46b68a55183d"
     },
     {
+      "path": "third_party/llama.cpp-integrated/tools/ui/tests/client/README-perf.md",
+      "bytes": 2839,
+      "sha256": "283c3cfeb87c496cc527659e3ca0d504a0ade7109626e970ce3c2cc09967e2b7"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/tools/ui/tests/client/agentic-stream.perf.svelte.test.ts",
       "bytes": 13532,
       "sha256": "14471406bc31219c0f4ceb946cf5714528f227b75d1180c91ce63191d77b94cd"
@@ -20520,11 +21090,6 @@
       "path": "third_party/llama.cpp-integrated/tools/ui/tests/client/collapsible-lazy-body.svelte.test.ts",
       "bytes": 1485,
       "sha256": "49a2365c0b9bd47ecea29db183fad5c6a2748268f48b4d8111f72aebee256069"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/tests/client/components/agentic-perf-state.svelte.ts",
-      "bytes": 494,
-      "sha256": "a96f48c62d0f0b68b52e20d8c0dbf5ec35cbee76ffdff4771fdc7d2373c7b66c"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/tests/client/components/AgenticPerfWrapper.svelte",
@@ -20590,6 +21155,11 @@
       "path": "third_party/llama.cpp-integrated/tools/ui/tests/client/components/TestWrapper.svelte",
       "bytes": 345,
       "sha256": "6cd3c5d9b40165c6b054b3df5f249d58d7a7ba6f693b350b47fe855991bb5bf5"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/tests/client/components/agentic-perf-state.svelte.ts",
+      "bytes": 494,
+      "sha256": "a96f48c62d0f0b68b52e20d8c0dbf5ec35cbee76ffdff4771fdc7d2373c7b66c"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/tests/client/context-panel-mobile.svelte.test.ts",
@@ -20682,11 +21252,6 @@
       "sha256": "b5249ed2c80b5793350bc2c5147e55b0e45ab78ba2f89d256b356091bfa9e7f4"
     },
     {
-      "path": "third_party/llama.cpp-integrated/tools/ui/tests/client/README-perf.md",
-      "bytes": 2839,
-      "sha256": "283c3cfeb87c496cc527659e3ca0d504a0ade7109626e970ce3c2cc09967e2b7"
-    },
-    {
       "path": "third_party/llama.cpp-integrated/tools/ui/tests/client/reasoning-control-mobile.svelte.test.ts",
       "bytes": 1619,
       "sha256": "b66c490bdc0f12c7f311256c8a431cb9fe9cc8741b43e548157f799719a18426"
@@ -20737,6 +21302,46 @@
       "sha256": "900aa84168d20dcf19731a1efe07e853d4b47667a97b8c2f71069d40e6364f14"
     },
     {
+      "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/ChatMessage.stories.svelte",
+      "bytes": 7751,
+      "sha256": "d6eac6ae1b6561f80f0ea68fb5d9674c20bcd9dfc5dcc1b439d2bf0adfe6ef86"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/ChatScreenForm.stories.svelte",
+      "bytes": 2851,
+      "sha256": "0f78bddac242f32b818c7063879a177248ead1caffd2def139853a2015e2e325"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/Introduction.mdx",
+      "bytes": 1677,
+      "sha256": "91b8a83995fe367742635f195bbca90d6342e385cab92b829ee46238ee692c3f"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/MarkdownContent.stories.svelte",
+      "bytes": 4420,
+      "sha256": "d4a53f4b4e500feea5bec09ec8e4aae037a225460b3c383a0784275617da160c"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/ModelsManager.stories.svelte",
+      "bytes": 3306,
+      "sha256": "52638fdabe96c8c140786f0c38a8ef6d6ccbf6067bc37379099ff5be64d43122"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/ModelsSelector.stories.svelte",
+      "bytes": 7252,
+      "sha256": "50c98db6397c4f89ab49f842155a3a30e828ce7d4762649585456191c641d871"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/PwaRefreshAlert.stories.svelte",
+      "bytes": 1677,
+      "sha256": "dfaf39d358a1cb63d23d8e4bce24b1cb621e1c8ded7366a5230340845be2cbd6"
+    },
+    {
+      "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/SidebarNavigation.stories.svelte",
+      "bytes": 2812,
+      "sha256": "0d6f6dfc72206619b1793f464d7e8c1114a7a004738dfdbc68e424a836114557"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/a11y/ActionIcon.a11y.stories.svelte",
       "bytes": 896,
       "sha256": "dc1ffc38562c370f76d48ea6d41b62ea759b30ce52538afc976408403ee848af"
@@ -20765,16 +21370,6 @@
       "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/a11y/SidebarNavigationConversationItem.a11y.stories.svelte",
       "bytes": 1086,
       "sha256": "089936b97556593979fdb95a1935b35ec91278e6727771e88f2fe3e03d7e78d2"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/ChatMessage.stories.svelte",
-      "bytes": 7751,
-      "sha256": "d6eac6ae1b6561f80f0ea68fb5d9674c20bcd9dfc5dcc1b439d2bf0adfe6ef86"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/ChatScreenForm.stories.svelte",
-      "bytes": 2851,
-      "sha256": "0f78bddac242f32b818c7063879a177248ead1caffd2def139853a2015e2e325"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/fixtures/ai-tutorial.ts",
@@ -20840,36 +21435,6 @@
       "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/fixtures/storybook-mocks.ts",
       "bytes": 2859,
       "sha256": "d9c600a53e0b8924444d488441b183058a17f3da6921a40814a28e3a2800a3d8"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/Introduction.mdx",
-      "bytes": 1677,
-      "sha256": "91b8a83995fe367742635f195bbca90d6342e385cab92b829ee46238ee692c3f"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/MarkdownContent.stories.svelte",
-      "bytes": 4420,
-      "sha256": "d4a53f4b4e500feea5bec09ec8e4aae037a225460b3c383a0784275617da160c"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/ModelsManager.stories.svelte",
-      "bytes": 3306,
-      "sha256": "52638fdabe96c8c140786f0c38a8ef6d6ccbf6067bc37379099ff5be64d43122"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/ModelsSelector.stories.svelte",
-      "bytes": 7252,
-      "sha256": "50c98db6397c4f89ab49f842155a3a30e828ce7d4762649585456191c641d871"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/PwaRefreshAlert.stories.svelte",
-      "bytes": 1677,
-      "sha256": "dfaf39d358a1cb63d23d8e4bce24b1cb621e1c8ded7366a5230340845be2cbd6"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/tools/ui/tests/stories/SidebarNavigation.stories.svelte",
-      "bytes": 2812,
-      "sha256": "0d6f6dfc72206619b1793f464d7e8c1114a7a004738dfdbc68e424a836114557"
     },
     {
       "path": "third_party/llama.cpp-integrated/tools/ui/tests/unit/abort.test.ts",
@@ -21217,6 +21782,11 @@
       "sha256": "4381eddc7b0c1e3f1f0bdc1eb80e26f019567e914656e8a4f65a1c084b5de714"
     },
     {
+      "path": "third_party/llama.cpp-integrated/vendor/cpp-httplib/LICENSE",
+      "bytes": 1097,
+      "sha256": "bb546eae5924d8ee842e0e567e6d533c5824bdebccf605f99a5b3429034e6697"
+    },
+    {
       "path": "third_party/llama.cpp-integrated/vendor/cpp-httplib/httplib.cpp",
       "bytes": 679300,
       "sha256": "fde76cd6d10c2b9179db014f52708eebbba89a40f0ceba60e7764a245b120ec2"
@@ -21225,11 +21795,6 @@
       "path": "third_party/llama.cpp-integrated/vendor/cpp-httplib/httplib.h",
       "bytes": 183326,
       "sha256": "0cd087d7b7df876918080031a85f095c686a52794600434319c0ab763bfa6b24"
-    },
-    {
-      "path": "third_party/llama.cpp-integrated/vendor/cpp-httplib/LICENSE",
-      "bytes": 1097,
-      "sha256": "bb546eae5924d8ee842e0e567e6d533c5824bdebccf605f99a5b3429034e6697"
     },
     {
       "path": "third_party/llama.cpp-integrated/vendor/hash/CMakeLists.txt",
@@ -21347,11 +21912,6 @@
       "sha256": "1f8c1b6b408f26e3b20cbfbbd4758afb3dc9b837ff1e17c258928f406148a87c"
     },
     {
-      "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 554,
-      "sha256": "74936797603d174f684730829c0ed79ce5b58593068f0f0d7b7fb34353a9ed1d"
-    },
-    {
       "path": "tools/check_llama_integrated.py",
       "bytes": 4650,
       "sha256": "bc73894f718ae3eff619af4929ee032941f5690de88ee956a73254a4fbdaefc8"
@@ -21372,6 +21932,11 @@
       "sha256": "68360641048676ccd790b7291b81378b45836ea8badc645e15490c844e242e78"
     },
     {
+      "path": "tools/package_minexp_records.py",
+      "bytes": 3994,
+      "sha256": "8228ee6ac1813c1e74217e7f65cdb3e7d97ac08300cf02d4fce698d0843f0d92"
+    },
+    {
       "path": "tools/package_source.py",
       "bytes": 3802,
       "sha256": "38363e193e8048c5ba532ed7d921fe271b79c50825be237fd13fe65b7a3ace13"
@@ -21380,6 +21945,11 @@
       "path": "tools/platform_environment.py",
       "bytes": 1905,
       "sha256": "16313044dafb0ed70b98089dc01d3dcfee094f0003ff92c20e46536c00e8c9ea"
+    },
+    {
+      "path": "tools/restore_minexp_records.py",
+      "bytes": 2704,
+      "sha256": "da752ea14bdb38c84cd91a764beec5211a504249e2ed400608e4e1b0207aae8c"
     },
     {
       "path": "tools/run_integrated_matrix.py",
