@@ -16,6 +16,7 @@ add_library(hbf_eventlab
     src/host/recovery_manager.cpp
     src/host/host_driver.cpp
     src/host/host_input.cpp
+    src/host/host_indices.cpp
     src/host/host_storage.cpp
     src/host/write_retry.cpp
     src/runtime/simulation_runner.cpp
@@ -56,6 +57,8 @@ target_link_libraries(hbf_eventlab_tensor_bridge PUBLIC HBFEventLab::core)
 add_executable(hbf_eventlab_tensor_bridge_demo examples/cpu_tensor_bridge.cpp)
 target_link_libraries(hbf_eventlab_tensor_bridge_demo PRIVATE HBFEventLab::tensor_bridge)
 add_executable(hbf_eventlab_runtime_bench examples/runtime_profile_bench.cpp)
+add_executable(hbf_eventlab_read_wakeup_bench examples/read_wakeup_bench.cpp)
+target_link_libraries(hbf_eventlab_read_wakeup_bench PRIVATE HBFEventLab::core)
 target_link_libraries(hbf_eventlab_runtime_bench PRIVATE HBFEventLab::tensor_bridge)
 add_executable(hbf_eventlab_demo examples/foundations_demo.cpp)
 target_link_libraries(hbf_eventlab_demo PRIVATE HBFEventLab::core)
@@ -76,9 +79,21 @@ if(HBF_EVENTLAB_QWEN_EXPERIMENT)
     add_subdirectory(experiments/qwen_online)
 endif()
 if(BUILD_TESTING)
+    add_executable(hbf_eventlab_notification_tests tests/notifications.cpp)
+    add_test(NAME notification_benchmark COMMAND ${CMAKE_COMMAND}
+        -DBENCH=$<TARGET_FILE:hbf_eventlab_read_wakeup_bench> -DOUT=${CMAKE_CURRENT_BINARY_DIR}/notification-bench-$<CONFIG>
+        -P ${CMAKE_CURRENT_SOURCE_DIR}/tests/check_notification_bench.cmake)
+    set_tests_properties(notification_benchmark PROPERTIES TIMEOUT 60)
+    target_link_libraries(hbf_eventlab_notification_tests PRIVATE HBFEventLab::core)
+    foreach(scenario same_block same_block_many same_zone other_zone channels health release_each zone_cancel zone_swap
+            shared_space local_space entry_budget terminal_space terminal_error registry reserved_rollback cached_rollback metadata_release)
+        add_test(NAME notification_${scenario} COMMAND hbf_eventlab_notification_tests ${scenario})
+        set_tests_properties(notification_${scenario} PROPERTIES TIMEOUT 30)
+    endforeach()
     add_executable(hbf_eventlab_host_completion_tests tests/host_completion.cpp)
     target_link_libraries(hbf_eventlab_host_completion_tests PRIVATE HBFEventLab::core)
-    foreach(scenario empty partial admission future feedback replay pending_retry timeout_retry dependency_cancel recovery_failure history burst_finite)
+    foreach(scenario empty partial admission future feedback replay pending_retry timeout_retry dependency_cancel recovery_failure history burst_finite
+            index_burst_refs index_retry_refs index_read_reuse index_cancel_read)
         add_test(NAME host_completion_${scenario} COMMAND hbf_eventlab_host_completion_tests ${scenario})
         set_tests_properties(host_completion_${scenario} PROPERTIES TIMEOUT 30)
     endforeach()
@@ -131,6 +146,13 @@ if(BUILD_TESTING)
     endforeach()
     add_test(NAME session_demo COMMAND hbf_eventlab_session_demo)
     add_executable(hbf_eventlab_session_tests tests/session.cpp)
+    add_executable(hbf_eventlab_backend_overlay_tests tests/backend_overlay.cpp)
+    target_link_libraries(hbf_eventlab_backend_overlay_tests PRIVATE HBFEventLab::core)
+    foreach(scenario install_guards install_atomic install_reentrant fault_override fault_exception
+            history_normal history_late_failure persistent_failure read_failure_dependency abort_later_version zero_reclaim)
+        add_test(NAME backend_overlay_${scenario} COMMAND hbf_eventlab_backend_overlay_tests ${scenario})
+        set_tests_properties(backend_overlay_${scenario} PROPERTIES TIMEOUT 30)
+    endforeach()
     target_link_libraries(hbf_eventlab_session_tests PRIVATE HBFEventLab::core)
     foreach(scenario exclusive empty_frontier endpoint_input first_atomic late_atomic horizon_guard open_drained close_work close_empty
             open_timeout closed_stalled missing_predecessor feedback_closed feedback_guard feedback_future feedback_validation callback_error callback_model_error
@@ -208,7 +230,9 @@ if(BUILD_TESTING)
     add_executable(hbf_eventlab_host_send_policy_tests tests/host_send_policy.cpp)
     target_link_libraries(hbf_eventlab_host_send_policy_tests PRIVATE HBFEventLab::core)
     foreach(scenario order fcfs fill_open blocked_open release_order same_tick dependency_age not_taken retry_tail
-            same_tick_retry timeout_tail timeout_unsent replay_followers burst_mixed cross_global_burst channels)
+            same_tick_retry timeout_tail timeout_unsent replay_followers burst_mixed cross_global_burst channels
+            preflight_busy preflight_same_tick preflight_race preflight_reselect preflight_cancel preflight_regression
+            index_group_handoff index_batch_accept index_group_future index_group_channels)
         add_test(NAME host_send_${scenario} COMMAND hbf_eventlab_host_send_policy_tests ${scenario})
         set_tests_properties(host_send_${scenario} PROPERTIES TIMEOUT 30)
     endforeach()
@@ -296,7 +320,7 @@ if(BUILD_TESTING)
             remap_cache duplicate_handoff response_feedback configuration cache_pin_invalidation teardown unsupported
             policies invalid_policy link_latency pending_recheck deadline_link_boundary
             sense_order_policy sense_order_blocked ordered_late_error rewrite_saved_read retirement_loop
-            teardown_cache_hit callback_limit multi_channel_bandwidth)
+            teardown_cache_hit callback_limit multi_channel_bandwidth channel_preflight preflight_rx_fit)
         add_test(NAME device_${scenario} COMMAND hbf_eventlab_device_tests ${scenario})
         set_tests_properties(device_${scenario} PROPERTIES TIMEOUT 20)
     endforeach()

@@ -2,8 +2,9 @@
 import argparse,json
 from pathlib import Path
 from setup_llama_baseline import ROOT,sha
-from platform_environment import executable
-COMMIT='72e074508c462dceb7d42962c4885ecf17cc4d0d'
+from platform_environment import executable,cache_value
+ORIGIN=ROOT/'third_party/hbf-eventlab-origin.json'
+COMMIT=json.loads(ORIGIN.read_text(encoding='utf-8'))['upstream_commit']
 DEFAULT_BUILD=ROOT/'build-model'
 def require(ok,message):
     if not ok:raise RuntimeError(message)
@@ -14,12 +15,23 @@ def verify_records(items):
     for i in items:require(sha(Path(i['path']))==i['sha256'],'changed file: '+i['path'])
 def inputs():
     return records([p for name in ['include','src','cmake','adapters','third_party','tools'] for p in (ROOT/name).rglob('*') if p.is_file() and '__pycache__' not in p.parts])
+def backend_identity(build):
+    origin=read(ORIGIN);source=(ROOT/'third_party/HBF-EventLab').resolve()
+    configured=cache_value(build,'HBFLAB_EVENTLAB_SOURCE')
+    require(configured is not None and Path(configured).resolve()==source,'backend source path mismatch')
+    require(not origin['local_changes'],'baseline requires unmodified upstream backend')
+    expected={i['path'] for i in origin['upstream_files']}
+    actual={p.relative_to(source).as_posix() for p in source.rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.suffix!='.pyc'}
+    require(actual==expected,'backend source membership mismatch')
+    for i in origin['upstream_files']:require(sha(source/i['path'])==i['sha256'],'backend source changed: '+i['path'])
+    return {'commit':origin['upstream_commit'],'tree':origin['upstream_tree'],'path':str(source)}
+
 def seal(build):
     build=Path(build).resolve();require(not (build/'release-identity.json').exists(),'sealed build cannot be overwritten')
-    v={'status':'sealed','backend':{'commit':COMMIT,'path':str(ROOT/'third_party/HBF-EventLab')},'build_directory':str(build),'sources':inputs(),'artifacts':records([*list((build/'bin').glob('*')),*list(build.glob('*.ptx')),build/'CMakeCache.txt'])}
+    v={'status':'sealed','backend':backend_identity(build),'build_directory':str(build),'sources':inputs(),'artifacts':records([*list((build/'bin').glob('*')),*list(build.glob('*.ptx')),build/'CMakeCache.txt'])}
     require(executable(build/'bin','realgpu_llama').exists(),'model executable missing');write(build/'release-identity.json',v);return v
 def verify_build(build=DEFAULT_BUILD,expected=COMMIT):
-    v=read(Path(build)/'release-identity.json');require(v['backend']['commit']==expected,'backend mismatch');require(Path(v['build_directory'])==Path(build).resolve(),'build location changed; rebuild required');verify_records(v['artifacts']);require(v['sources']==inputs(),'source inventory changed; rebuild required');return v
+    v=read(Path(build)/'release-identity.json');require(v['backend']==backend_identity(build),'backend source identity mismatch');require(v['backend']['commit']==expected,'backend mismatch');require(Path(v['build_directory'])==Path(build).resolve(),'build location changed; rebuild required');verify_records(v['artifacts']);require(v['sources']==inputs(),'source inventory changed; rebuild required');return v
 def add_build_arguments(p):
     p.add_argument('--cuda-root',type=Path);p.add_argument('--gpu-device',default='0');p.add_argument('--build-dir',type=Path,default=DEFAULT_BUILD);p.add_argument('--expected-backend',default=COMMIT)
 if __name__=='__main__':

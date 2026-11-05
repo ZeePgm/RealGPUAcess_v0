@@ -6,23 +6,25 @@
 
 ## 1. 验证版本与环境
 
-默认完整测试集共 **466 项**（454项核心测试＋12项依赖Python的实验及公共基础设施测试入口，本次使用Python 3.14）。实验测试默认开启，缺少Python 3.10+会导致配置失败；显式关闭后为454项核心测试，不属于完整回归；下列回归在 Windows、MSVC 19.43、x64 环境完成。测试覆盖当前支持的功能子集，目标环境的复现命令见第 3、4 节；本表不代表其他工具链已完成本次回归。
+默认完整测试集共 **512 项**（500项核心测试＋12项依赖Python的实验及公共基础设施测试入口，本次使用Python 3.14）。实验测试默认开启，缺少Python 3.10+会导致配置失败；显式关闭后为500项核心测试，不属于完整回归；下列回归在 Windows、MSVC 19.43、x64 环境完成。测试覆盖当前支持的功能子集，目标环境的复现命令见第 3、4 节；本表不代表其他工具链已完成本次回归。
 
 | 配置 | 验证日期 | 测试结果 | CTest墙钟耗时 |
 |---|---|---|---:|
-| Debug | 2026-10-27 | 466/466通过，0失败 | 393.02s |
-| Release | 2026-10-27 | 466/466通过，0失败 | 55.52s |
+| Debug | 2026-11-02 | 512/512通过，0失败、0跳过 | 183.61s |
+| Release | 2026-11-02 | 512/512通过，0失败、0跳过 | 41.95s |
 
-上述两个配置各按串行 CTest 运行，耗时只记录本次环境。墙钟耗时包含测试进程和测试框架开销，并受机器、工具链、并发和系统负载影响；不构成 Debug/Release 或跨平台性能结论。项目要求 C++17 和 CMake 3.20 或更新版本，平台构建方法见[使用说明](usage.md#构建)；复现时应记录 commit、工具链及配置。
+上述两个配置为后端基线发布前的重新构建与完整回归，CTest串行运行（未启用 `--parallel`），每项超时30s；两个配置的构建也依次执行。日志及JUnit XML保存在本机构建/验证产物中，不纳入源码。耗时只记录本次环境。墙钟耗时包含测试进程和测试框架开销，并受机器、工具链、并发和系统负载影响；不构成 Debug/Release 或跨平台性能结论。项目要求 C++17 和 CMake 3.20 或更新版本，平台构建方法见[使用说明](usage.md#构建)；复现时应记录 commit、工具链及配置。
 
 ## 2. 测试矩阵
 
-466项由35个基础行为场景、34个生命周期/事件场景、44个Device场景、1个Device示例、139个Host行为场景、1个增量Host示例、45个在线会话场景、3个会话/容量/桥接示例、23个tensor桥接场景、8个计算尾段/选区场景、45个统计场景、26个配置场景、28个CLI场景、12个程序性能诊断场景、10个读调度/窗口观察场景和12个依赖Python的实验及公共基础设施测试入口组成。分类表示验证职责，不表示规范章节数量。
+512项由35个基础行为场景、34个生命周期/事件场景、46个Device场景、1个Device示例、153个Host行为场景、1个增量Host示例、45个在线会话场景、11个Session故障接口/Host历史边界场景、3个会话/容量/桥接示例、23个tensor桥接场景、8个计算尾段/选区场景、45个统计场景、26个配置场景、28个CLI场景、12个程序性能诊断场景、19个通知诊断/唤醒场景、10个读调度/窗口观察场景和12个依赖Python的实验及公共基础设施测试入口组成。分类表示验证职责，不表示规范章节数量。
 
 | 验证面 | 代表场景 | 主要断言 |
 |---|---|---|
+| Session故障接口与历史处理 | backend_overlay_install_guards／install_atomic／install_reentrant／fault_override／fault_exception／history_normal／history_late_failure／persistent_failure／read_failure_dependency／abort_later_version／zero_reclaim | 非空、开始前及非重入保护；替换配置故障模型；异常终结；正常历史后首次写失败；恢复预算与已回收前页replay；仅读失败仍推进依赖取消；历史失败影响新版本；未终结Unit不回收。 |
 | Host完成汇总 | host_completion_empty／partial／admission／future／feedback／replay／pending_retry／timeout_retry／dependency_cancel／recovery_failure／history／burst_finite | 在统计观察与事件边界独立扫描结果表，核对常数时间查询；拒绝不计入、未来输入计入、重试不重复计数、历史失败保留、回调排空、回收及跨Global burst；12份事件与结果快照和优化前版本逐字一致。 |
 | 程序性能诊断 | runtime_profile_nested／disabled／unwind／export／isolation／admission／normal／replay／timeout／pending／config／cli | 确定性嵌套与自身计时、异常、固定聚合、默认关闭、准备后背压计数；开关对照模拟事件流、Tick、结果和排空一致；配置和输出冲突检查。详见[诊断口径](runtime_profiling.md)。 |
+| 通知隔离与唤醒 | notification_same_block／same_block_many／same_zone／other_zone／channels／health／release_each／zone_cancel／zone_swap／shared_space／local_space／entry_budget／terminal_space／terminal_error／registry／reserved_rollback／cached_rollback／metadata_release／benchmark | 无关读不因使用者退出而重查；真实故障、映射状态变化、逐次释放、结果空间不足和预留回滚仍正确唤醒；共享池与独立channel预算分别验证；版本差异、取消及首次通知归因正确；诊断开关不改变业务事件、Tick与结果。定向终结Pending测试使用测试夹具解除内容guard，不代表生产允许冲突重写。 |
 | 计算尾段与选区 | tensor_compute_tail、zero、empty、limit、overflow、guards、ranges、identity | 最后访存后独立推进，不造虚拟命令；零时延保留反馈；限额、溢出、重入、子范围交集与既有内容身份。 |
 | Qwen审计器 | experiment_qwen_audit_unit | 8项无CUDA的Python检查：时间分解、尾段遗漏、墙钟混入、回调缺失/失败、非有限计时、生成结果不一致及范围并集。真实GPU三方实验另行执行。 |
 | 地址与接收 | address_mapping、admission、shared_credit | 地址单位、双映射、共享credit与响应生命周期。 |
@@ -36,7 +38,9 @@
 | 读窗口与组序 | window_batch_timer、batch_pending、batch_missing、ordered_late_error | Batch边界、主动timer、Pending提示与组内错误返回。 |
 | 链路与正式接受 | rx_reservation、mocs_ingress、link_latency、multi_channel_bandwidth | 在途RX预留、MOCS边界、序列化/传播分离。 |
 | Global与发送策略 | splitter、sixteen_channels、host_send_fcfs、host_send_fill_open、host_send_blocked_open、host_send_channels | 跨Global补DLU；真实Device下两种策略次序不同，受阻请求可被合法补片越过，各channel独立前进。 |
+| Channel发送前置检查 | host_send_preflight_busy、preflight_same_tick、preflight_race、preflight_reselect、preflight_cancel、preflight_regression；device_channel_preflight、device_preflight_rx_fit | 链路忙时不扫描候选；释放即唤醒而非等待响应；同Tick不添延迟；带版本订阅不漏唤醒；重新选候选；依赖取消与重试照常推进；RX容量条件保留候选绕过；兼容未实现查询的端口。 |
 | Host入队身份与次序 | host_send_release_order、host_send_same_tick、host_send_dependency_age、host_send_not_taken、host_send_burst_mixed、host_send_cross_global_burst | 按释放与输入次序入队，依赖／背压保留队龄；burst等最后贡献片段，不受预加载构造顺序影响。 |
+| Host派生索引 | host_send_index_group_handoff、index_batch_accept、index_group_future、index_group_channels；host_completion_index_burst_refs、index_retry_refs、index_read_reuse、index_cancel_read | 逐事件全扫描核对读前序、驻留引用与稀疏重试集合；覆盖跨Global burst、未来读、跨channel、重试复用和取消回收；12个生命周期基线快照逐字节一致。 |
 | Host重试排序 | host_send_retry_tail、host_send_same_tick_retry、host_send_timeout_tail、host_send_timeout_unsent、host_send_replay_followers | 错误重发排到队尾，未发送补片保留原次序，同Tick可复现；稳定逻辑身份和统计释放时刻不被重置。 |
 | Host恢复 | recovery_once、follower_before_root、replay_merge、burst_recovery | 真正响应驱动、根因定位、任务合并和恢复终点。 |
 | Host命令重试 | pending_root_first、pending_follower_first、pending_late_followers、pending_burst | 根因或后继错误先到均可修复；只重发被拒绝命令，保留有效片段；burst仍按一条命令记账。 |
@@ -87,7 +91,7 @@
 | 配置合法性与运行 | configuration_grade_limits、configuration_mocs_ranges、configuration_small_read、configuration_small_write、configuration_small_burst、configuration_capacity | 档位上限、Supported／Selected、实际写模式诊断、真实超时／burst前进及预算传递。 |
 | 配置复现与保护 | configuration_roundtrip、configuration_default_equivalence、configuration_cli_roundtrip、configuration_cli_collision | 导出再载入保持结果／Tick／事件数；输入与输出不互相覆盖。 |
 
-场景名指测试函数或CLI案例名；同名案例按“生命周期 / Device / Host / CLI”区分。Host断言主要位于 [host.cpp](../tests/host.cpp)、[host_retry.cpp](../tests/host_retry.cpp)、[host_send_policy.cpp](../tests/host_send_policy.cpp) 和 [host_incremental.cpp](../tests/host_incremental.cpp)；在线会话断言位于 [session.cpp](../tests/session.cpp)。实际CTest注册以[构建定义](../CMakeLists.txt)和`ctest -N`为准。设计表中的测试引用指向对应注册位置；需要查看断言时可在`tests/`中搜索函数，例如：
+场景名指测试函数或CLI案例名；同名案例按“生命周期 / Device / Host / CLI”区分。Host断言主要位于 [host.cpp](../tests/host.cpp)、[host_retry.cpp](../tests/host_retry.cpp)、[host_send_policy.cpp](../tests/host_send_policy.cpp) 和 [host_incremental.cpp](../tests/host_incremental.cpp)；在线会话断言位于 [session.cpp](../tests/session.cpp) 和 [backend_overlay.cpp](../tests/backend_overlay.cpp)。[测试侧索引核对](../tests/host_index_oracle.hpp)从现存Unit重建版本目录、Global引用和读顺序索引；增量驻留测试在安全回收后和等待重试边界检查一致性。与`fa4f37d`的10组CLI对照覆盖普通、burst、单次/合并replay、持续失败、恢复数据不足、超时、Pending满及运行限额：统计JSON与业务事件JSONL逐字一致，控制台仅统一输出文件路径后比较；这些对照不衡量性能收益。实际CTest注册以[构建定义](../CMakeLists.txt)和`ctest -N`为准。设计表中的测试引用指向对应注册位置；需要查看断言时可在`tests/`中搜索函数，例如：
 
 ```text
 rg -n "void event_rounds" tests
@@ -156,7 +160,7 @@ Linux 的构建与全量回归命令见 [贡献指南](../CONTRIBUTING.md#testin
 正常案例的输出节选：
 
 ```text
-STOP Completed workload=Success tick=1753065 events=19846 reason=All logical work succeeded
+STOP Completed workload=Success tick=1753065 events=11790 reason=All logical work succeeded
 HOST handed=256 accepted=256 responses=256 attempt_errors=0 logical_success=256 logical_failed=0 recovery_tasks=0 replay_passes=0 replay_commands=0 pending_limit_errors=0 pending_retry_commands=0 assembly_timeout_errors=0 timeout_retry_rounds=0 timeout_retry_commands=0 order_retry_commands=0
 DEVICE programs=2 erases=2 senses=2 cache_hits=126 host_drained=1 device_drained=1 pending_global=0 source_queue=0 unsettled_host=0 outstanding_device=0 ingress=0 pending_dlu=0 bank_ops=0 egress=0
 ```
@@ -277,7 +281,7 @@ python experiments/read_scheduling/plot.py out/read-scheduling-minimal
 
 ## 可选Qwen在线验证
 
-默认466项CTest不需要GPU、CUDA或模型权重，其中包含8个计算推进/选区场景及1个Python审计测试入口。真实GPU三方验证需要显式启用可选目标并运行[Qwen实验](qwen_online.md#运行)。程序性能诊断的开关对照也使用无CUDA的原Host闭环；可选Qwen的诊断入口已有构建记录，本次完成计数优化未重新构建或运行可选CUDA目标。
+默认512项CTest不需要GPU、CUDA或模型权重，其中包含8个计算推进/选区场景及1个Python审计测试入口。真实GPU三方验证需要显式启用可选目标并运行[Qwen实验](qwen_online.md#运行)。程序性能诊断的开关对照也使用无CUDA的原Host闭环；可选Qwen的诊断入口已有构建记录，本次后端接口与历史扫描优化未重新构建或运行可选CUDA目标。
 
 2026-10-26在Windows、MSVC 19.43、CUDA 12.9.1、RTX 4070 Laptop GPU完成：独立CPU参照、原生GPU、HBF接入GPU三方生成结果一致；logits最大绝对误差约6.53e-5、RMSE约7.25e-6，低于运行前确定的阈值；两个GPU模式的全部快照逐字节一致。默认选区为8KiB，50个Global、3200次命令尝试终结，25次输入容量背压，Host/Device排空。
 

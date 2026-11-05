@@ -85,6 +85,14 @@ const BufferBudget& DeviceDriver::ingress(ChannelId ch) const { return channels_
 DeviceDriver::Transaction* DeviceDriver::find(ChannelId ch,CommandId id) {
     const auto it=identities_.find({ch,id}); return it==identities_.end()?nullptr:&transactions_.at(it->second);
 }
+std::vector<WaitObservation> DeviceDriver::channel_send_blockers(ChannelId ch) const {
+    const auto& channel=*channels_.at(ch);
+    const auto link=signals_.observe(WaitKey::channel_key(WaitReason::RequestLink,ch));
+    // RX payload fit depends on the chosen transaction; do not turn a blocked
+    // large write into a channel-wide barrier for reads or smaller writes.
+    if(channel.request_busy)return {link};
+    return {};
+}
 HandoffResult DeviceDriver::try_submit(const LocalTransaction& input,Receiver receiver,AcceptanceObserver acceptance) {
     const auto& cmd=input.command; const auto ch=cmd.address.channel;
     if(ch>=channels_.size() || !receiver) throw std::invalid_argument("bad channel/receiver");
@@ -259,6 +267,7 @@ bool DeviceDriver::try_cache(Transaction& t) {
     return true;
 }
 void DeviceDriver::pump(ChannelId ch) {
+    RuntimeScope timing(signals_.runtime_profile(),RuntimeRegion::DevicePump);
     // Bounded active-command/Ingress directories only; never scan NAND or historical
     // mappings. Sleeping records are not retried unless their indexed condition fires.
     for(const auto identity:channels_[ch]->transactions) {
@@ -448,14 +457,16 @@ void DeviceDriver::deliver(std::uint64_t id) {
     } else {
         t.delivered=*writes_.response(ch,cmd.id); writes_.response_delivered(ch,cmd.id);
     }
-    if(!t.egress_in_path) egress_.release(*t.egress);
+    if(!t.egress_in_path) {
+        egress_.release(*t.egress);
+        signals_.notify(WaitKey::channel_key(WaitReason::ResultSpace,egress_.space_channel(ch)));
+    }
     t.egress.reset(); t.stage=Stage::Feedback;
     auto& channel=*channels_[ch]; --channel.response_flights; ++channel.feedback;
     ++stats_.delivered; emit("delivered",ch,id);
     if(statistics_sink_)std::visit([&](const auto& response) {
         statistics_sink_->observe(StatAttemptDelivered{t.id,events_.now(),cmd.op,static_cast<std::uint8_t>(response.status)});
     },*t.delivered);
-    signals_.notify(WaitKey::channel_key(WaitReason::ResultSpace,0));
     if(t.target) notify_cache(bank_of(*t.target));
     // Cleanup first; feedback is a subsequent normal event, never a recursive call.
     const auto delivery_time=events_.now();

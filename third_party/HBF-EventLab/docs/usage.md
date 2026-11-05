@@ -225,7 +225,7 @@ CLI的 `HOST` 行同时报告命令尝试和逻辑工作结果。计数单位如
 
 ## 统一统计
 
-模拟器程序自身的耗时使用独立、默认关闭的`--runtime-profile FILE`，支持拆分、准备、登记、发送、状态推进、历史结果扫描和回收的聚合计时。它与下面的模拟时间统计分开，详见[程序性能诊断](runtime_profiling.md)。
+模拟器程序自身的耗时使用独立、默认关闭的`--runtime-profile FILE`，支持拆分、准备、登记、发送、状态推进、完成检查、回收及Device推进的聚合计时，并按原因汇总通知命中和唤醒回调；旧历史扫描字段保留为零。它与下面的模拟时间统计分开，详见[程序性能诊断和并发读基准](runtime_profiling.md)。
 
 ```powershell
 .\build\Release\hbf_eventlab_cli.exe examples\workloads\normal.txt --stats-json build\normal-statistics.json
@@ -419,6 +419,14 @@ API 契约如下：
 ## 在线会话 API
 
 `SimulationSession` 接收 `ResolvedSimulationConfiguration`，构造原有 Host、Device、地址交织及事件队列。它使用统一配置中的几何、策略、故障输入和运行限额，不依赖文件输入。配置的 `output` 路径和 trace 开关仍由应用层处理；会话不打开输出文件。可在构造时传入 `IStatisticsSink*`，观察器必须比会话活得更久。Host/Device 查询通过只读视图提供，不允许从会话获取可修改的事件队列。
+
+需要由执行器决定 program 结果时，可在会话开始前调用
+`set_program_outcome(std::function<ProgramOutcome(const ProgramOperation&)>)`。
+此回调**替换**统一配置中的故障模型以及此前安装的回调，不与它们叠加；参数为空、已有成功登记输入、调用过时间推进、已关闭输入或正在执行回调时，修改均被拒绝。
+原子拒绝的无效输入／TooLarge 输入不算成功登记，不关闭初始化入口。
+回调返回 `Success`、`FailedReusable` 等既有介质结果后，错误响应与恢复仍由原 Device／Host 处理。
+回调抛出异常会使会话进入终结错误，不应通过抛异常表达正常的 program fail。
+生产者须保证捕获对象的生命周期，并单独记录自定义故障模型及参数；`configuration()`／有效配置导出只描述原始配置，无法序列化任意函数。
 
 ```cpp
 SimulationConfiguration config;

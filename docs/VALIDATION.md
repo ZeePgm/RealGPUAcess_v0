@@ -1,4 +1,12 @@
-# Release validation
+# Validation
+
+The active backend is the unmodified HBF-EventLab commit `8ccb1f3`.
+The vendored file hashes are recorded in [the origin record](../third_party/hbf-eventlab-origin.json).
+The Windows CUDA build and full CPU/CUDA/backend/injection suite passed 763 tests.
+
+## Historical release evidence
+
+The records below describe the earlier release; they are retained as provenance.
 
 Final acceptance is recorded in [release-validation.json](validation/release-validation.json).
 Release checks use binaries built in this release directory.

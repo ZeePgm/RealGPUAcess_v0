@@ -2,8 +2,8 @@
   "schema": 2,
   "release": "RealGPUAcess_v0",
   "revision": "incremental-host-72e0745",
-  "backend_upstream_commit": "72e074508c462dceb7d42962c4885ecf17cc4d0d",
-  "backend_overlay_files": 6,
+  "backend_upstream_commit": "8ccb1f353630f893f761b017d621812b7b9d5bf2",
+  "backend_overlay_files": 0,
   "framework_commit": "b3fa69955ea81c3b60e77e3c1e2224c4a826ffb9",
   "files": [
     {
@@ -233,8 +233,8 @@
     },
     {
       "path": "docs/DEPENDENCIES.md",
-      "bytes": 1606,
-      "sha256": "460ff1e3a9a9a1f4b4df232cf5c173785d42831edf773532341aef6c4cd339a8"
+      "bytes": 1380,
+      "sha256": "fef512fbdc239d683c531748e0a48f96032affdbeaf611115d90ab42716dd2e1"
     },
     {
       "path": "docs/ENVIRONMENT.md",
@@ -248,8 +248,8 @@
     },
     {
       "path": "docs/INCREMENTAL_BACKEND.md",
-      "bytes": 8201,
-      "sha256": "716c30234cedbd5dc6084565a069c8bf8307259aaabf3432ce01a9b53fdceb33"
+      "bytes": 7095,
+      "sha256": "4833cacc4b83f14e36b6c9b435455aac01a10b7931dd8c29c8c5b56c444966b1"
     },
     {
       "path": "docs/INCREMENTAL_INTEGRATION_REVIEW.md",
@@ -318,8 +318,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "bytes": 2458,
-      "sha256": "4a04a869288ff30869219248fc93051639ad07117e2578540117b29be087a89f"
+      "bytes": 2867,
+      "sha256": "88dfee4133a428a5afd50ea5df73fbf363dfba419f71bc216556dfad25c14d60"
     },
     {
       "path": "examples/async_reads.cu",
@@ -443,13 +443,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 7021,
-      "sha256": "25d7ae971303d62c5e2c6b1eba185e5c20f434d00aa0134f4002cc3116bf4fd4"
+      "bytes": 6974,
+      "sha256": "48a616c84ce3d265cf18c9f1d1c20fc02557ddda24ee13ab2356386d7640c63f"
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 1115,
-      "sha256": "0a94a4adc28bd0f1071c3979bb19f573376ac0a75abb1d7b8ce1000aeaa78014"
+      "bytes": 371,
+      "sha256": "508ddd173566c3b970a9f6910c4ec1f8ec5f77ad4bd631a898a11fe64218902e"
     },
     {
       "path": "requirements-dev.txt",
@@ -798,8 +798,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/CMakeLists.txt",
-      "bytes": 25372,
-      "sha256": "f75882f3e3e1f74d45b305e78aba6f73d5ea1782f6453580778996c5264ce54c"
+      "bytes": 27438,
+      "sha256": "6c78acf60f3c2e616cef54cc337cc46ea6f0fca630b5e846ff175d8dd2081e89"
     },
     {
       "path": "third_party/HBF-EventLab/configs/functional.ini",
@@ -813,13 +813,13 @@
     },
     {
       "path": "third_party/HBF-EventLab/docs/architecture.md",
-      "bytes": 25032,
-      "sha256": "f626e507dfc0b7d473d4497d240a5e63d6bdd5eebf4a6ccb9a071dae7ca16771"
+      "bytes": 27521,
+      "sha256": "920610a30b8adbed918536c3d70a54c975d18522a0591c52faaed6abf4915888"
     },
     {
       "path": "third_party/HBF-EventLab/docs/design_decisions.md",
-      "bytes": 377559,
-      "sha256": "42bc98b3b81fe55c628d2f4db168e4d9cca64e022082cbfdb9bc28e0105ee1a8"
+      "bytes": 383479,
+      "sha256": "2a82e2aad60070cae62771dd3b0a3297c7847acc413a914810ff91f8de0269bc"
     },
     {
       "path": "third_party/HBF-EventLab/docs/gpu_experiment_handoff.md",
@@ -843,8 +843,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/docs/runtime_profiling.md",
-      "bytes": 10329,
-      "sha256": "fb6179a2dce1af4d96cc83141ad1d423fc73830bd2ae96ab71fdaa05edc42f77"
+      "bytes": 16390,
+      "sha256": "fcdb453c44bc4d95b7ceff5fe3f8cd0b4ecc64b65f22fe282defd45a6c011cb3"
     },
     {
       "path": "third_party/HBF-EventLab/docs/scope_and_limitations.md",
@@ -863,13 +863,13 @@
     },
     {
       "path": "third_party/HBF-EventLab/docs/usage.md",
-      "bytes": 52399,
-      "sha256": "b285ab24ffbbdbc44a4e19cf919da2fab81e364f2c0efcda674432d3459b8f64"
+      "bytes": 53406,
+      "sha256": "2718c755a124bc318c114d35faff8429fe8a5d522c85ddd1a44a305f5d3a00e6"
     },
     {
       "path": "third_party/HBF-EventLab/docs/verification.md",
-      "bytes": 35812,
-      "sha256": "068adb610b6d720a6020efed00da5b5684661b789248d1f82965d579da1ddf0e"
+      "bytes": 38760,
+      "sha256": "1a2c80011683d193121e0d058760d733f7ae6a8d3ca35bafa907f73d4cef4e91"
     },
     {
       "path": "third_party/HBF-EventLab/examples/bounded_input.cpp",
@@ -898,13 +898,18 @@
     },
     {
       "path": "third_party/HBF-EventLab/examples/minimal_loop.cpp",
-      "bytes": 13152,
-      "sha256": "dca0c9af1f6417db474850bae5ca64ce22cc7ad15c056b98adb9bf733c816d87"
+      "bytes": 13192,
+      "sha256": "1e1036a4d259259599b3672bf28d1451c0bef118af6d52ae04e4adf9447e889d"
     },
     {
       "path": "third_party/HBF-EventLab/examples/online_session.cpp",
       "bytes": 2068,
       "sha256": "16028855e6cd0aad3b17e9934d1df7517cdbf7d730b410b614a1ca53c71f9551"
+    },
+    {
+      "path": "third_party/HBF-EventLab/examples/read_wakeup_bench.cpp",
+      "bytes": 3464,
+      "sha256": "a83c7dafa7a63125b512a3a483d7d88aca88ae443b093c6bf3b775e1db028223"
     },
     {
       "path": "third_party/HBF-EventLab/examples/runtime_profile_bench.cpp",
@@ -1182,6 +1187,11 @@
       "sha256": "7e3aab91b2bd6e2a85fe25da69edd8b85bb93078ce50abd25f180c2b2b6f552d"
     },
     {
+      "path": "third_party/HBF-EventLab/include/hbf_eventlab/common/wait_reason.hpp",
+      "bytes": 411,
+      "sha256": "6c55010481ff07ad9ebb0412d77724a2f945c3741fc1354311b5c151ed21ecdf"
+    },
+    {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/common/write_observation.hpp",
       "bytes": 766,
       "sha256": "01abce208e423f42228ca4f2a02f99ff9318a902032dd161b670e887cdff20ce"
@@ -1193,8 +1203,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/diagnostics/runtime_profile.hpp",
-      "bytes": 3144,
-      "sha256": "bd3bce1e5ffd948968e11c93dd5303d76e40d2dfdbe0f755a861d37ce0146684"
+      "bytes": 3889,
+      "sha256": "09db1b946e1f6635a95bd21838eb90c056729052383c99ea093c7aa3bbb80098"
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/host/global_request_splitter.hpp",
@@ -1203,8 +1213,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/host/host_driver.hpp",
-      "bytes": 11122,
-      "sha256": "b8e3ebc6db7c4b0298f8e2a7111557a6383dd8f4aa4853c57833c9ba4cb229f9"
+      "bytes": 12262,
+      "sha256": "4777a4fdfa9ee7b09efe11eb52c7be6cc586fe125543c328cd79174b13922096"
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/host/recovery_manager.hpp",
@@ -1243,8 +1253,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/interfaces/host_port.hpp",
-      "bytes": 1807,
-      "sha256": "ca681db725ba929d04f0a3ab5d034dcaf79ede86b76ff8a85d799dfb6d116e26"
+      "bytes": 2378,
+      "sha256": "b3ada44517b3c4e6134d305185ba4169c06703948f1f5925a8dda153b45451a8"
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/interfaces/host_send_policy.hpp",
@@ -1258,8 +1268,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/interfaces/read_result_storage.hpp",
-      "bytes": 1817,
-      "sha256": "4a14174592258a6df1d4e619073d3511326039931a7ffea41ecd8c078c63edcf"
+      "bytes": 2150,
+      "sha256": "f5f0a5cdacb189ac5d6ad2fe9c976910d3d289c5cdf6721ae401e9f00b94935d"
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/interfaces/statistics_sink.hpp",
@@ -1308,8 +1318,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/runtime/admission_wait_registry.hpp",
-      "bytes": 2682,
-      "sha256": "9179cae2248bdea99f6b80c73d8e00c1046de3eb624348df4da52b208cda5ef1"
+      "bytes": 3143,
+      "sha256": "ac5a49a0fe5b6b89c9a4579ce59a12e0632406947860d0c1f44e332ef35d6998"
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/runtime/bank_cache.hpp",
@@ -1328,8 +1338,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/runtime/capacity_retirement_coordinator.hpp",
-      "bytes": 3730,
-      "sha256": "9b28fef7c89f9c16121eac05346e688e210ffbe0370461e6589101c80ee3ba29"
+      "bytes": 3783,
+      "sha256": "8fcc6d7ced8b20a37b841fd2511282f7f21a03947782a4eab45387448c31f7aa"
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/runtime/command_admission.hpp",
@@ -1338,8 +1348,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/runtime/device_driver.hpp",
-      "bytes": 7349,
-      "sha256": "335aebb47d2a099743def39d2a639708b265d0f238fc8706aa6a27be06a7a7e7"
+      "bytes": 7631,
+      "sha256": "3a5e20fd7ffdc51c46be54f4a1c2554514fa232e7340efc1479bce2b225c2724"
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/runtime/device_runtime_state.hpp",
@@ -1348,8 +1358,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/runtime/link_buffers.hpp",
-      "bytes": 2839,
-      "sha256": "5f4bbd70891f826e89a02984eb2ecb8d1b297e1c26786d7904224f60b53afe7f"
+      "bytes": 3010,
+      "sha256": "2564847a5d16f58d6f0159b26560c01912b71e1644da10053ac5867f5f05dc16"
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/runtime/logical_access_tracker.hpp",
@@ -1373,8 +1383,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/runtime/read_path.hpp",
-      "bytes": 4263,
-      "sha256": "53ee368d8e9fa93a96a9a297ab7656ec0d47260284e3a90b8b37cbac9acfb3c2"
+      "bytes": 4601,
+      "sha256": "e0ccc61a9675c8d074e026d8b6816ac61a89545a0cb371f3a8c9c01e5ab2f9ab"
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/runtime/replay_state.hpp",
@@ -1393,8 +1403,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/runtime/simulation_session.hpp",
-      "bytes": 4542,
-      "sha256": "8aa0332fcf30bf6aefaa2943a0bebd7e9736ff41488c794b99489c72cb50a3e5"
+      "bytes": 4776,
+      "sha256": "23a1fbabb6f325c1fb2072761f00625f24fa7e105368d03822e08943be197f76"
     },
     {
       "path": "third_party/HBF-EventLab/include/hbf_eventlab/runtime/write_assembly.hpp",
@@ -1433,8 +1443,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/README.md",
-      "bytes": 14685,
-      "sha256": "768c268c6393cd320925d38a038b52329dcb33468882fd851d9118a494e62210"
+      "bytes": 15582,
+      "sha256": "e15418aa52c323b7a95f68ded76337523247567245688c5c27a7df3708cb358d"
     },
     {
       "path": "third_party/HBF-EventLab/src/adapters/tensor_access_bridge.cpp",
@@ -1473,8 +1483,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/src/diagnostics/runtime_profile.cpp",
-      "bytes": 3095,
-      "sha256": "8489ddf8ce1ea7dd4c2952aef7d871210fa3092ff75e00474f5a1e7fce4eb014"
+      "bytes": 4201,
+      "sha256": "0fb9900ef713ceb3411f2ea982ea88505ff1bc60b327ed2599a288c7410319f9"
     },
     {
       "path": "third_party/HBF-EventLab/src/host/global_request_splitter.cpp",
@@ -1488,18 +1498,23 @@
     },
     {
       "path": "third_party/HBF-EventLab/src/host/host_driver.cpp",
-      "bytes": 25552,
-      "sha256": "8ead35dd5c42d8355ecbd867e59f67917bd7d0efd0ed1502bdf37e27bbfa120b"
+      "bytes": 25245,
+      "sha256": "3c61119a1b2affb1fdb55b67347428e01ea6440a5b953b8d48a908c6387f428f"
+    },
+    {
+      "path": "third_party/HBF-EventLab/src/host/host_indices.cpp",
+      "bytes": 2832,
+      "sha256": "bae0ffb851478818cae87b4b78f0696fe4532e23b7354eae9822cf731c4e6e7d"
     },
     {
       "path": "third_party/HBF-EventLab/src/host/host_input.cpp",
-      "bytes": 10904,
-      "sha256": "cdd9683d2c438359eb9f257f25a3827ad41894b34d2ec37bdd953fb9632c9b3d"
+      "bytes": 10951,
+      "sha256": "81506ce4943a7639b2918788761b4ad16fe31ffb5bc6edcfc74ad91b9f5581fd"
     },
     {
       "path": "third_party/HBF-EventLab/src/host/host_storage.cpp",
-      "bytes": 5829,
-      "sha256": "82aa33c6a382d3219c44a289fb8293e090c95c7e6fa4a1403e649d896a4e32ed"
+      "bytes": 6143,
+      "sha256": "5e07bc24affb0fe389f5eee9d2c4a8e65d1a525ec85a5241c5fb9411ffb2f21f"
     },
     {
       "path": "third_party/HBF-EventLab/src/host/recovery_manager.cpp",
@@ -1513,8 +1528,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/src/host/write_retry.cpp",
-      "bytes": 9607,
-      "sha256": "c4ab2c9c6b226fc7bc69debb895b9b3a0a5e9451abb25f91d2a79e2cab581895"
+      "bytes": 9346,
+      "sha256": "c90d5d0a90cc4e9169a29e3864ef62f194ca4e10f2e41aa8fc7953debc884ac0"
     },
     {
       "path": "third_party/HBF-EventLab/src/infrastructure/event_queue.cpp",
@@ -1538,8 +1553,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/src/runtime/admission_wait_registry.cpp",
-      "bytes": 2340,
-      "sha256": "0a39fe3a830444be462777c746f51d8dd5d6d7461cee0d2d49a043e57aaf2d02"
+      "bytes": 3169,
+      "sha256": "6465a82a709a70bc2fe30c3dc28497a894f931e5cf40f1cee81ae0a3049d326b"
     },
     {
       "path": "third_party/HBF-EventLab/src/runtime/bank_cache.cpp",
@@ -1558,8 +1573,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/src/runtime/capacity_retirement_coordinator.cpp",
-      "bytes": 16120,
-      "sha256": "e94a85685138b37fdfff10bafd7f012598ab7e69c018ba7cdaa0d3de2072c409"
+      "bytes": 16550,
+      "sha256": "f2da5c63e98cf540a7a7728a8c9084d2381da8f2a6dc1fa87587d3926f73025a"
     },
     {
       "path": "third_party/HBF-EventLab/src/runtime/command_admission.cpp",
@@ -1568,8 +1583,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/src/runtime/device_driver.cpp",
-      "bytes": 30577,
-      "sha256": "3b68edb85b30e148d8c8ff5d070adcf0cdba76b00733e9f456c25ea2889e87bc"
+      "bytes": 31133,
+      "sha256": "682b47af165d83b1e9e3ee6e87baaf46e34642c9485caff1e71e6f618deac40d"
     },
     {
       "path": "third_party/HBF-EventLab/src/runtime/nand_media_state.cpp",
@@ -1578,8 +1593,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/src/runtime/read_path.cpp",
-      "bytes": 13164,
-      "sha256": "9f0c28a3654ee70856d79fc5fbb9d420f8ae43514064c493d94f6cfb32d9f856"
+      "bytes": 15206,
+      "sha256": "85fef95201eff00ad3285b4fb29b54623e017f867bf8879fd19b6a8fd1d3cd0a"
     },
     {
       "path": "third_party/HBF-EventLab/src/runtime/simulation_runner.cpp",
@@ -1588,8 +1603,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/src/runtime/simulation_session.cpp",
-      "bytes": 9187,
-      "sha256": "98973cc09409e9b1482edefb2a67b2f5a47eb4a9c7c05386c85bcbb2c4566bf2"
+      "bytes": 9250,
+      "sha256": "443b329226e980bd763c7ba40db977c414aba2dfa71d4749e1ff0c4f8485e9e3"
     },
     {
       "path": "third_party/HBF-EventLab/src/runtime/write_assembly.cpp",
@@ -1632,6 +1647,11 @@
       "sha256": "68084a5c53b2a9d06bec2efb655401d73f6d8ffb04dab069fadaf2fc0fe55784"
     },
     {
+      "path": "third_party/HBF-EventLab/tests/backend_overlay.cpp",
+      "bytes": 8664,
+      "sha256": "2e8b6881e5451b12eb45d847863615dc1a4f79d12fb5df65d40b0740bbd39529"
+    },
+    {
       "path": "third_party/HBF-EventLab/tests/capacity_retirement.cpp",
       "bytes": 15617,
       "sha256": "ca2ec36a2ad4bfd1e230f7d2c99e6ff4e68b0d27748063adad0adfd45b83fd20"
@@ -1657,6 +1677,11 @@
       "sha256": "4c693f424627adccebc0ef1575eff5f66aa1b89ae6fdfbb02a0a8777cf1384f8"
     },
     {
+      "path": "third_party/HBF-EventLab/tests/check_notification_bench.cmake",
+      "bytes": 1274,
+      "sha256": "12bbe8e76b7777e3d2f56e3c11a397bc012709730e5b217b4e29b84a75f93687"
+    },
+    {
       "path": "third_party/HBF-EventLab/tests/check_runtime_profile.cmake",
       "bytes": 2828,
       "sha256": "bc017b1110e0f832765fc8e643d6d62a93f8d567f12cee7a48fdabe1e5cc7667"
@@ -1678,8 +1703,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/tests/device.cpp",
-      "bytes": 30795,
-      "sha256": "1961c082af000a7a82777eb82fc63d5684e57194f1c9bf30102691eb928a565c"
+      "bytes": 33370,
+      "sha256": "da9166a9e43414f4d0666f388ac1ed8e0364c9b16b474ee5b67313295db13996"
     },
     {
       "path": "third_party/HBF-EventLab/tests/event_stream.cpp",
@@ -1698,8 +1723,8 @@
     },
     {
       "path": "third_party/HBF-EventLab/tests/host_completion.cpp",
-      "bytes": 11829,
-      "sha256": "dd43352f30879cb3308b80313366f511f6857cc505c907076ad3e92a14f4adf9"
+      "bytes": 14983,
+      "sha256": "7fcd6f1ddf3df3fe71628be1783277f55c21bc0bbb35594202c5fb408b4646f3"
     },
     {
       "path": "third_party/HBF-EventLab/tests/host_incremental.cpp",
@@ -1707,9 +1732,14 @@
       "sha256": "a7e1a2e117dd09dd6215c61b5a2fdb4ce8deac74a111cf0f9dab15b4ada623c2"
     },
     {
+      "path": "third_party/HBF-EventLab/tests/host_index_oracle.hpp",
+      "bytes": 4092,
+      "sha256": "554ef7859703765480ed1fa8c05ca6076eba63f91555ef9bc8899e46ca05be50"
+    },
+    {
       "path": "third_party/HBF-EventLab/tests/host_resident.cpp",
-      "bytes": 13948,
-      "sha256": "9f17a8ef132d13c81154ab2e56755243180fcf87c9ed5c8191ac5b72d61fc0e0"
+      "bytes": 14068,
+      "sha256": "b675e3fbbb774813224133014237a137aca2c7699b861a28c13edf54e407147d"
     },
     {
       "path": "third_party/HBF-EventLab/tests/host_retry.cpp",
@@ -1718,13 +1748,18 @@
     },
     {
       "path": "third_party/HBF-EventLab/tests/host_send_policy.cpp",
-      "bytes": 14593,
-      "sha256": "fcad7779682f9c6de944ed3790c623dee2263010eb28a8881fdd36ca4def2e4f"
+      "bytes": 21602,
+      "sha256": "38016ec0776fd8f6561dde728c0062c2a71c9116a343a7d9ac87494b461d8134"
     },
     {
       "path": "third_party/HBF-EventLab/tests/lifecycle.cpp",
-      "bytes": 31530,
-      "sha256": "bb817daa7df40e0193f607d7d27347e2acc2797e4954286f8c0e62a63a6c0c92"
+      "bytes": 31536,
+      "sha256": "1db4bbe286c60c5cc01c72b663f65d20074e796b096b21580e68200fe7dd5d50"
+    },
+    {
+      "path": "third_party/HBF-EventLab/tests/notifications.cpp",
+      "bytes": 13816,
+      "sha256": "83dd33fbf1916b4c7d46569971d2fa66557ba35cfb9799a277d68517b0c09b7b"
     },
     {
       "path": "third_party/HBF-EventLab/tests/pending_statistics.cpp",
@@ -1803,13 +1838,8 @@
     },
     {
       "path": "third_party/hbf-eventlab-origin.json",
-      "bytes": 2238,
-      "sha256": "0571cc2aec6976d29a2c950745b953dea090fa91221d58d9fe6c7adcc9f1e4b7"
-    },
-    {
-      "path": "third_party/hbf-eventlab-overlay.patch",
-      "bytes": 6439,
-      "sha256": "61a47215acd9f7744ac2f0669251b4211721b490a9e84444ba188c4fac808bab"
+      "bytes": 46199,
+      "sha256": "c581a85ce231779736c5f76f32afb668a555e824ef9e9f45d334852b1aa39bc4"
     },
     {
       "path": "third_party/llama.cpp-integrated/.clang-format",
@@ -21363,8 +21393,8 @@
     },
     {
       "path": "tools/integrated_build_identity.py",
-      "bytes": 2394,
-      "sha256": "701012bf020f048cab627c6df21e4173a87fd84272bded2b0838760bc760f8d7"
+      "bytes": 3380,
+      "sha256": "0ac25afd0e70d3f7808442b65bc50ccb233334d4cf4301581f74609d2a4bd903"
     },
     {
       "path": "tools/integrated_profile.py",

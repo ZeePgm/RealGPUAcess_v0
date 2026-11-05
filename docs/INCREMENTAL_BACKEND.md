@@ -1,28 +1,14 @@
 # Incremental backend adaptation
 
-This release pins HBF-EventLab upstream commit
-`72e074508c462dceb7d42962c4885ecf17cc4d0d`. The complete upstream archive has
-205 files. A two-file local Session extension permits guarded installation of a
-program-outcome fault function before any input or advancement. Original and
-patched hashes are recorded in `third_party/hbf-eventlab-origin.json`.
-Four additional Host files reduce historical scans without changing event
-decisions: before the first failed Write response, recovery/retry/abort scans are
-dormant; reclamation visits only versions whose units were retired. Once a Write
-error occurs, the original error-history scans run for the rest of the Session.
-All upstream history and sealed-version checks remain intact. The combined local
-overlay therefore changes six upstream files; it is not an unmodified checkout.
-Ungrouped Regular reads also skip a predecessor scan whose grouping/Batch
-conditions cannot apply. The normal/fault trace comparison and all 466 upstream
-tests were repeated after this addition.
+The baseline uses unmodified upstream main commit
+`8ccb1f353630f893f761b017d621812b7b9d5bf2`. All 212 source files are verified against the upstream
+Git tree. Guarded Session fault injection and former local Host history
+optimizations are now provided upstream; there is no local backend overlay.
+The new backend also provides targeted read notifications, channel-send
+preflight, Host indices and extended runtime profiling.
 
-The isolated optimization passed 466 upstream tests, 12 byte-exact normal/fault
-CLI trace comparisons, and deterministic benchmark comparisons. In the dedicated
-2,048-block history fixture, baseline software wall time divided by optimized
-wall time was approximately 8.24, measured on the history-scan variant before the
-Regular-read shortcut. This is simulator software cost, not modeled
-HBF hardware performance. Raw before/after results and the interrupted slow model
-diagnostic are retained in the development validation archive; the release
-contains compact acceptance and backend provenance records.
+See [current baseline validation](VALIDATION.md) and
+[source provenance](../third_party/hbf-eventlab-origin.json).
 
 ## Execution path
 

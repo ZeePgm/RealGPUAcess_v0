@@ -13,8 +13,8 @@ The shared execution path is:
         -> SimulationSession -> HostDriver -> DeviceDriver
         -> final Global result -> parent completion -> dependent GPU work
 
-The backend is pinned to feat/incremental-host commit
-72e074508c462dceb7d42962c4885ecf17cc4d0d, with six recorded local patch files.
+The backend is pinned to HBF-EventLab main commit
+8ccb1f353630f893f761b017d621812b7b9d5bf2. It uses the unmodified upstream source tree.
 The original synchronous, immutable TensorAccessBridge remains a tested reference.
 The shared asynchronous mutable path uses SimulationSession through the frontend
 producer adapter. See the [adapter contract](docs/INCREMENTAL_BACKEND.md).
@@ -103,8 +103,7 @@ service calls.
 - ./adapters/llama_cpp/integrated: model CMake entry; adjacent files implement the
   runner, weights, KV, PTX and profiles.
 - ./third_party/HBF-EventLab: complete backend source, including tests/docs.
-- ./third_party/hbf-eventlab-origin.json and ./third_party/hbf-eventlab-overlay.patch:
-  upstream identity and exact local changes.
+- ./third_party/hbf-eventlab-origin.json: upstream commit, tree and file hashes.
 - ./third_party/llama.cpp-integrated: pinned framework with its existing overlay.
 - ./third_party/detours: Windows injection source dependency.
 - ./tests and ./examples: functional, GPU, failure and injection validation.

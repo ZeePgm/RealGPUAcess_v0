@@ -34,6 +34,10 @@ Host 只依赖公开的 `IHostPort`、静态地址视图和自身记录，不查
 
 `host_storage.cpp` 负责增量输入容量和详细对象回收。`max_resident_fragments` 按尚未安全回收的 Work 计费，包含未来释放和依赖等待；burst仍按64个逻辑片段计费。容量不足整批退回，调用方保留请求，Host不建立另一份隐藏队列。Work终结且其Unit/Attempt和重试/恢复流程不再引用详细记录后，回收Work、Unit及不再使用的GlobalRequest；结果摘要、版本覆盖/成功位图和保留区独立存活。容量释放通知合并为事件，不能同步重入接收路径。该额度不等于MOCS、Pending、数据保留额度或整个进程内存上限。
 
+Host 的三个派生索引由 `host_indices.cpp` 集中维护：Pending 满重试集合仅收录尚未中止版本中处于 Done 的 PendingLimit Unit，查找唤醒时间时仍重新判断资格与容量反馈；Global 驻留引用计数按普通 Unit 中每个片段的 parent 登记，只在安全回收 Unit 时递减，重试不重复计费、replay 不新增 Global 引用；读顺序分别按 `(channel, group)` 登记 Queued 读、按 `(channel, Global)` 登记尚未接受且未终结的读。后者仅在 TailBatch 模式需要，且包含将来释放的前序读。索引保存 ID 或计数，详细状态仍由原对象维护。
+
+读前序关系保持 Unit ID 顺序：同 group 前序读在成功移交时解除发送阻塞，Batch 则等待同 Global、同 channel 前序读正式接受或终结；这些发送规则不代替 Device 的返回顺序约束。Global 最终结果与驻留引用数是独立条件，两者同时允许后才在原稳定回收边界删除详细请求记录。测试在事件结束后以全扫描核对索引与原始状态；正常模拟不运行该核对，也不为索引添加事件或 Tick。
+
 统计仍通过同一个 `IStatisticsSink` 观察真实事件。`StatisticsCollector` 用于完整历史分析；`StatisticsEventStream` 按序列化字节阈值输出JSONL后释放缓冲，不保存历史关联表。跨flush的Global、Work、Attempt、DLU generation和Bank ticket身份保持不变；离线消费者自行维护跨记录关联。详见[统计事件流](statistics_event_stream.md)。
 
 `SimulationRunner` 负责有限离线输入；在线入口为 `SimulationSession`，它拥有同一套 EventQueue、DeviceDriver、interleaver 和 HostDriver，不复制业务状态或另建 Host。`submit()` 登记外部输入，`advance_before(T)` 处理严格早于 T 的事件，`close_input()` 封闭外部来源；完成回调内的 `submit_feedback()` 仍可生成因果后续工作。会话只暴露 Host/Device 的只读视图，避免外部绕过时间和关闭边界。见[在线会话 API](usage.md#online-session)。
@@ -71,6 +75,8 @@ Host 只依赖公开的 `IHostPort`、静态地址视图和自身记录，不查
 overlap、写顺序、错误作用域、同组交付、同 Bank sense 顺序和所有权是固定正确性条件。策略可以改变合法候选的优先级，不能绕过这些条件。接口存在也不意味着所有替代实现均已通过验证。Core Channel 目前只有路由模型，Cache 替换也尚无独立策略插件。
 
 Host 将稳定发送单元身份 `SendUnitId` 与本次入队序号分开维护。FCFS 按每 channel 合法候选的入队序号选择，允许合法补片越过受阻请求；`fill_open` 先比较补齐／replay 优先级，再比较同一序号。初始入队依释放时间和输入次序登记，错误重试重新排队，`NotTaken` 保留队龄。入队序号只影响 Host 选择，不改变 Device 的接收、介质调度或 UCIe 仲裁规则。
+
+每次发送推进先处理 Host 的恢复、重试和依赖状态，再调用 `IHostPort::channel_send_blockers()`。当前 Device 仅报告对该 channel 全部候选都成立的请求链路占用；Host 订阅返回的带版本等待条件，跳过无效队列扫描。链路释放后在同 Tick 的后续事件重新选候选，不预先固定请求、不预留资源，也不等待正式接受或最终响应。空结果只表示没有已知的统一阻塞：接收缓冲的具体容量条件仍由 `try_submit()` 最终检查，其他合法候选可以绕过受阻请求。该查询默认返回空，已有端口实现可继续仅通过 `try_submit()` 提供背压。
 
 读统计复用真实窗口及Device状态转换：`ReadDispatchWindow`在释放时报告成员和触发原因，Device关联为稳定attempt身份；Cache pin和成功sense提交分别记录。统计接收器不管理窗口，也不产生事件。读优先只改变已就绪合法候选的选择，窗口尚未释放的读不能因优先级高而提前发射。
 
@@ -216,6 +222,8 @@ Host的Global完成汇总由登记和最终状态转换维护两个精确计数�
 ## 11. 统计观察边界
 
 程序性能诊断采用独立的`RuntimeProfile`，不借用模拟事件统计或Tick。Host、Runner／Session及tensor适配器可挂接同一调用方持有的实例；默认不挂接。固定大小的区域汇总区分包含子调用和自身墙钟时间，实际扫描计数只随既有遍历更新；不保存逐调用历史、不反馈给调度、不引入事件。详见[程序性能诊断](runtime_profiling.md)。
+
+Device与通知注册表也可挂接同一诊断实例，记录通知原因、订阅命中、实际回调和读状态检查。通知契约区分`PhysicalUsers`／`ZoneUsers`的排空进展与`PhysicalState`／`Zone`的可用性或接收／映射状态变化。已接受的普通读观察后者和逻辑块状态；仅可形成数据结果却缺少空间时额外订阅`ResultSpace`。返回缓冲按channel预算隔离，介质完成的结果所有权移交不冒充空间释放。释放通知继续遵循安全发布边界和单次订阅版本检查，不修改Bank调度、读窗口或模拟时延。详见[通知契约](design_decisions.md#adr-runtime-efficiency-01)。
 
 Host与Device通过`IStatisticsSink`发布已经发生的生命周期事实；`StatisticsCollector`只保存观察历史及汇总，不参与发送、组装或资源调度。请求统计与Pending统计共用一个sink；默认不挂接，开启后也不添加采样事件或模拟Tick。
 

@@ -42,10 +42,15 @@ public:
     ~DeviceDriver();
     DeviceDriver(const DeviceDriver&)=delete;
     DeviceDriver& operator=(const DeviceDriver&)=delete;
+    std::vector<WaitObservation> channel_send_blockers(ChannelId) const override;
     // Taken starts serialization and reserves RX; no synchronous callback.
     // NotTaken retains source ownership: subscribe returned keys before retrying.
     HandoffResult try_submit(const LocalTransaction&,Receiver,AcceptanceObserver = {}) override;
     AdmissionWaitRegistry& notifications() { return signals_; }
+    void set_runtime_profile(RuntimeProfile& profile) {
+        if(next_attempt_)throw std::logic_error("attach Device diagnostics before input");
+        signals_.set_runtime_profile(profile);
+    }
     const StaticDeviceDescription& description() const { return description_; }
     const ExecutionConfiguration& configuration() const { return config_; }
     const CoreChannelTopology& topology() const { return topology_; }
