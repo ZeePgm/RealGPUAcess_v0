@@ -1,0 +1,789 @@
+{
+  "S_tokens": [
+    {
+      "output_index": 1.0,
+      "token_id": 32.0,
+      "G2_relative_ps": 10040304000.0,
+      "G3_relative_ps": 10040791788.0,
+      "step_compute_ps": 10040304000.0,
+      "step_wait_ps": 487788.0,
+      "cumulative_wait_ps": 487788.0,
+      "G2_interval_ps": 10040304000.0,
+      "G3_interval_ps": 10040791788.0,
+      "conservation_residual_ps": 0.0
+    },
+    {
+      "output_index": 2.0,
+      "token_id": 6366.0,
+      "G2_relative_ps": 13905181000.0,
+      "G3_relative_ps": 13905936776.0,
+      "step_compute_ps": 3864877000.0,
+      "step_wait_ps": 267988.0,
+      "cumulative_wait_ps": 755776.0,
+      "G2_interval_ps": 3864877000.0,
+      "G3_interval_ps": 3865144988.0,
+      "conservation_residual_ps": 0.0
+    },
+    {
+      "output_index": 3.0,
+      "token_id": 5711.0,
+      "G2_relative_ps": 17637663000.0,
+      "G3_relative_ps": 17638686764.0,
+      "step_compute_ps": 3732482000.0,
+      "step_wait_ps": 267988.0,
+      "cumulative_wait_ps": 1023764.0,
+      "G2_interval_ps": 3732482000.0,
+      "G3_interval_ps": 3732749988.0,
+      "conservation_residual_ps": 0.0
+    },
+    {
+      "output_index": 4.0,
+      "token_id": 4938.0,
+      "G2_relative_ps": 23047694000.0,
+      "G3_relative_ps": 23048985752.0,
+      "step_compute_ps": 5410031000.0,
+      "step_wait_ps": 267988.0,
+      "cumulative_wait_ps": 1291752.0,
+      "G2_interval_ps": 5410031000.0,
+      "G3_interval_ps": 5410298988.0,
+      "conservation_residual_ps": 0.0
+    },
+    {
+      "output_index": 5.0,
+      "token_id": 311.0,
+      "G2_relative_ps": 28995630000.0,
+      "G3_relative_ps": 28997189740.0,
+      "step_compute_ps": 5947936000.0,
+      "step_wait_ps": 267988.0,
+      "cumulative_wait_ps": 1559740.0,
+      "G2_interval_ps": 5947936000.0,
+      "G3_interval_ps": 5948203988.0,
+      "conservation_residual_ps": 0.0
+    },
+    {
+      "output_index": 6.0,
+      "token_id": 3553.0,
+      "G2_relative_ps": 34834336000.0,
+      "G3_relative_ps": 34836163728.0,
+      "step_compute_ps": 5838706000.0,
+      "step_wait_ps": 267988.0,
+      "cumulative_wait_ps": 1827728.0,
+      "G2_interval_ps": 5838706000.0,
+      "G3_interval_ps": 5838973988.0,
+      "conservation_residual_ps": 0.0
+    },
+    {
+      "output_index": 7.0,
+      "token_id": 323.0,
+      "G2_relative_ps": 40204113000.0,
+      "G3_relative_ps": 40206208716.0,
+      "step_compute_ps": 5369777000.0,
+      "step_wait_ps": 267988.0,
+      "cumulative_wait_ps": 2095716.0,
+      "G2_interval_ps": 5369777000.0,
+      "G3_interval_ps": 5370044988.0,
+      "conservation_residual_ps": 0.0
+    },
+    {
+      "output_index": 8.0,
+      "token_id": 17179.0,
+      "G2_relative_ps": 45869755000.0,
+      "G3_relative_ps": 45872118704.0,
+      "step_compute_ps": 5665642000.0,
+      "step_wait_ps": 267988.0,
+      "cumulative_wait_ps": 2363704.0,
+      "G2_interval_ps": 5665642000.0,
+      "G3_interval_ps": 5665909988.0,
+      "conservation_residual_ps": 0.0
+    }
+  ],
+  "S_samples": [
+    {
+      "sample": 1.0,
+      "gpu_active_ms": 44.879566,
+      "instrumented_request_ms": 16651.6447,
+      "reference_request_ms": 167.463
+    },
+    {
+      "sample": 2.0,
+      "gpu_active_ms": 47.283121,
+      "instrumented_request_ms": 16581.5553,
+      "reference_request_ms": 196.6519
+    },
+    {
+      "sample": 3.0,
+      "gpu_active_ms": 45.869755,
+      "instrumented_request_ms": 16320.2001,
+      "reference_request_ms": 186.4184
+    },
+    {
+      "sample": 4.0,
+      "gpu_active_ms": 45.524075,
+      "instrumented_request_ms": 16373.4827,
+      "reference_request_ms": 175.3347
+    },
+    {
+      "sample": 5.0,
+      "gpu_active_ms": 47.299544,
+      "instrumented_request_ms": 16328.2087,
+      "reference_request_ms": 174.8598
+    },
+    {
+      "sample": 6.0,
+      "gpu_active_ms": 46.089275,
+      "instrumented_request_ms": 16295.3703,
+      "reference_request_ms": 188.4393
+    },
+    {
+      "sample": 7.0,
+      "gpu_active_ms": 46.094642,
+      "instrumented_request_ms": 16612.7747,
+      "reference_request_ms": 189.4393
+    },
+    {
+      "sample": 8.0,
+      "gpu_active_ms": 42.707339,
+      "instrumented_request_ms": 16952.7642,
+      "reference_request_ms": 177.9264
+    },
+    {
+      "sample": 9.0,
+      "gpu_active_ms": 45.01489,
+      "instrumented_request_ms": 16762.1306,
+      "reference_request_ms": 183.5741
+    },
+    {
+      "sample": 10.0,
+      "gpu_active_ms": 44.405201,
+      "instrumented_request_ms": 16762.6595,
+      "reference_request_ms": 170.0444
+    }
+  ],
+  "F_results": {
+    "F1": {
+      "stage": "F1",
+      "status": "pass",
+      "scope": "layer 10 full FFN gate/up/down; native GPU KV; symbolic synchronous HBF",
+      "coverage": {
+        "registered_valid_bytes": 18874368,
+        "parent_reads": 24,
+        "cumulative_read_bytes": 150994944,
+        "read_globals": 36864,
+        "read_fragments": 2359296,
+        "write_fragments": 294912
+      },
+      "native_logits_bitwise_equal": true,
+      "native_tokens_equal": true,
+      "G2": {
+        "actual_outputs": 8,
+        "ttft_ps": 6400483000,
+        "tpot_ps": 7940377714.285714,
+        "itl_ps": [
+          3806240000,
+          3799198000,
+          8265699000,
+          9555227000,
+          9981377000,
+          10036056000,
+          10138847000
+        ]
+      },
+      "G3": {
+        "actual_outputs": 8,
+        "ttft_ps": 6892432906,
+        "tpot_ps": 8432327620.285714,
+        "itl_ps": [
+          4298189906,
+          4291147906,
+          8757648906,
+          10047176906,
+          10473326906,
+          10528005906,
+          10630796906
+        ]
+      },
+      "total_wait_ps": 3935599248,
+      "compute_ps": 61983127000,
+      "all_conservation_residuals_zero": true,
+      "online_audit": {
+        "logical_failures": 0,
+        "attempt_errors": 0,
+        "read_fragments": 2359296,
+        "write_fragments": 294912,
+        "peak_live_fragments": 256,
+        "peak_live_attempts": 256
+      },
+      "events_processed": 181348979,
+      "closed_and_drained": true,
+      "measured_software_phases_seconds": {
+        "backend_initialization": 0.3394303,
+        "backend_read_calls_including_online_audit": 405.4078445,
+        "backend_finish": 1e-06
+      },
+      "limitations": "One native GPU activity trace; no hardware calibration, full weight offload, wall-clock slowdown or population timing claim.",
+      "software_costs": {
+        "native": {
+          "argv": [
+            "D:\\HBF-Sim\\RealGPUAcess_v0\\build-ffn\\bin\\gpu_ffn.exe",
+            "D:\\HBF-Sim\\HBFLab\\models\\Qwen3-0.6B-F16.gguf",
+            "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-ffn\\20261104-f1-001\\prompt.txt",
+            "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-ffn\\20261104-f1-001\\native",
+            "8",
+            "timing",
+            "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-ffn\\20261104-f1-001\\native-config.json"
+          ],
+          "returncode": 0,
+          "process_wall_seconds": 17.5738867999753,
+          "peak_working_set_bytes": 1808277504,
+          "wall_scope": "Whole process including load, initialization, inference, CUPTI and recording; never simulated HBF time."
+        },
+        "F1": {
+          "argv": [
+            "D:\\HBF-Sim\\RealGPUAcess_v0\\build-ffn\\bin\\gpu_ffn.exe",
+            "D:\\HBF-Sim\\HBFLab\\models\\Qwen3-0.6B-F16.gguf",
+            "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-ffn\\20261104-f1-001\\prompt.txt",
+            "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-ffn\\20261104-f1-001\\F1",
+            "8",
+            "timing",
+            "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-ffn\\20261104-f1-001\\F1-config.json"
+          ],
+          "returncode": 0,
+          "process_wall_seconds": 423.4179467000067,
+          "peak_working_set_bytes": 1840111616,
+          "wall_scope": "Whole process including load, initialization, inference, CUPTI and recording; never simulated HBF time."
+        }
+      }
+    },
+    "F2": {
+      "stage": "F2",
+      "status": "pass",
+      "layers": [
+        0,
+        10,
+        20,
+        27
+      ],
+      "scope": "layers 0,10,20,27 full FFN gate/up/down; native GPU KV; symbolic synchronous HBF",
+      "coverage": {
+        "registered_valid_bytes": 75497472,
+        "parent_reads": 96,
+        "cumulative_read_bytes": 603979776,
+        "read_globals": 147456,
+        "read_fragments": 9437184,
+        "write_fragments": 1179648
+      },
+      "native_logits_bitwise_equal": true,
+      "native_tokens_equal": true,
+      "G2": {
+        "actual_outputs": 8,
+        "ttft_ps": 6400483000,
+        "tpot_ps": 7940377714.285714,
+        "itl_ps": [
+          3806240000,
+          3799198000,
+          8265699000,
+          9555227000,
+          9981377000,
+          10036056000,
+          10138847000
+        ]
+      },
+      "G3": {
+        "actual_outputs": 8,
+        "ttft_ps": 8368282624,
+        "tpot_ps": 9908177338.285715,
+        "itl_ps": [
+          5774039624,
+          5766997624,
+          10233498624,
+          11523026624,
+          11949176624,
+          12003855624,
+          12106646624
+        ]
+      },
+      "total_wait_ps": 15742396992,
+      "compute_ps": 61983127000,
+      "all_conservation_residuals_zero": true,
+      "online_audit": {
+        "logical_failures": 0,
+        "attempt_errors": 0,
+        "read_fragments": 9437184,
+        "write_fragments": 1179648,
+        "peak_live_fragments": 256,
+        "peak_live_attempts": 256
+      },
+      "events_processed": 725395919,
+      "closed_and_drained": true,
+      "measured_software_phases_seconds": {
+        "backend_initialization": 1.4093242,
+        "backend_read_calls_including_online_audit": 1673.7184833,
+        "backend_finish": 1.8e-06
+      },
+      "limitations": "One native GPU activity trace; no hardware calibration, full weight offload, wall-clock slowdown or population timing claim.",
+      "software_costs": {
+        "F2": {
+          "argv": [
+            "D:\\HBF-Sim\\RealGPUAcess_v0\\build-ffn\\bin\\gpu_ffn.exe",
+            "D:\\HBF-Sim\\HBFLab\\models\\Qwen3-0.6B-F16.gguf",
+            "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-ffn\\20261104-f2-001\\prompt.txt",
+            "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-ffn\\20261104-f2-001\\F2",
+            "8",
+            "timing",
+            "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-ffn\\20261104-f2-001\\F2-config.json"
+          ],
+          "returncode": 0,
+          "process_wall_seconds": 1693.6997530000517,
+          "peak_working_set_bytes": 1870008320,
+          "wall_scope": "Whole process including load, initialization, inference, CUPTI and recording; never simulated HBF time."
+        }
+      },
+      "reference_binding": {
+        "reference": "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-ffn\\20261104-f1-001",
+        "reference_result_sha256": "05a4dd22f2c86542cc35cb02903c04a61f6a62dc6a6b0af5e81a2a96f0d9465f",
+        "reference_index_sha256": "24ddb3c4651ec7dbe92e03f0a5c4862304546011316f4c6d935c0d2f8c061910",
+        "compute_table_sha256": "cdb402ec39ea930f7b81d08e12b64bddeeff2a38df314e42c9d26bf7ed4a4799",
+        "native_reexecuted": false,
+        "copied_files_verified": 11
+      }
+    },
+    "F3": {
+      "stage": "F3",
+      "status": "pass",
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "scope": "layers 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27 full FFN gate/up/down; native GPU KV; symbolic synchronous HBF",
+      "coverage": {
+        "registered_valid_bytes": 528482304,
+        "parent_reads": 672,
+        "cumulative_read_bytes": 4227858432,
+        "read_globals": 1032192,
+        "read_fragments": 66060288,
+        "write_fragments": 8257536
+      },
+      "native_logits_bitwise_equal": true,
+      "native_tokens_equal": true,
+      "G2": {
+        "actual_outputs": 8,
+        "ttft_ps": 6400483000,
+        "tpot_ps": 7940377714.285714,
+        "itl_ps": [
+          3806240000,
+          3799198000,
+          8265699000,
+          9555227000,
+          9981377000,
+          10036056000,
+          10138847000
+        ]
+      },
+      "G3": {
+        "actual_outputs": 8,
+        "ttft_ps": 20175080368,
+        "tpot_ps": 21714975082.285713,
+        "itl_ps": [
+          17580837368,
+          17573795368,
+          22040296368,
+          23329824368,
+          23755974368,
+          23810653368,
+          23913444368
+        ]
+      },
+      "total_wait_ps": 110196778944,
+      "compute_ps": 61983127000,
+      "all_conservation_residuals_zero": true,
+      "online_audit": {
+        "logical_failures": 0,
+        "attempt_errors": 0,
+        "read_fragments": 66060288,
+        "write_fragments": 8257536,
+        "peak_live_fragments": 256,
+        "peak_live_attempts": 256
+      },
+      "events_processed": 5077771439,
+      "closed_and_drained": true,
+      "measured_software_phases_seconds": {
+        "backend_initialization": 10.4823421,
+        "backend_read_calls_including_online_audit": 12443.7959067,
+        "backend_finish": 9e-07
+      },
+      "limitations": "One native GPU activity trace; no hardware calibration, full weight offload, wall-clock slowdown or population timing claim.",
+      "software_costs": {
+        "F3": {
+          "argv": [
+            "D:\\HBF-Sim\\RealGPUAcess_v0\\build-ffn\\bin\\gpu_ffn.exe",
+            "D:\\HBF-Sim\\HBFLab\\models\\Qwen3-0.6B-F16.gguf",
+            "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-ffn\\20261104-f3-001\\prompt.txt",
+            "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-ffn\\20261104-f3-001\\F3",
+            "8",
+            "timing",
+            "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-ffn\\20261104-f3-001\\F3-config.json"
+          ],
+          "returncode": 0,
+          "process_wall_seconds": 12474.325067400001,
+          "peak_working_set_bytes": 2013626368,
+          "wall_scope": "Whole process including load, initialization, inference, CUPTI and recording; never simulated HBF time."
+        }
+      },
+      "reference_binding": {
+        "reference": "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-ffn\\20261104-f1-001",
+        "reference_result_sha256": "05a4dd22f2c86542cc35cb02903c04a61f6a62dc6a6b0af5e81a2a96f0d9465f",
+        "reference_index_sha256": "24ddb3c4651ec7dbe92e03f0a5c4862304546011316f4c6d935c0d2f8c061910",
+        "compute_table_sha256": "cdb402ec39ea930f7b81d08e12b64bddeeff2a38df314e42c9d26bf7ed4a4799",
+        "native_reexecuted": false,
+        "copied_files_verified": 11
+      }
+    }
+  },
+  "F_tokens": {
+    "F1": [
+      {
+        "step": 0.0,
+        "token_id": 32.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 6400483000.0,
+        "G3_relative_ps": 6892432906.0,
+        "step_wait_ps": 491949906.0,
+        "cumulative_wait_ps": 491949906.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 1.0,
+        "token_id": 6366.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 10206723000.0,
+        "G3_relative_ps": 11190622812.0,
+        "step_wait_ps": 491949906.0,
+        "cumulative_wait_ps": 983899812.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 2.0,
+        "token_id": 5711.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 14005921000.0,
+        "G3_relative_ps": 15481770718.0,
+        "step_wait_ps": 491949906.0,
+        "cumulative_wait_ps": 1475849718.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 3.0,
+        "token_id": 4938.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 22271620000.0,
+        "G3_relative_ps": 24239419624.0,
+        "step_wait_ps": 491949906.0,
+        "cumulative_wait_ps": 1967799624.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 4.0,
+        "token_id": 311.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 31826847000.0,
+        "G3_relative_ps": 34286596530.0,
+        "step_wait_ps": 491949906.0,
+        "cumulative_wait_ps": 2459749530.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 5.0,
+        "token_id": 3553.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 41808224000.0,
+        "G3_relative_ps": 44759923436.0,
+        "step_wait_ps": 491949906.0,
+        "cumulative_wait_ps": 2951699436.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 6.0,
+        "token_id": 323.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 51844280000.0,
+        "G3_relative_ps": 55287929342.0,
+        "step_wait_ps": 491949906.0,
+        "cumulative_wait_ps": 3443649342.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 7.0,
+        "token_id": 17179.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 61983127000.0,
+        "G3_relative_ps": 65918726248.0,
+        "step_wait_ps": 491949906.0,
+        "cumulative_wait_ps": 3935599248.0,
+        "conservation_residual_ps": 0.0
+      }
+    ],
+    "F2": [
+      {
+        "step": 0.0,
+        "token_id": 32.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 6400483000.0,
+        "G3_relative_ps": 8368282624.0,
+        "step_wait_ps": 1967799624.0,
+        "cumulative_wait_ps": 1967799624.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 1.0,
+        "token_id": 6366.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 10206723000.0,
+        "G3_relative_ps": 14142322248.0,
+        "step_wait_ps": 1967799624.0,
+        "cumulative_wait_ps": 3935599248.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 2.0,
+        "token_id": 5711.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 14005921000.0,
+        "G3_relative_ps": 19909319872.0,
+        "step_wait_ps": 1967799624.0,
+        "cumulative_wait_ps": 5903398872.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 3.0,
+        "token_id": 4938.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 22271620000.0,
+        "G3_relative_ps": 30142818496.0,
+        "step_wait_ps": 1967799624.0,
+        "cumulative_wait_ps": 7871198496.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 4.0,
+        "token_id": 311.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 31826847000.0,
+        "G3_relative_ps": 41665845120.0,
+        "step_wait_ps": 1967799624.0,
+        "cumulative_wait_ps": 9838998120.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 5.0,
+        "token_id": 3553.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 41808224000.0,
+        "G3_relative_ps": 53615021744.0,
+        "step_wait_ps": 1967799624.0,
+        "cumulative_wait_ps": 11806797744.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 6.0,
+        "token_id": 323.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 51844280000.0,
+        "G3_relative_ps": 65618877368.0,
+        "step_wait_ps": 1967799624.0,
+        "cumulative_wait_ps": 13774597368.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 7.0,
+        "token_id": 17179.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 61983127000.0,
+        "G3_relative_ps": 77725523992.0,
+        "step_wait_ps": 1967799624.0,
+        "cumulative_wait_ps": 15742396992.0,
+        "conservation_residual_ps": 0.0
+      }
+    ],
+    "F3": [
+      {
+        "step": 0.0,
+        "token_id": 32.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 6400483000.0,
+        "G3_relative_ps": 20175080368.0,
+        "step_wait_ps": 13774597368.0,
+        "cumulative_wait_ps": 13774597368.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 1.0,
+        "token_id": 6366.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 10206723000.0,
+        "G3_relative_ps": 37755917736.0,
+        "step_wait_ps": 13774597368.0,
+        "cumulative_wait_ps": 27549194736.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 2.0,
+        "token_id": 5711.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 14005921000.0,
+        "G3_relative_ps": 55329713104.0,
+        "step_wait_ps": 13774597368.0,
+        "cumulative_wait_ps": 41323792104.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 3.0,
+        "token_id": 4938.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 22271620000.0,
+        "G3_relative_ps": 77370009472.0,
+        "step_wait_ps": 13774597368.0,
+        "cumulative_wait_ps": 55098389472.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 4.0,
+        "token_id": 311.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 31826847000.0,
+        "G3_relative_ps": 100699833840.0,
+        "step_wait_ps": 13774597368.0,
+        "cumulative_wait_ps": 68872986840.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 5.0,
+        "token_id": 3553.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 41808224000.0,
+        "G3_relative_ps": 124455808208.0,
+        "step_wait_ps": 13774597368.0,
+        "cumulative_wait_ps": 82647584208.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 6.0,
+        "token_id": 323.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 51844280000.0,
+        "G3_relative_ps": 148266461576.0,
+        "step_wait_ps": 13774597368.0,
+        "cumulative_wait_ps": 96422181576.0,
+        "conservation_residual_ps": 0.0
+      },
+      {
+        "step": 7.0,
+        "token_id": 17179.0,
+        "type": "token_emitted",
+        "G2_relative_ps": 61983127000.0,
+        "G3_relative_ps": 172179905944.0,
+        "step_wait_ps": 13774597368.0,
+        "cumulative_wait_ps": 110196778944.0,
+        "conservation_residual_ps": 0.0
+      }
+    ]
+  },
+  "relative_increments_percent": [
+    [
+      0.00485829911126197,
+      0.005235681674274049
+    ],
+    [
+      7.686137218081823,
+      6.1955479160005416
+    ],
+    [
+      30.744548872327293,
+      24.782191664002177
+    ],
+    [
+      215.21184210629104,
+      173.47534164801516
+    ]
+  ],
+  "wait_us_per_MiB": [
+    30.255411199999998,
+    27.330550333333335,
+    27.330550333333335,
+    27.330550333333335
+  ],
+  "sources": [
+    {
+      "path": "docs\\validation\\gpu-s9\\paired-tokens.csv",
+      "sha256": "b7a7056caf557a1646de2eea94f88a5a5072726cf6ba83985f43b9d05aa9bf09"
+    },
+    {
+      "path": "output\\gpu-s\\20261101-s6-001\\instrumentation-comparison.csv",
+      "sha256": "e113f781cb417fc0017d725909285441793fe5ab16b45b71c554b287c72ba821"
+    },
+    {
+      "path": "output\\gpu-ffn\\20261104-f1-001\\result.json",
+      "sha256": "05a4dd22f2c86542cc35cb02903c04a61f6a62dc6a6b0af5e81a2a96f0d9465f"
+    },
+    {
+      "path": "output\\gpu-ffn\\20261104-f2-001\\result.json",
+      "sha256": "400f97b6e4ed8284bc36345a1cf04ea8b7f0cf8aca89970380831b810b20a3ac"
+    },
+    {
+      "path": "output\\gpu-ffn\\20261104-f3-001\\result.json",
+      "sha256": "b6c9ac4432b27c5c31b357c62558d8ce6377332b9e78b4f81fba71af7e0af7c6"
+    },
+    {
+      "path": "output\\gpu-ffn\\20261104-f1-001\\paired-tokens.csv",
+      "sha256": "e3cc6d9f4cb8bb5a015326c82a06cd0ae9ee84ddb099f5b5ebf8cd06875ad594"
+    },
+    {
+      "path": "output\\gpu-ffn\\20261104-f2-001\\paired-tokens.csv",
+      "sha256": "f73e17719cd0f9ae43e213d90c5ce51a422d121b72895eca3287767259ab83b4"
+    },
+    {
+      "path": "output\\gpu-ffn\\20261104-f3-001\\paired-tokens.csv",
+      "sha256": "19c70bbe9377b5ec6e9f9152275c170f91a1a6696002a5c2c2ef9266a8df8623"
+    },
+    {
+      "path": "docs\\validation\\gpu-s9.json",
+      "sha256": "5da974b3b83c11b58b4e13eeb85f0cff4b2755c0591ed15c822264b39c534280"
+    }
+  ],
+  "script_sha256": "9a7c940c3f42fca14eeb00d1071ec25e0eeffa1ee256112e1b9546937b9fa3cf",
+  "checks": "pass: paired conservation, shared F G2, F status/logits/drain",
+  "figures": [
+    "01-s-timing",
+    "02-s-sampling",
+    "03-f-timing",
+    "04-f-cost",
+    "05-cross-trace",
+    "06-cross-scale",
+    "07-cross-normalized"
+  ]
+}

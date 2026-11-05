@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "figures": 7,
+  "source_hashes_verified": 9,
+  "S_tokens_verified_against_raw_S8": 8,
+  "all_report_links_exist": true,
+  "visual_QA": "All seven figures inspected in contact sheet; labels, units and log axes visible; no clipping."
+}

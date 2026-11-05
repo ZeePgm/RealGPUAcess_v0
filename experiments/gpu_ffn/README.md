@@ -106,3 +106,5 @@ cost remains in the reference batch and is not presented as a new measurement.
 - `records/` contains readable result and per-token summaries and one ZIP per completed run. Each ZIP includes the original indexed evidence and its SHA-256 index. Paths in archived commands describe the original machine.
 - Extract the ZIPs into `output/gpu-ffn/` to recreate the original batch paths and run the offline validation commands in the reports. For a new GPU build, capture a new F1 reference before running F2/F3: historical references bind to their original executable and DLL identities.
 - The packaged build uses a local copy of the shared GPU executor. Run snapshots retain the original source layout for provenance. The GGUF model and compiled executables are not included.
+
+- [S/F comparative report with seven figures](reports/GPU_S_F_COMPARATIVE_REPORT.md) ([HTML](reports/GPU_S_F_COMPARATIVE_REPORT.html))
