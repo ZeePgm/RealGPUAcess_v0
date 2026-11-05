@@ -1,0 +1,22 @@
+{
+  "stage": "F2",
+  "layers": [
+    0,
+    10,
+    20,
+    27
+  ],
+  "status": "prepared",
+  "requested_outputs": 8,
+  "model_sha256": "74878aba1d10648eae3d6cfef822f8c59ce3217b3808b35fce2dd02d975952a2",
+  "prompt_sha256": "ce4fa40becfa4a191064fbda15721985a953ae231557ea6f6f8f7b669e0d1a74",
+  "capacity_bytes": 536870912,
+  "expected_if_no_EOS": {
+    "registered_valid_bytes": 75497472,
+    "parent_reads": 96,
+    "cumulative_read_bytes": 603979776,
+    "read_globals": 147456,
+    "read_fragments": 9437184,
+    "write_fragments": 1179648
+  }
+}

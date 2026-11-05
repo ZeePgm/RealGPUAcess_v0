@@ -1,0 +1,103 @@
+{
+  "stage": "F1",
+  "status": "pass",
+  "scope": "layer 10 full FFN gate/up/down; native GPU KV; symbolic synchronous HBF",
+  "coverage": {
+    "registered_valid_bytes": 18874368,
+    "parent_reads": 24,
+    "cumulative_read_bytes": 150994944,
+    "read_globals": 36864,
+    "read_fragments": 2359296,
+    "write_fragments": 294912
+  },
+  "native_logits_bitwise_equal": true,
+  "native_tokens_equal": true,
+  "G2": {
+    "actual_outputs": 8,
+    "ttft_ps": 6400483000,
+    "tpot_ps": 7940377714.285714,
+    "itl_ps": [
+      3806240000,
+      3799198000,
+      8265699000,
+      9555227000,
+      9981377000,
+      10036056000,
+      10138847000
+    ]
+  },
+  "G3": {
+    "actual_outputs": 8,
+    "ttft_ps": 6892432906,
+    "tpot_ps": 8432327620.285714,
+    "itl_ps": [
+      4298189906,
+      4291147906,
+      8757648906,
+      10047176906,
+      10473326906,
+      10528005906,
+      10630796906
+    ]
+  },
+  "total_wait_ps": 3935599248,
+  "compute_ps": 61983127000,
+  "all_conservation_residuals_zero": true,
+  "online_audit": {
+    "logical_failures": 0,
+    "attempt_errors": 0,
+    "read_fragments": 2359296,
+    "write_fragments": 294912,
+    "peak_live_fragments": 256,
+    "peak_live_attempts": 256
+  },
+  "events_processed": 181348979,
+  "closed_and_drained": true,
+  "measured_software_phases_seconds": {
+    "backend_initialization": 0.3394303,
+    "backend_read_calls_including_online_audit": 405.4078445,
+    "backend_finish": 1e-06
+  },
+  "limitations": "One native GPU activity trace; no hardware calibration, full weight offload, wall-clock slowdown or population timing claim.",
+  "software_costs": {
+    "native": {
+      "returncode": 0,
+      "process_wall_seconds": 17.5738867999753,
+      "peak_working_set_bytes": 1808277504,
+      "wall_scope": "Whole process including load, initialization, inference, CUPTI and recording; never simulated HBF time."
+    },
+    "F1": {
+      "returncode": 0,
+      "process_wall_seconds": 423.4179467000067,
+      "peak_working_set_bytes": 1840111616,
+      "wall_scope": "Whole process including load, initialization, inference, CUPTI and recording; never simulated HBF time."
+    }
+  },
+  "date": "2026-11-04",
+  "batch": "output/gpu-ffn/20261104-f1-001",
+  "model_id": "Qwen/Qwen3-0.6B",
+  "model_sha256": "74878aba1d10648eae3d6cfef822f8c59ce3217b3808b35fce2dd02d975952a2",
+  "prompt_tokens": 44,
+  "generated_tokens": [
+    32,
+    6366,
+    5711,
+    4938,
+    311,
+    3553,
+    323,
+    17179
+  ],
+  "capacity_bytes": 536870912,
+  "layers": [
+    10
+  ],
+  "compute_table_sha256": "cdb402ec39ea930f7b81d08e12b64bddeeff2a38df314e42c9d26bf7ed4a4799",
+  "build_identity_sha256": "55922cf8eb87bc792aff07fe1c86a49f61ceec0178c3b66a82b7cbb6c062d597",
+  "source_and_runtime_hashes_verified": true,
+  "validation": {
+    "python_unit_checks": 6,
+    "cpp_online_audit": "pass",
+    "corrupt_record_cases_rejected": 5
+  }
+}

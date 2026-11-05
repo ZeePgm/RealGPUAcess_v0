@@ -1,0 +1,93 @@
+{
+  "stage": "F2",
+  "status": "pass",
+  "layers": [
+    0,
+    10,
+    20,
+    27
+  ],
+  "scope": "layers 0,10,20,27 full FFN gate/up/down; native GPU KV; symbolic synchronous HBF",
+  "coverage": {
+    "registered_valid_bytes": 75497472,
+    "parent_reads": 96,
+    "cumulative_read_bytes": 603979776,
+    "read_globals": 147456,
+    "read_fragments": 9437184,
+    "write_fragments": 1179648
+  },
+  "native_logits_bitwise_equal": true,
+  "native_tokens_equal": true,
+  "G2": {
+    "actual_outputs": 8,
+    "ttft_ps": 6400483000,
+    "tpot_ps": 7940377714.285714,
+    "itl_ps": [
+      3806240000,
+      3799198000,
+      8265699000,
+      9555227000,
+      9981377000,
+      10036056000,
+      10138847000
+    ]
+  },
+  "G3": {
+    "actual_outputs": 8,
+    "ttft_ps": 8368282624,
+    "tpot_ps": 9908177338.285715,
+    "itl_ps": [
+      5774039624,
+      5766997624,
+      10233498624,
+      11523026624,
+      11949176624,
+      12003855624,
+      12106646624
+    ]
+  },
+  "total_wait_ps": 15742396992,
+  "compute_ps": 61983127000,
+  "all_conservation_residuals_zero": true,
+  "online_audit": {
+    "logical_failures": 0,
+    "attempt_errors": 0,
+    "read_fragments": 9437184,
+    "write_fragments": 1179648,
+    "peak_live_fragments": 256,
+    "peak_live_attempts": 256
+  },
+  "events_processed": 725395919,
+  "closed_and_drained": true,
+  "measured_software_phases_seconds": {
+    "backend_initialization": 1.4093242,
+    "backend_read_calls_including_online_audit": 1673.7184833,
+    "backend_finish": 1.8e-06
+  },
+  "limitations": "One native GPU activity trace; no hardware calibration, full weight offload, wall-clock slowdown or population timing claim.",
+  "software_costs": {
+    "F2": {
+      "argv": [
+        "D:\\HBF-Sim\\RealGPUAcess_v0\\build-ffn\\bin\\gpu_ffn.exe",
+        "D:\\HBF-Sim\\HBFLab\\models\\Qwen3-0.6B-F16.gguf",
+        "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-ffn\\20261104-f2-001\\prompt.txt",
+        "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-ffn\\20261104-f2-001\\F2",
+        "8",
+        "timing",
+        "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-ffn\\20261104-f2-001\\F2-config.json"
+      ],
+      "returncode": 0,
+      "process_wall_seconds": 1693.6997530000517,
+      "peak_working_set_bytes": 1870008320,
+      "wall_scope": "Whole process including load, initialization, inference, CUPTI and recording; never simulated HBF time."
+    }
+  },
+  "reference_binding": {
+    "reference": "D:\\HBF-Sim\\RealGPUAcess_v0\\output\\gpu-ffn\\20261104-f1-001",
+    "reference_result_sha256": "05a4dd22f2c86542cc35cb02903c04a61f6a62dc6a6b0af5e81a2a96f0d9465f",
+    "reference_index_sha256": "24ddb3c4651ec7dbe92e03f0a5c4862304546011316f4c6d935c0d2f8c061910",
+    "compute_table_sha256": "cdb402ec39ea930f7b81d08e12b64bddeeff2a38df314e42c9d26bf7ed4a4799",
+    "native_reexecuted": false,
+    "copied_files_verified": 11
+  }
+}
