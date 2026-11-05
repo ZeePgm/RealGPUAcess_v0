@@ -775,7 +775,7 @@
       "sha256": "5da974b3b83c11b58b4e13eeb85f0cff4b2755c0591ed15c822264b39c534280"
     }
   ],
-  "script_sha256": "9a7c940c3f42fca14eeb00d1071ec25e0eeffa1ee256112e1b9546937b9fa3cf",
+  "script_sha256": "438cf72acedbc53c2b0d5947f6bd910e44d8aa590dfa2d2de19b7c8ef1196755",
   "checks": "pass: paired conservation, shared F G2, F status/logits/drain",
   "figures": [
     "01-s-timing",
