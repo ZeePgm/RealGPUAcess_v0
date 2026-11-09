@@ -81,4 +81,4 @@ F3 完成 1,032,192 个读 Global、66,060,288 个读片段和 8,257,536 个初�
 
 - [S 系列复现记录](S-REPRODUCTION.md) · [F 系列复现记录](F-REPRODUCTION.md) · [阶段验收汇总](data/acceptance.json)
 - [S6 采样表](data/S6-samples.csv) · [S8 逐 token 配对](data/S-paired-tokens.csv) · [F1 配对](data/F1-paired-tokens.csv) · [F2 配对](data/F2-paired-tokens.csv) · [F3 配对](data/F3-paired-tokens.csv)
-- [绘图数据与原始记录哈希](data/plot-data.json)。路径为原实验工作区中的来源标识。此分支提供报告、SVG、汇总与精简数据。
+- [绘图数据与原始记录哈希](data/plot-data.json)。路径为原实验工作区中的来源标识。此分支提供报告、SVG、汇总、精简数据，以及 [S/F 复现源码和运行说明](SOURCE.md)。
